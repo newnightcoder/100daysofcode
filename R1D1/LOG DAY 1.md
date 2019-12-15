@@ -14,7 +14,7 @@ idea submitted on codepen by freecodecamp (link to the exercise [here](https://c
 - usage of css variables, em units, some positioning..
 - how valuable css grid and flexbox must be! have to practice it from now on.
 
-**feelin:**
+**feeling:**
 - i am extremely happy, feel motivated to climb the mountain (it's still easy now).
 - disappointed by the overall aspect of the page after so much time spent codeing and figuring things out.
 - the main problem came with the background images etc... size/proportions/impossible alignment/size of the body etc...
