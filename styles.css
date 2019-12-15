@@ -1,0 +1,155 @@
+:root {
+ --border: solid 1px #4f3d63;
+  --textcolor: #ffffff;
+  --mainfont: roboto;
+  --maincolor: #4f3d63;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--maincolor);
+  font-family: var(--mainfont);
+  border: var(--border);
+  font-weight:light;
+  font-size: 2em;
+	margin-left:0;
+
+}
+a {
+  text-decoration:none;
+  font-weight:bold;
+  color:var(--textcolor);
+  /*transition:transform 100ms;*/
+}
+a:hover {
+  color:black;
+  /*transform:scale (1.5);*/
+}
+a:activated {
+  color:var (--textcolor);
+}
+.section-header {
+  color: var(--textcolor);
+  margin-left:1em;
+  margin-top:2em;
+}
+
+#home {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  text-align:center;
+}
+.homesymbol {
+  height: 90vh;
+  position: relative;
+  margin-top: 1.5em;
+}
+.colorinfo {
+  position: relative;
+  left: 50%;
+  color: var(--textcolor);
+  font-size: 0.5em;
+}
+.colorinfo p {
+  margin-top:3em;
+  margin-right:10em;
+}
+
+#discography {
+  background-image: url(discography.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: var(--border);
+  height: 100vh;
+  margin-top: 2em;
+	/*background:url(discography.png) 0 0 no-repeat;*/
+	/*opacity:0.5*/;
+}
+#theperformer {
+  background-image: url(performer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: var(--border);
+  height: 100vh;
+  margin-top: 2em;
+}
+#princeofthedigital {
+  background-image: url(lotusflow3r.png);
+  background-repeat: no-repeat;
+  background-size: center;
+  width: 100vw;
+  border: var(--border);
+  height: 100vh;
+}
+#movies {
+  background-image: url(joker.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+	opacity:
+  border: var(--border);
+  height: 100vh;
+}
+#interviews {
+  background-image: url(interview.gif);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  border: var(--border);
+  height: 100vh;
+  width:100vw;
+}
+#paisleypark {
+  background-image: url(paisleypark.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: var(--border);
+  height: 100vh;
+}
+#papers {
+  background-image: url(magazines.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: var(--border);
+  height: 100vh;
+}
+#bestgifs {
+  background-image: url(tribute.png);
+  background-repeat: no-repeat;
+  background-size: center;
+  border: var(--border);
+  height: 100vh;
+  position: relative;
+}
+h2 {
+	color:var(--textcolor);
+.gif {
+  position: relative;
+  top: 6em;
+  margin-right: 1em;
+  left: 1em;
+}
+footer {
+  height: 30vh;
+  display: inline-block;
+  position: relative;
+  margin:1em 0 0 2em;
+  text-align:center;
+}
+footer p {
+  text-align: left;
+  color: var(--textcolor);
+	font-family:var(--mainfont);
+  font-size:.6em;
+}
+.icontodev {
+  margin:0 2em 2em 0;
+}
+.icontocodepen {
+  margin:0 2em 2em 0;
+}
+.icontotwitter {
+  margin:0 2em 2em 0;
+}
