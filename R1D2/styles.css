@@ -1,0 +1,135 @@
+:root {
+ --border: solid 1px #000000;
+  --textcolor: #ffffff;
+  --mainfont: roboto;
+  --maincolor: #4f3d63;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 13;
+  border:var(--border);
+  background-color: var(--maincolor);
+  color:var(--textcolor);
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color:var(--textcolor);
+}
+.parenthome {
+  background-image: url("/images/liveguitar.png");
+  background-repeat:no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+}
+#home {
+  grid-colum: 1/3;
+  grid-row: 1/2;
+  justify-self:center;
+}
+#discography {
+  grid-row:3/4;
+  border: var(--border);
+  height: 100vh;
+  background-image:url("/images/discography.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.colorinfo {
+ grid-row:2/3;
+ justify-self:end;
+}
+#theperformer {
+  grid-row:4/5;
+  height: 100vh;
+  border:var(--border);
+  background-image:url("/images/performer.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#princeofthedigital {
+  grid-row:5/6;
+  height: 100vh;
+  border:var(--border);
+  background-image:url("/images/lotusflow3r.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#movies {
+  grid-row:6/7;
+  height: 100vh;
+  border:var(--border);
+  background-image:url("/images/joker.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#interviews {
+  grid-row:7/8;
+  height: 100vh;
+  border:var(--border);
+  background-image:url("/images/gif/interview.gif");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#paisleypark {
+  grid-row:8/9;
+  height: 100vh;
+  border:var(--border);
+  background-image:url("/images/paisleypark.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#papers {
+  grid-row:9/10;
+  height: 100vh;
+  border:var(--border);
+  background-image:url("/images/magazines.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#bestgifs {
+  grid-row:10/11;
+  height: 100vh;
+  border:var(--border);
+  background-image:url("/images/tribute.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  align-self:end;
+}
+#bestgifs img {
+align-self:end;
+}
+footer {
+  grid-row:11/12;
+  height: 30vh;
+  background-color: var(--maincolor);
+  color:var(--textcolor);
+  border:var(--border);
+  padding: 2em 0 0 2em;
+}
+footer a {
+  color:var(--textcolor);
+  font-weight: bold;
+}
+.socialicons{
+  padding-left: 1em;
+  text-align: left;
+}
+.icontodev {
+  margin-right: 2em;
+}
+.icontocodepen{
+  margin-right: 2em;
+}
+.icontotwitter {
+  margin-right: 2em;
+}
+
+/*#rubriques à venir {
+  grid-row: / ;
+}*/
