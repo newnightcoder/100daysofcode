@@ -1,0 +1,172 @@
+:root {
+ --border: solid 1px #000000;
+  --textcolor: #ffffff;
+  --mainfont: roboto;
+  --maincolor: #4f3d63;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+	background-color:var(--maincolor);
+}
+.container {
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 15;
+  /*border:var(--border);*/
+  background-color: var(--maincolor);
+  color:var(--textcolor);
+  /*text-align: center;*/
+}
+a {
+  text-decoration: none;
+  color:var(--textcolor);
+}
+.parenthome {
+
+}
+#home {
+  grid-column:1/2;
+  grid-row: 1/2;
+	height: 1lum:1
+	background-image: url("/images/png/liveguitar.png");
+  background-repeat:no-repeat;
+  background-size: cover;
+	opacity: 0.5;
+	border: solid black 1px;
+}
+
+#discography {
+  grid-row:3/4;
+  /*border:var(--border);*/
+  height: 100vh;
+  background-image:url("/images/png/discography.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.colorinfo {
+ grid-row:2/3;
+ justify-self:end;
+}
+#theperformer {
+  grid-row:4/5;
+  height: 140vh;
+  /*border:var(--border);*/
+  background-image:url("/images/png/performer.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#princeofthedigital {
+  grid-row:5/6;
+  height: 99vh;
+  /*border:var(--border);*/
+  background-image:url("/images/png/lotusflow3r.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#movies {
+  grid-row:6/7;
+  height: 100vh;
+  /*border:var(--border);*/
+  background-image:url("/images/png/joker.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#interviews {
+  grid-row:7/8;
+  height: 160vh;
+  /*border:var(--border);*/
+  background-image:url("/images/png/interview.gif");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#paisleypark {
+  grid-row:8/9;
+  height: 200vh;
+  /*border:var(--border);*/
+  background-image:url("/images/png/paisleypark.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#papers {
+  grid-row:9/10;
+  height: 200vh;
+  /*border:var(--border);*/
+  background-image:url("/images/png/magazines.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#bestgifs {
+  grid-row:10/12;
+  height: 100vh;
+  border:solid 10px black;
+  background-image:url("/images/png/tribute.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+	position:relative;
+}
+.row11 {
+	grid-row:11/12;
+	border: 1px solid yellow;
+	height:30em;
+}
+.gif1 {
+	grid-row:11/12;
+	grid-column:1/2;
+}
+.gif2 {
+	grid-row-start:11/12;
+	grid-column:2/3;
+}
+.gif3 {
+	grid-row:11/12;
+	grid-column:3/4;
+	}
+#footer {
+  grid-row:12/14;
+	height:100vh;
+  background-color: var(--maincolor);
+  color:var(--textcolor);
+  /*border:var(--border);*/
+  padding: 2em 0 0 2em;
+	border: solid 10px white;
+
+}
+
+#footer p {
+  color:var(--textcolor)
+		border: solid 10px white;
+
+}
+#footer a {
+  color:var(--textcolor);
+  font-weight: bold;
+	text-decoration:underline;
+}
+
+#footer a:hover {
+  color:#000000;
+}
+.socialicons {
+	grid-row: 13/14;
+	height:30vh;
+	border: solid 5px tomato;
+}
+.logodev {
+	width=30em;
+  margin-right: 2em;
+}
+.logocodepen {
+	width=30em;
+  margin-right: 2em;
+}
+.logotwitter {
+	width=30em;
+  margin-right: 2em;
+}
+
+/*#rubriques à venir {
+  grid-row: / ;
+}*/
