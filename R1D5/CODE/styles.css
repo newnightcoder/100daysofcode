@@ -1,0 +1,251 @@
+
+:root {
+ --border: solid 1px #000000;
+  --textcolor: #ffffff;
+  --mainfont: roboto;
+  --maincolor: #4f3d63;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	background-color:var(--maincolor);
+	margin-left:0;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 15;
+  /*border:var(--border);*/
+  background-color: var(--maincolor);
+  color:var(--textcolor);
+  /*text-align: center;*/
+}
+a {
+  text-decoration: none;
+  color:var(--textcolor);
+}
+.parenthome {
+		opacity: 0.5;
+}
+
+#home {
+  grid-row: 1/2;
+	/*height: 100vh;*/
+	max-width:100%;
+	background-image: url("/images/png/liveguitar.png");
+  background-repeat:no-repeat;
+  background-size: cover;
+	border: solid black 1px;
+	/*vertical-align:center;*/
+
+}
+.homesymbol {
+	width:80%;
+}
+/*@media (max-height: 768px) {
+	.homesymbol {
+	width:90%;
+	}
+}*/
+
+#discography {
+  grid-row:3/4;
+  /*border:var(--border);*/
+  max-width:100%;
+  background-image:url("/images/png/discography.png");
+  background-attachment: fixed ;
+  /*below: parallalx effect on laptop! how? */
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*@media (max-width: 768px) {
+	#discography {
+	background-image: url("/images/png/discography.png");
+	height:40vh;
+width:100vw;}
+}*/
+
+/*@media (max-width: 1200px) {
+	#discography {
+	background-image: url("/images/png/discography.png");
+	height:40vh;
+	width:100vw;}*/
+}
+.colorinfo {
+ grid-row:2/3;
+margin-left : 1em;
+}
+
+#theperformer {
+  grid-row:4/5;
+  max-width:100%;
+	height:50vh;
+  /*border:var(--border);*/
+  background-image:url("/images/png/performer.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+#theperformer .p {
+border: solid 10px white;
+}
+/*@media (max-width: 768px) {
+	#theperformer {
+	background-image: url("/images/png/performer.png");
+	height:50vh;
+	width:100vw; }
+	}*/
+#princeofthedigital {
+  grid-row:5/6;
+  max-width:100%;
+  /*border:var(--border);*/
+  background-image:url("/images/png/lotusflow3r.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+@media (max-width: 768px) {
+	#princeofthedigital {
+	background-image: url("/images/png/lotusflow3r.png");
+	height:50vh;
+	width:100vw; }
+	}
+#movies {
+  grid-row:6/7;
+  max-width:100%;
+  /*border:var(--border);*/
+  background-image:url("/images/png/joker.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+@media (max-width: 768px) {
+	#movies {
+	background-image: url("/images/png/joker.png");
+	height:50vh;
+	width:100vw; }
+	}
+#interviews {
+  grid-row:7/8;
+  max-width:100%;
+  /*border:var(--border);*/
+  background-image:url("/images/png/interview.gif");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+@media (max-width: 768px) {
+	#interviews {
+	background-image: url("/images/png/interview.gif");
+	height:50vh;
+	width:100vw; }
+	}
+
+#paisleypark {
+  grid-row:8/9;
+  max-width:100%;
+  /*border:var(--border);*/
+  background-image:url("/images/png/paisleypark.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+@media (max-width: 768px) {
+	#paisleypark {
+	background-image: url("/images/png/paisleypark.png");
+	height:50vh;
+	width:100vw; }
+	}
+
+#papers {
+  grid-row:9/10;
+  max-width:100%;
+  /*border:var(--border);*/
+  background-image:url("/images/png/magazines.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+@media (max-width: 768px) {
+	#papers {
+	background-image: url("/images/png/magazines.png");
+	height:50vh;
+	width:100vw; }
+}
+
+#bestgifs {
+  grid-row:10/11;
+  max-width:100%;
+  border:solid 10px black;
+  background-image:url("/images/png/tribute.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+#bestgifs .gifrow {
+	border: 1px solid yellow;
+	margin-top:20em;}
+
+#bestgifs .gif {
+	display:inline-block;
+	margin-right:1em;
+	border: 1px solid white;
+}
+
+.gif1, .gif2, .gif3 {
+	max-width: 100%;
+  display: block;
+  height: auto;
+	}
+
+/*@media (max-width:768px) {
+	.gif1, .gif2, .gif3 {
+	height:8em;*/
+}
+
+#footer {
+	grid-row:11/12;
+	max-width:100%;
+  background-color: var(--maincolor);
+  color:var(--textcolor);
+  /*border:var(--border);*/
+	border: solid 10px white;
+}
+
+#footer p {
+  color:var(--textcolor);
+	border: solid 10px white;
+	margin-left:10;
+	}
+
+#footer a {
+  color:var(--textcolor);
+  font-weight: bold;
+	text-decoration:underline;
+}
+
+#footer a:hover {
+  color:#000000;
+}
+.socialicons {
+	height:30vh;
+	border: solid 5px tomato;
+}
+	@media (max-width:768px) {
+		.socialicons {height:10vh;}
+	}
+.logodev {
+	width=10em;
+  margin-right: 2em;
+}
+.logocodepen {
+	width=100px;
+  margin-right: 2em;
+}
+.logotwitter {
+	width=10em;
+  margin-right: 2em;
+}
+
+/*#rubriques à venir {
+  grid-row: / ;
+}*/
