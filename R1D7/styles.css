@@ -1,0 +1,213 @@
+:root {
+--colorbg:#4F3D63;
+--colortext:#ffffff;
+--font:roboto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 10;
+  grid-gap:3vh;
+  background: var(--colorbg);
+  font-family: var(--font);
+}
+
+body {
+  background: var(--colorbg);
+
+}
+
+/*------------------------HEADER AND SECTIONS---------------------
+                          i need to use SASS!!                    */
+header {
+  background-image: url("images/lovesymbol.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+  padding-bottom:100vh;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+#section-a,#section-b,#section-c,#section-d,#section-e,#section-f,#section-g,#section-h {
+  border:var(--border);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+#section-a {
+  background:url("images/png/discography.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 50%;
+}
+#section-b {
+  background:url("images/png/performer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50%;
+}
+
+#section-c {
+  background:url("images/png/joker.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+	background-position: center;
+  padding-bottom: 50%;
+}
+#section-c ul {
+  list-style: none;
+  text-align:left;
+}
+#section-c ul a {
+  color:var(--colortext);
+  font-size: 1em;
+}
+#section-c ul a:hover {
+  color:var(--colorbg);
+}
+
+#section-d {
+  background:url("images/png/lotusflow3r.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 50%;
+  text-align: center;
+}
+#section-d .link {
+  color:var(--colortext);
+  font-size: 1em;
+}
+#section-d .link:hover {
+  color:var(--colorbg);
+}
+
+#section-e {
+  background:url("images/png/interview.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:top;
+  padding-bottom: 50%;
+}
+#section-f {
+  background:url("images/png/magazines.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding-bottom: 50%;
+}
+	#section-f p {
+	color:var(--colorbg);
+	font-weight:bold;
+}
+
+#section-g {
+  background:url("images/png/paisleypark.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 60%;
+}
+#section-h {
+}
+
+/*------------------ ALL SECTIONS h2, p and a------------------*/
+h2 {
+text-transform: uppercase;
+text-align: center;
+margin-top:1rem;
+}
+
+h2, p {
+  color:var(--colortext);
+}
+
+h2 a {
+  color:var(--colortext);
+  text-decoration: none;
+}
+
+p {
+margin: 0 1rem 0 1rem;
+font-size: 1em;
+}
+
+
+/* ------------------------------- i used FLOAT property to align my gifs in the best responsive way possible ------------------------*/
+.gif-a,.gif-b,.gif-c,.gif-d,.gif-e,.gif-f,.gif-g,.gif-h,.gif-i {
+  height:10rem;
+}
+
+#section-h ul {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+}
+#section-h ul li {
+  float: left;
+  margin:1rem;
+}
+/*
+-----------------    struggle to align my gifs with nested grid...    -----------------
+                          flexbox needed:
+
+.gifs {
+  display: grid;
+  grid-template-columns: 3 auto;
+}
+.gif-a,.gif-b,.gif-c {
+  height:40vh;
+}
+.gif-a {
+  grid-column: 1/2;
+}
+.gif-a {
+  grid-column: 2/3;
+}
+.gif-a {
+  grid-column: 3/4;
+}*/
+
+/*------------------ FOOTER, obviously :P ------------------*/
+footer {
+  margin: 1rem ;
+}
+footer p {
+  margin-bottom:1rem;
+}
+footer a {
+  color: var(--colortext);
+  font-weight: bold;
+}
+footer a:hover {
+  color:#000000;
+}
+footer .logo {
+  margin-left:1rem;
+}
+.back-top {
+  color: var(--colortext);
+  font-weight: bold;
+  text-align: center;
+  font-size: .8em;
+}
+.backtop:hover {
+  color:#000000;
+}
+
+
+/*  FLEXBOF FOR THE 3 GIFS!!! YUHU!!! */
+/*.gifs {
+  display:flex;
+}
+.column {
+  flex:30%;
+  width:25%;
+}
+.column img {
+  height:20%;
+}
