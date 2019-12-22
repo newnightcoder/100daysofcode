@@ -7,12 +7,12 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12082711184
 - delivered the layout for my Prince tribute page for day 7, it was super important for me.
 
 **what i learned:**
-- media quieries aren't that much needed to make a site with images responsive! CSS GRID is amazing!!! 
-- use of flexbox in the grid. it worked at some point and then it didn't lol, so i used the float property instead and it worked!
+- media queries aren't that much needed to make a site with images responsive! CSS GRID is amazing!!! 
+- use of flexbox in the grid. it went well at some point until it didn't lol, so i used the float property instead and it worked!
 - i have difficulties with nested grid and flexbox in a grid... 
 - how useful SASS really is. have to use it for real now.
 
 **next step:**
-- rewrite the css of the page using SASS?
+- rewrite the css of the page using SASS.
 - align gifs with FLEXBOX and not float.
 - add NAVigation to the page.
