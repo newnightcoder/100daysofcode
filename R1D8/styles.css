@@ -1,0 +1,115 @@
+:root {
+  --thicklines:rgb(154, 154, 154);
+  --textcolor:#000000;
+}
+
+body {
+  background-color: rgb(252, 205, 120);
+  font-family:courier;
+} /*rgba(252, 198, 109,.7)*/
+
+.big-circle {
+  height: 300px;
+  width: 300px;
+  background-color:tomato;
+  border-radius: 50%;
+}
+.small-circle {
+  height: 90px;
+  width: 90px;
+  background-color:rgb(252, 205, 120);
+  border-radius: 50%;
+  position: relative;
+  bottom:49%;
+  left: 24%;
+}
+p {
+  text-transform:uppercase;
+}
+p a {
+  color:var(--textcolor);
+}
+p a:hover {
+  font-weight:bold;
+}
+p a:visited {
+  color:var(--textcolor);
+}
+.grid {
+  display:grid;
+  grid-template-columns: 3 1fr;
+  grid-template-rows: 12 100px;
+  grid-column-gap: 1rem;
+  position: relative;
+}
+.circle {
+  height:400px;
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.row-a {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  transform: rotate(-35deg);
+  padding: 1rem;
+  position: relative;
+  left:50px;
+  bottom:120px;
+  white-space: nowrap;
+  font-weight:bold;
+}
+/*------------- pseudo-element to add later --------------
+
+.row-a::before {
+  content:"";
+  height:10px;
+  width:10px;
+  border-radius: 50%;
+  background-color: black;*/
+
+.row-b {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  align-self: end;
+  border-bottom: 10px solid var(--thicklines);
+}
+.row-c {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  align-self: center;
+  border-bottom: 10px solid var(--thicklines);
+}
+.row-d {
+  grid-column: 3/4;
+  grid-row: 5/6;
+  align-self: start;
+  border-bottom: 10px solid var(--thicklines);
+}
+.row-e {
+  grid-column: 3/4;
+  grid-row: 6/7;
+  border-bottom: 10px solid var(--thicklines);
+}
+.row-f {
+  grid-column: 3/4;
+  grid-row: 7/8;
+  border-bottom: 10px solid var(--thicklines);
+}
+.row-g {
+  grid-column: 3/4;
+  grid-row: 8/9;
+  border-bottom: 10px solid var(--thicklines);
+}
+.row-h {
+  grid-column: 3/4;
+  grid-row: 9/10;
+}
+.thick-line {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  padding:1rem;
+  height:100px;
+  width:5px;
+  background-color: black;
+  justify-content: center;
+}
