@@ -30,4 +30,4 @@ it's actually like a PERSONAL BOOTCAMP! i feel like i've found a treasure lol.
 - it feels impossible to burn out at this point because the joy i have from learning/coding and navigating in the dev community fulfills me + perspective of working there one day - soon... 
 - this life change i wanted to happen seems to take place nicely, gradually.
 
-Thank you so much [Alexander Kallaway](https://www.youtube.com/watch?v=6y5P7O7YlBU&feature=emb_logo)
+Thank you so much [Alexander Kallaway](https://www.youtube.com/watch?v=z_mzJnk31Cg)
