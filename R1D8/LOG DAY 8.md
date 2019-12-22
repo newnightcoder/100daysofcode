@@ -5,7 +5,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12086116475
 **what i did:**
 - 100% Jan Tschichold inspired css grid layout, thanks to this AMAZING [video](https://www.youtube.com/watch?v=OxrsO4aIjyc) 
 by [Jen Simmons](https://twitter.com/jensimmons)!! wow.
-- 
+- i want to finish it within 4 days - perfect exercise to practice and boost html/css skills and overall layout creativity.
 
 **what i learned:**
 - today was a lot of fundamental css! properties: transform and writing style, and pseudo elements. i am happy. 
