@@ -8,7 +8,7 @@ by [Jen Simmons](https://twitter.com/jensimmons)!! wow.
 - i want to finish it within 4 days - perfect exercise to practice and boost html/css skills and overall layout creativity.
 
 **what i learned:**
-- today was a lot of fundamental css: properties "transform" and "writing style", and pseudo elements. i am happy. 
+- today was a lot of fundamental css: properties "transform" and "writing-mode", and pseudo elements. i am happy. 
 - more about grid layout.
 - flexbox still needed, i have to get to it asap. grid + flexbox work together nicely for sure. i
 already knew it from my Prince tribute project, but I NEED TO LEARN AND USE FLEXBOX.
