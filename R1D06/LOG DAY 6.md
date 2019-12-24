@@ -1,4 +1,4 @@
-**LOG R1D6** (19/12/19)
+**LOG R1D6** (20/12/19)
 
 link to my daily tweet [here](https://twitter.com/Nightcoder2/status/1207875105101103104)
 
