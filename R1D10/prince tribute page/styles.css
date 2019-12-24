@@ -1,0 +1,205 @@
+:root {
+--colorbg:#4F3D63;
+--colortext:#ffffff;
+--colorgifs:#C0C0C0;
+--font:optima;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 10;
+  grid-gap:3vh;
+  background: var(--colorbg);
+  font-family: var(--font);
+}
+
+body {
+  background: var(--colorbg);
+}
+
+
+/*------------------------HEADER AND SECTIONS---------------------
+                          i need to use SASS!!                    */
+header {
+  background-image: url("images/lovesymbol.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+  padding-bottom:100vh;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+#section-a,#section-b,#section-c,#section-d,#section-e,#section-f,#section-g,#section-h {
+  border:var(--border);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+#section-a {
+  background:url("images/png/discography.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 50%;
+}
+#section-b {
+  background:url("images/png/performer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50%;
+}
+
+#section-c {
+  background:url("images/png/joker.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+	background-position: center;
+  padding-bottom: 50%;
+}
+#section-c ul {
+  list-style: none;
+  text-align:left;
+}
+#section-c ul a {
+  color:var(--colortext);
+  font-size: 1em;
+}
+#section-c ul a:hover {
+  color:var(--colorbg);
+}
+
+#section-d {
+  background:url("images/png/lotusflow3r.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 50%;
+  text-align: center;
+}
+#section-d .link {
+  color:var(--colortext);
+  font-size: 1em;
+  position: relative;
+  top:20vh;
+}
+#section-d .link:hover {
+  color:var(--colorbg);
+}
+
+#section-e {
+  background:url("images/png/interview.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:top;
+  padding-bottom: 50%;
+}
+#section-f {
+  background:url("images/png/magazines.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding-bottom: 50%;
+}
+	#section-f p {
+	color:var(--colorbg);
+	font-weight:bold;
+}
+
+#section-g {
+  background:url("images/png/paisleypark.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 60%;
+}
+
+/*  GIFS of #section-h: i finally used FLEXBOX! :P   */
+
+.gifs {
+  display:flex;
+  flex-wrap: wrap;
+}
+/*  END of FLEXBOX : 2 lines of code for perfection hahaha!
+i struggled with positioning and floats and grid and 100 things for dayyyyyzzz! so happy right now! yuhu! */
+
+.gif {
+  height: 10rem;
+  margin: 1rem ;
+  border: 1px solid var(--colorgifs);
+}
+
+/*------------------ ALL SECTIONS h2, p and a------------------*/
+h2 {
+text-transform: uppercase;
+text-align: center;
+margin-top:1rem;
+}
+
+h2, p {
+  color:var(--colortext);
+  text-shadow:    ;
+}
+
+h2 a {
+  color:var(--colortext);
+  text-decoration: none;
+}
+
+p {
+margin: 5rem 1rem 0 1rem;
+font-size: 1em;
+}
+
+/* --- the little V "to next section" link ---*/
+small a {
+  font-family:optima;
+  text-transform: lowercase;
+  font-weight: 1;
+  color:rgba(255,255,255,.7);
+  text-decoration: none;
+  margin-left: 1em;
+}
+small a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+#section-d small a {
+  top:70px;
+}
+#section-h small a {
+  top:15vh;
+}
+
+/*------------------ FOOTER, obviously :P ------------------*/
+footer {
+  margin: 1rem ;
+}
+footer p {
+  margin-bottom:1rem;
+  margin-top: 0;
+}
+footer a {
+  color: var(--colortext);
+  font-weight: bold;
+}
+footer a:hover {
+  color:#000000;
+}
+footer .logo {
+  margin-left:1rem;
+}
+.back-top {
+  color: var(--colortext);
+  font-weight: bold;
+  text-align: center;
+  font-size: .8em;
+}
+.backtop:hover {
+  color:#000000;
+}
+.socialicons {
+	margin-bottom:.5em;
+}
