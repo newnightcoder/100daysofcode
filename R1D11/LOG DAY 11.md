@@ -11,7 +11,7 @@ i'm so tired right now! gotta sleep as soon as i get home in 2 hours :P
 but NOT horizontally yet..) 
 
 **what i learned:**
-- i now understand much more about flexibility/reponsivenes related issues and how far it can go with grid - thanks to Jen Simmons (her channel is truly amazing) [Layout Land](https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag)) 
+- i now understand much more about flexibility/reponsivenes related issues and how far it can go with grid - thanks to Jen Simmons (her channel is truly amazing: [Layout Land](https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag)) 
 - i have so much more to learn about those units and their best use and css grid in general. it is easy with simple layout but it seems to get trickier now..
 
 **next step:**
