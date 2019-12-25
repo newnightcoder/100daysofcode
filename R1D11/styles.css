@@ -1,0 +1,185 @@
+:root {
+  --color-body:#ffffff;
+  --color-hover-body:#22e7c2;
+  --color-circle:#ff5e4d;
+  --color-box:#f4f0e5;
+  --color-lines:#808080;
+  --color-hover-lines:#ffe700;
+  --color-text:#000000;
+  --font:courier, sans-serif;
+}
+body {
+  background-color:var(--color-body);
+  margin:0;
+}
+.awesome {
+  font-size:1.3em;
+  font-weight:bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transform: rotate(-45deg)translate(70%);
+  position: absolute;
+  top:75%;
+  margin-top:2em;
+  z-index:1;
+  font-family: var(--font);
+}
+.grid {
+  display: grid;
+  grid-column-gap: 2.5em;
+  grid-template-areas:
+  " . thick-horizontal ."
+  "circle . text-block"
+  "circle awesaome text-block"
+    "awesome  . text-block";
+  grid-columns:1fr min-content auto;
+}
+
+.circle {
+  height:50vmin;
+  width:50vmin;
+  background-color: var(--color-circle);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20% 0 0 10%;
+}
+.small-circle {
+  height:15vmin;
+  width:15vmin;
+  background-color: var(--color-box);
+  border-radius: 50%;
+}
+.text-block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6em;
+  line-height: 1.5em;
+}
+.book {
+  color:var(--color-circle);
+  text-transform: uppercase;
+  writing-mode:vertical-rl;
+  align-self: start;
+  margin: .5em 0 .5em 0;
+}
+#box {
+  width:90%;
+  background-color: var(--color-box);
+  margin: auto;
+  margin-bottom: 2em;
+  position: relative;
+  top:5vh;
+  padding:1em;
+  font-family:var(--font);
+}
+@media (max-width:960px){
+  #box {
+    display:flex;
+    flex-direction:row;
+  }
+  .awesome {
+    transform:rotate(90deg);
+    top:50%;
+    right:60%;
+  }
+  .circle {
+    width:max-width;
+    background-color:var(--color-circle);
+  }
+  /*.small-circle: {
+    width:max-width;
+    height:max-width;
+    background-color:var(--color-box);
+  }*/
+}
+.moma {
+  text-transform: uppercase;
+}
+p {
+  text-transform: lowercase;
+}
+p a {
+  text-decoration: none;
+  color:var(--color-text);
+  font-weight: 800;
+}
+/*--- styling of the thick lines ---*/
+.lines {
+  height:10px;
+  width:100%;
+  background-color:var(--color-lines);
+}
+.line {
+  height:2px;
+  width:100%;
+  background-color: var(--color-circle);
+}
+.thick-horizontal {
+  height:20px;
+  width:150px;
+  margin-left: 1em;
+  background-color: var(--color-text);
+}
+.thick-vertical {
+  height:180px;
+  width:20px;
+  background-color:var(--color-text);
+  position: absolute;
+  bottom:0;
+  left:30%;
+}
+@media (max-width:960px) {
+  .thick-vertical {
+    transform:rotate(180deg);
+  }
+}
+
+/*--- PSEUDO ELEMENTS  ---
+.intro::before {
+  content:open-quote;
+  font-family: arial;
+  font-size:5em;
+  position: absolute;
+  top:1.6em;
+  left:6.7em;
+  color: var(--color-hover-lines);
+}
+.outro::after {
+  content:close-quote;
+  font-family: arial;
+  font-size:5em;
+  display: inline-block;
+  position: absolute;
+  color: var(--color-hover-lines);
+}
+.awesome::before {
+  content:dot;
+  height:1000px;
+  width:10px;
+  border-radius: 50%;
+  background-color:var(--color-text);}*/
+
+/*---- HOVER effects! ----*/
+body:hover {
+  background-color:var(--color-hover-body);
+}
+.circle:hover {
+  background-color: var(--color-body);
+}
+.small-circle:hover {
+  background-color:var(--color-hover-lines);
+}
+.lines:hover {
+  background-color:var(--color-hover-lines);
+}
+p a:hover {
+  color:var(--color-hover-body);
+}
+.thick-horizontal:hover {
+  background-color: var(--color-hover-body);
+}
+.line:hover{
+  background-color: var(--color-lines);
+}
