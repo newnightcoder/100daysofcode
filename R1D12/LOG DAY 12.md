@@ -1,6 +1,6 @@
 **LOG R1D12** (26/12/19)
 
-link to my daily tweet [here](https://https://twitter.com/Nightcoder2/status/1210055339565027329)
+link to my daily tweet [here](https://twitter.com/Nightcoder2/status/1210055339565027329)
 
 **what i did:**
 - worked more precisely on Tschichold: i start to really understand the role of vmin as well as min and max-content but not 100%...(experiment/play with the units to see the effect ===> i feel the "learning-by-doing" thing a lot!)
