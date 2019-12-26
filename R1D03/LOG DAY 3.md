@@ -13,7 +13,7 @@ but it forces you to look deeper on your own code and it has benefits, like givi
 **next step:**
 - continue to dive and swim in css grid ([wes bos grid course](https://www.youtube.com/watch?v=T-slCsOrLcc&list=PLu8EoSxDXHP5CIFvt9-ze3IngcdAc2xKG) + [bootstrap grid system doc](https://getbootstrap.com/docs/4.0/layout/grid/))
 
-*ps: advice to read bootstrap grid system doc came from Ashley on twitter, who commented on my tweet of the day to encourage me. super nice, thank you!
+*ps: advice to read bootstrap grid system doc came from [Ashley](https://twitter.com/CrashleyGames) on twitter, who commented on my tweet of the day to encourage me. super nice, thank you!
 Ashley did memory game in React, now a google book search app (project involving a database and React as the front framework)...*
 
 
