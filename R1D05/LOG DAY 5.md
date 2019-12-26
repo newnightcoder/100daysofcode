@@ -3,8 +3,7 @@
 link to my daily tweet [here](https://twitter.com/Nightcoder2/status/1207507148919525376)
 
 **what i did:**
-- i coded to make the background images fit both in landscape and portrait view on my phone and it works only for portrait mode.
-on laptop the bg img is cropped.
+- i coded to make the background images fit both in landscape and portrait view on my phone and it works only for portrait mode. on laptop the bg img is cropped.
 - i played around with my code to see what works and what doesn't.
 
 
