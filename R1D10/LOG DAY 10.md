@@ -9,9 +9,7 @@ link to my daily tweet [here](https://https://twitter.com/Nightcoder2/status/120
 
 **what i learned:**
 - grid-areas: so much easier to design your grid and make your layout perfect (or almost, at this point :))
-- flexbox {
-flex-wrap:wrap;
-} 
+- flexbox { flex-wrap:wrap; } 
 /*-------yeah!!!*/
 
 
