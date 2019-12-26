@@ -1,0 +1,175 @@
+:root {
+  --color-body:#ffffff;
+  --color-hover-body:#22e7c2;
+  --color-circle:#ff5e4d;
+  --color-box:#f4f0e5;
+  --color-lines:#808080;
+  --color-hover-lines:#ffe700;
+  --color-text:#000000;
+  --font:courier, sans-serif;
+}
+body {
+  background-color:var(--color-body);
+  margin:0;
+}
+.awesome {
+  padding:0;
+  font-size:1.3em;
+  font-weight:bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transform: rotate(-45deg)translate(50%);
+  position: absolute;
+  top:75%;
+  font-family: var(--font);
+}
+.grid {
+  display: grid;
+  grid-template-columns:10px 50vmin 150px 20px min-content;
+}
+
+.circle {
+  height:40vmin;
+  width:40vmin;
+  background-color: var(--color-circle);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 2/3;
+}
+.small-circle {
+  height:10vmin;
+  width:10vmin;
+  background-color: var(--color-box);
+  border-radius: 50%;
+}
+.text-block {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5em;
+  grid-column:5/6;
+}
+.book {
+  color:var(--color-circle);
+  text-transform: uppercase;
+  writing-mode:vertical-rl;
+  align-self: start;
+  margin: .5em 0 .5em 0;
+}
+#box {
+  width:max-content;
+  background-color: var(--color-box);
+  margin: auto;
+  margin-bottom:2em;
+  position: relative;
+  top:5vh;
+  padding:1em;
+  font-family:var(--font);
+}
+@media (max-width:900px){
+  .grid {
+    display:flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .awesome {
+    position: absolute;
+    top:0;
+    bottom:0;
+    transform:none;
+  }
+  .thick-horizontal {
+    margin-top:2em;
+  }
+  .thick-vertical {
+    position: absolute;
+    top:3em;
+  }
+}
+.moma {
+  text-transform: uppercase;
+}
+p {
+  text-transform: lowercase;
+}
+p a {
+  text-decoration: none;
+  color:var(--color-text);
+  font-weight: 800;
+}
+/*--- styling of the thick lines ---*/
+.lines {
+  height:10px;
+  width:100vmax;
+  background-color:var(--color-lines);
+}
+.line {
+  height:2px;
+  width:100vmax;
+  background-color: var(--color-circle);
+}
+.thick-horizontal {
+  height:20px;
+  width:150px;
+  grid-column: 3/4;
+  background-color: var(--color-text);
+}
+.thick-vertical {
+  height:180px;
+  width:20px;
+  background-color:var(--color-text);
+  position: absolute;
+  bottom:0;
+  left:30%;
+  grid-column: 3/4;
+  margin-left:2em;
+}
+
+/*---- HOVER effects! ----*/
+body:hover {
+  background-color:var(--color-hover-body);
+}
+.circle:hover {
+  background-color: var(--color-body);
+}
+.small-circle:hover {
+  background-color:var(--color-hover-lines);
+}
+.lines:hover {
+  background-color:var(--color-hover-lines);
+}
+p a:hover {
+  color:var(--color-hover-body);
+}
+.thick-horizontal:hover {
+  background-color: var(--color-hover-body);
+}
+.line:hover{
+  background-color: var(--color-lines);
+}
+
+/*--- PSEUDO ELEMENTS  ---
+.intro::before {
+  content:open-quote;
+  font-family: arial;
+  font-size:5em;
+  position: absolute;
+  top:1.6em;
+  left:6.7em;
+  color: var(--color-hover-lines);
+}
+.outro::after {
+  content:close-quote;
+  font-family: arial;
+  font-size:5em;
+  display: inline-block;
+  position: absolute;
+  color: var(--color-hover-lines);
+}
+.awesome::before {
+  content:dot;
+  height:1000px;
+  width:10px;
+  border-radius: 50%;
+  background-color:var(--color-text);}*/
