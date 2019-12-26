@@ -10,4 +10,4 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12089673141
 - easyness of flexbox to center and align things perfectly.
 
 **next step:**
-- finish this pen / css animations 
+- finish this pen / css animations. 
