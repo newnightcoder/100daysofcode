@@ -11,7 +11,7 @@ idea submitted on codepen by freecodecamp (link to the exercise [here](https://c
 
 **what i learned:**
 - how to use figma + importance of resizing images beforehand, else it gets messy...
-- usage of css variables, em units, some positioning..
+- usage of css variables, em units, some positioning...
 - how valuable css grid and flexbox must be! have to practice it from now on.
 
 **feeling:**
