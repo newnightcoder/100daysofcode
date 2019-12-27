@@ -1,0 +1,151 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+:root {
+  --color-body:#ffffff;
+  --color-hover-body:#22e7c2;
+  --color-circle:#ff5e4d;
+  --color-box:#f4f0e5;
+  --color-lines:#808080;
+  --color-small-circle:#ffe700;
+  --color-text:#000000;
+  --font:courier, sans-serif;
+}
+body {
+  font-size:1em;
+  font-family: 'Saira Condensed', sans-serif;
+}
+.grid {
+  display: grid;
+  grid-template-columns: max-content max-content 1fr;
+  grid-template-areas: ". thick ."
+                       " circle . text"
+                       "awesome awesome text"
+                       " . vertical text";
+  background-color: var(--color-box);
+}
+.circle {
+  height:40vmin;
+  width:40vmin;
+  background-color: var(--color-circle);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1/2;
+  grid-area: circle;
+  margin-top: 1em;
+}
+.small-circle {
+  height:10vmin;
+  width:10vmin;
+  background-color: var(--color-box);
+  border-radius: 50%;
+}
+.text-block {
+  text-transform: uppercase;
+  grid-column: 3/4;
+  grid-area: text;
+  margin: 6em 3em 0 1.5em;
+}
+.awesome {
+  grid-area:awesome;
+  text-transform: capitalize;
+  font-size: 1.3em;
+  font-weight: bolder;
+  border-bottom: none;
+  color: var(--text-color);
+  transform: rotate(-50deg) translate(20%);
+}
+.awesome::before {
+  content: "";
+  height:15px;
+  width:15px;
+  border-radius: 50%;
+  display:inline-block;
+  background-color: var(--color-text);
+  margin-right: .3em;
+}
+p {
+  padding-right: 1em;
+  color:var(--color-circle);
+  border-bottom: 2px solid black;
+  justify-self: center;
+}
+p a {
+  text-decoration: none;
+  color:var(--color-text);
+  font-weight: 800;
+}
+p a:hover {
+  color:var(--color-circle);
+}
+.book {
+  color:var(--color-text);
+  writing-mode:vertical-lr;
+border-bottom: 0;
+}
+/*--- the thick lines ---*/
+.thick-horizontal {
+  height:20px;
+  width:25vmin;
+  grid-area: thick;
+  background-color: var(--color-text);
+  margin-top: 2em;
+}
+.thick-vertical {
+  height:25vmin;
+  width:20px;
+  grid-area: vertical;
+  background-color:var(--color-text);
+  align-self: end;
+  justify-self:end;
+}
+
+@media (max-width:650px) and (orientation:portrait){
+  .grid {
+    grid-template-areas:
+    "thick" "circle" "awesome" "vertical" "text";
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .awesome {
+    text-align: center;
+    transform: none;
+}
+  .text-block {
+    margin-top: 0;
+  }
+  .thick-vertical {
+    justify-self:center;
+  }
+}
+@media (max-height:650px) and (orientation:landscape){
+  .grid {
+    grid-template-areas:
+    "thick" "circle" "awesome" "vertical" "text";
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .awesome {
+    text-align: center;
+    transform: none;
+}
+  .text-block {
+    margin-top: 0;
+  }
+  .thick-vertical {
+    justify-self:center;
+  }
+}
+/*---- HOVER effects! ----*/
+
+.circle:hover {
+  background-color: var(--color-text);
+}
+.small-circle:hover {
+  background-color:var(--color-small-circle);
+}
+.thick-horizontal:hover, .thick-vertical:hover {
+  background-color: var(--color-circle);
+}
