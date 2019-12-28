@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --maincolor:tomato;
+  --textcolor:black;
+  --bg:#fdfef6;
+}
+body {
+  background-color: #999;
+  font-family:"M PLUS 1p",sans-serif;
+}
+.container {
+  width:90%;
+  background-color: white;
+}
+.grid {
+  background-color: var(--bg);
+  margin-top:3em;
+  padding:1em;
+  border:1px solid var(--maincolor);
+  display: grid;
+  grid-template-columns: max-content 10px 1fr auto min-content;
+  grid-template-areas: "rectangle . . . ."
+                       "asymmetry . . . ."
+                       "vertical . text text text"
+                       "vertical . effective . arrow"
+                       "vertical . . . symmetry"
+}
+.rectangle {
+  height:10vmin;
+  width:35vmin;
+  background-color: var(--maincolor);
+  grid-area: rectangle;
+}
+.asymmetry {
+  grid-area: asymmetry;
+  justify-self:end;
+  align-self: start;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top:0;
+}
+.symmetry{
+  grid-area:symmetry;
+  text-transform: uppercase;
+  border: 5px solid var(--maincolor);
+  align-self: center;
+  padding:.3em;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.vertical {
+  width: 2vmin;
+  height:30vmin;
+  background-color: var(--maincolor);
+  grid-area: vertical;
+  align-self: end;
+  justify-self:end;
+}
+.tschichold {
+  grid-area: vertical;
+  justify-self:center;
+  align-self: end;
+  font-family: serif;
+}
+.text {
+  grid-area: text;
+}
+.effective {
+  grid-area:effective;
+  justify-self: start;
+  margin-top:10%;
+}
+.arrow{
+  width:2vmin;
+  height:7vmin;
+  background-color: var(--maincolor);
+  grid-area: arrow;
+  justify-self:center;
+}
+.tschichold {
+  text-transform:capitalize;
+  font-weight: bold;
+  font-size:1.1em;
+}
+span {
+  color:var(--maincolor);
+  font-size:1.4em;
+  font-weight: bold;
+}
+@media (max-width:520px) {
+    .grid {
+      grid-template-columns:1fr;
+      grid-template-areas: "rectangle" "asymmetry" "arrow" "text" "effective" "symmetry" "vertical"  "tschichold";
+      justify-items:center;
+      }
+    .arrow, .vertical {
+      transform: rotate(90deg);
+    }
+    .vertical, .asymmetry,.effective {
+      justify-self:center;
+    }
+    .tschichold {
+    align-self: end;
+    }
+}
