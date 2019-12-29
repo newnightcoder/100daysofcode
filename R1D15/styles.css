@@ -1,0 +1,46 @@
+:root {
+  --font:impact, sans-serif;
+  --font-size:5em;
+  --text-color:tomato;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color:white;
+}
+header {
+  font-family: var(--font);
+  font-weight:bold;
+  text-transform: uppercase;
+  padding: 0 .5em 0 .5em;
+  font-size: var(--font-size);
+  font-style: italic;
+  background-image: linear-gradient(to right, yellow, tomato, pink, lightblue);
+  background-size: 300%;
+  background-position: left;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation-name: gradient;
+  animation: gradient 4000ms infinite alternate;
+  box-shadow: lightgrey 5px 5px 5px 1px;
+}
+@keyframes gradient {
+  0% {
+    background-position:left;
+  }
+  100% {
+    background-position:right;
+  }
+}
+@media (max-width:500px) {
+  header {
+    writing-mode:vertical-rl;
+    text-transform: uppercase;
+  }
+}
