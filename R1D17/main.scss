@@ -1,0 +1,186 @@
+// variables
+$colorbg:#4F3D63;
+$colortext:#ffffff;
+$hoverlinks:#000000;
+$colorgifs:#C0C0C0;
+$font:"optima";
+
+// mixins for each section
+@mixin sections-center {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 50%;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+@mixin sections-top {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding-bottom: 50%;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 10;
+  grid-gap:3vh;
+  background: $colorbg;
+  font-family: $font;
+}
+body {
+  background: $colorbg;
+}
+
+// HEADER AND SECTIONS
+header {
+  background-image: url("images/lovesymbol.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+  padding-bottom:100vh;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+#section-a {
+  background:url("images/png/discography.png");
+  @include sections-center;
+}
+#section-b {
+  background:url("images/png/performer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50%;
+}
+
+#section-c {
+  background:url("images/png/joker.png");
+  @include sections-center;
+  ul {
+  list-style: none;
+  text-align:left;}
+  a {
+  color:$colortext;
+  font-size: 1em;
+  &:hover { color:$hoverlinks;}
+  }
+}
+
+#section-d {
+  background:url("images/png/lotusflow3r.png");
+  @include sections-center;
+  text-align: center;
+  .link {
+  color:$colortext;
+  font-size: 1em;
+  position: relative;
+  top:20vh;
+  &:hover {color:$hoverlinks;}
+  }
+}
+#section-e {
+  background:url("images/png/interview.gif");
+  @include sections-top;
+}
+#section-f {
+  background:url("images/png/magazines.png");
+  @include sections-top;
+	p {
+	color:$colortext;
+	font-weight:bold;
+  text-align: center;
+  margin-top:2em;
+  }
+}
+#section-g {
+  background:url("images/png/paisleypark.png");
+  @include sections-top;
+  padding-bottom: 60%;
+}
+#section-h {
+  @include sections-center;
+  padding-bottom: 0;
+}
+
+// GIFS of #section-h with flexbox
+.gifs {
+  display:flex;
+  flex-wrap: wrap;
+}
+//end of flexbox
+
+.gif {
+  height: 10rem;
+  margin: 1rem ;
+  border: 1px solid $colorgifs;
+}
+
+// ALL SECTIONS h2, p and a
+h2 {
+text-transform: uppercase;
+text-align: center;
+margin-top:1rem;
+color:$colortext;
+  a {
+  color:$colortext;
+  text-decoration: none;
+  }
+}
+p {
+margin: 5rem 1rem 0 1rem;
+font-size: 1em;
+color:$colortext;
+}
+
+// the little V "to next section" link
+small a {
+  font-family:optima;
+  text-transform: lowercase;
+  font-weight: 1;
+  color:rgba(255,255,255,.7);
+  text-decoration: none;
+  margin-left: 1em;
+  &:hover {
+  color: rgba(0, 0, 0, 0.5);
+  }
+}
+#section-d small a {
+  top:70px;
+}
+#section-h small a {
+  top:15vh;
+}
+
+/*------------------ FOOTER, obviously :P ------------------*/
+footer {
+  margin: 1rem ;
+ p {
+  margin-bottom:1rem;
+  margin-top: 0;
+}
+ a {
+  color: $colortext;
+  font-weight: bold;
+ &:hover {
+  color:$hoverlinks;
+  }
+}
+ .logo {
+  margin-left:1rem;
+  }
+}
+.back-top {
+  color: $colortext;
+  font-weight: bold;
+  text-align: center;
+  font-size: .8em;
+  &:hover {
+  color:$hoverlinks;
+  }
+}
+.socialicons {
+	margin-bottom:.5em;
+}
