@@ -1,0 +1,20 @@
+// variables
+$font:"Anton",sans-serif;
+$colorbg:linear-gradient(#a5b1c2, #45aaf2);
+$colortext:rgba(255,255,255,.7);
+
+//mixins
+@mixin bodysize {
+  height:100vh;
+}
+body {
+  background-image: $colorbg;
+  background-repeat: no-repeat;
+  @include bodysize;
+  color:$colortext;
+  text-align: center;
+}
+  h1 {
+    font-family: $font;
+    font-size: 10em;
+    margin:1em auto;}

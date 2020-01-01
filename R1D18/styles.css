@@ -1,0 +1,15 @@
+body {
+  background-image: linear-gradient(#a5b1c2, #45aaf2);
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 10em;
+  margin: 1em auto;
+}
+
+/*# sourceMappingURL=styles.css.map */
