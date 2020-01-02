@@ -1,0 +1,47 @@
+// variables
+$font:"Anton",sans-serif;
+$colorbg:linear-gradient(#a5b1c2, #45aaf2);
+$colortext:rgba(255,255,255,.7);
+$colorcanvas:#000000;
+
+* {
+  box-sizing: border-box;
+}
+body {
+  padding-bottom: 120vh;
+  background-image: url("/img/arkanoid3.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  color:$colortext;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-family: $font;
+  font-size: 10vmin;
+  text-transform: uppercase;
+  margin:0;
+  padding:0;}
+
+#canvas {
+  border-radius: 20%;
+  background-color:$colorcanvas;
+  background-size: 165%;
+  background-position: center;
+  border: 10px solid lightblue;
+margin-top:20em;  //opacity: .7;
+}
+  .platform {
+  height:30px;
+  width:100px;
+  background-color: grey;
+}
+footer {
+  font-size:1.5em;
+  margin:.8em 0 .8em 0;
+  color:black;
+  background-color:lightblue;
+}

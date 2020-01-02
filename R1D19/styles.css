@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding-bottom: 120vh;
+  background-image: url("/img/arkanoid3.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 10vmin;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+#canvas {
+  border-radius: 20%;
+  background-color: #000000;
+  background-size: 165%;
+  background-position: center;
+  border: 10px solid lightblue;
+  margin-top: 20em;
+}
+
+.platform {
+  height: 30px;
+  width: 100px;
+  background-color: grey;
+}
+
+footer {
+  font-size: 1.5em;
+  margin: 0.8em 0 0.8em 0;
+  color: black;
+  background-color: lightblue;
+}
+
+/*# sourceMappingURL=styles.css.map */
