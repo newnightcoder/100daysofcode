@@ -8,6 +8,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12126219690
 
 **what i learned:**
 - A WHOLE LOT!!!! 
+
 1- querySelector or getDocumentbyId (i know the difference thanks to someone on stackoverflow);
 
 2- let, not var anymore (so also i learned about ES6 and all that!);
