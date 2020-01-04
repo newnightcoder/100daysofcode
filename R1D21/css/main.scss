@@ -1,0 +1,50 @@
+// variables
+$font:"Anton",sans-serif;
+//$colorbg:#AFD4CD;
+$colorbg:linear-gradient(#a5b1c2, #45aaf2);
+$colortext:rgba(255,255,255,.7);
+$colorcanvas:#000000;
+$bordercanvas:lightblue;
+$colorfooter:white;
+
+
+body {
+height:100vh;
+  background-image: $colorbg;
+  font-family: $font;
+  color:$colortext;
+  margin:0;
+}
+.container {
+  margin-top: 2em;
+  background-image: url("../img/arkanoid-cartridge.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 120px max-content 80px;
+  grid-template-rows:  100px max-content min-content;
+  grid-template-areas:". . "
+                      " . canvas "
+                      " . footer "
+                      ". . ";
+  align-items: center;
+  justify-content: center;
+}
+
+#canvas {
+  grid-area: canvas;
+  border-radius: 20%;
+  background-color:$colorcanvas;
+  border: 10px solid $bordercanvas;
+}
+
+footer {
+  grid-area: footer;
+  justify-self:center;
+  font-size:1em;
+  letter-spacing: .2em;
+  color:$colorfooter;
+  padding:.3em 0 1em 0;
+}
