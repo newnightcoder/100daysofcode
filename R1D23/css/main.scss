@@ -1,0 +1,55 @@
+// variables
+$font:"Anton",sans-serif;
+//$colorbg:#AFD4CD;
+$colorbg:linear-gradient(#a5b1c2, #45aaf2);
+$colortext:rgba(255,255,255,.7);
+$colorcanvas:#000000;
+$bordercanvas:lightblue;
+$colorfooter:white;
+$colorpaddle:#0aeb00;
+
+
+body {
+  height:120vh;
+  background-image: $colorbg;
+  font-family: $font;
+  color:$colortext;
+  margin:0;
+}
+
+// all the rest of the CSS is nested in .container thanks to Sass! cool
+
+.container {
+  margin-top: 3em;
+  display: grid;
+  grid-template-columns: 195px max-content 60px;
+  grid-template-rows:  115px max-content min-content;
+  grid-template-areas:". . ."
+                      " . canvas . "
+                      " . . . "
+                      ". footer . ";
+  align-items: center;
+  justify-content: center;
+
+.poster {
+  grid-column: 1/4;
+  grid-row: 1/4;
+  z-index: -1;
+}
+
+#canvas {
+  grid-area: canvas;
+  border-radius: 20%;
+  background-color:$colorcanvas;
+  border: 5px solid $bordercanvas;
+}
+
+footer {
+  grid-area: footer;
+  justify-self:start;
+  font-size:1em;
+  letter-spacing: .2em;
+  color:$colorfooter;
+  padding:.3em 0 1em 0;
+  }
+}

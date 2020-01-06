@@ -1,0 +1,38 @@
+body {
+  height: 120vh;
+  background-image: linear-gradient(#a5b1c2, #45aaf2);
+  font-family: "Anton", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+.container {
+  margin-top: 3em;
+  display: grid;
+  grid-template-columns: 195px max-content 60px;
+  grid-template-rows: 115px max-content min-content;
+  grid-template-areas: ". . ." " . canvas . " " . . . " ". footer . ";
+  align-items: center;
+  justify-content: center;
+}
+.container .poster {
+  grid-column: 1/4;
+  grid-row: 1/4;
+  z-index: -1;
+}
+.container #canvas {
+  grid-area: canvas;
+  border-radius: 20%;
+  background-color: #000000;
+  border: 5px solid lightblue;
+}
+.container footer {
+  grid-area: footer;
+  justify-self: start;
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  color: white;
+  padding: 0.3em 0 1em 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
