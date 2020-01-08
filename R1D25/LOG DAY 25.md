@@ -3,10 +3,12 @@
 link to my daily tweet [here](https://twitter.com/Nightcoder2/status/1214783758123098112)
 
 **what i did:**
-- at first i tried to code for the proper function in order to have the paddle move when arrowjeys are pressed.
+
+- at first i tried to code for the proper function in order to have the paddle move when arrowkeys are pressed.
 - it didn't work/something was missing, so i researched and could easily find the appropriate material (MDN ressources mainly)! 
 
 **what i learned:**
+
 - many things about creating a game:
 
 1- it needs animation! i completely forgot to requestAnimationFrame! :)
@@ -15,7 +17,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12147837581
 
 3- and the logic of my eventListener was GOOD but incomplete, my move functions also.
 
-4- the eventListener/jey inputs have to be handled by a function (eventHandler or inputHandler)
+4- the eventListener/key inputs have to be handled by a function (eventHandler or inputHandler)
 
 = THERE IS A METHOD TO MAKE A GAME!!! WOW!!!
 
@@ -23,9 +25,9 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12147837581
 but i do NOT have to wait to learn it, it should happen now! it will give me a good JS start.
 - to make a game is less easy as it seemed to me in the beginning and i jumped into it without knowing, so naively! 
 but that's great to learn all that, i feel so happy/fulfilled!
-- (Nick Ang)[https://twitter.com/nickang] said that to make a game is a really good way of learning/jumping into JS 
-and i only now do i realize how much he was right! it goes much deeper than i thought! 
-it brings me to get to know and understand MUCH MORE than just move left or right..
+- [Nick Ang](https://twitter.com/nickang) said that to make a GAME is a really good way of learning/jumping into JS 
+and i sort of understood it but only now do i realize how much he was right!!! it goes much deeper than i thought!!! 
+it brings me to get to know and understand MUCH MORE than just move left or right.. 
 
 **next step:**
 
