@@ -5,7 +5,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12147837581
 **what i did:**
 
 - at first i tried to code for the proper function in order to have the paddle move when arrowkeys are pressed.
-- it didn't work/something was missing, so i researched and could easily find the appropriate material (MDN ressources mainly)! 
+- it didn't work/something was missing, so i researched and could finally find the appropriate material (MDN ressources mainly + indie game devs help/tutorials)
 
 **what i learned:**
 
@@ -25,8 +25,8 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12147837581
 but i do NOT have to wait to learn it, it should happen now! it will give me a good JS start.
 - to make a game is less easy as it seemed to me in the beginning and i jumped into it without knowing, so naively! 
 but that's great to learn all that, i feel so happy/fulfilled!
-- [Nick Ang](https://twitter.com/nickang) said that to make a GAME is a really good way of learning/jumping into JS 
-and i sort of understood it but only now do i realize how much he was right!!! it goes much deeper than i thought!!! 
+- [Nick Ang](https://twitter.com/nickang) said that to make a GAME is a really good way of learning/starting JS 
+and i sort of understood it, but only now do i realize how much he was right!!! it goes much deeper than i thought!!! 
 it brings me to get to know and understand MUCH MORE than just move left or right.. 
 
 **next step:**
