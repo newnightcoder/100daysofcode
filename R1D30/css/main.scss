@@ -1,0 +1,55 @@
+// variables
+$font:"Anton",sans-serif;
+//linear-gradient(#a5b1c2, #45aaf2)
+$colorbg:#AFD4CD;
+$colortext:rgba(255,255,255,.7);
+$colorcanvas:#000000;
+$bordercanvas:lightblue;
+$colorfooter:black;
+$colorpaddle:#0aeb00;
+
+
+body {
+  background-color: $colorbg;
+  font-family: $font;
+  color:$colortext;
+}
+
+// all the rest of the CSS is nested in .container thanks to Sass! cool
+.container {
+  background-image: url("/img/arkanoid3.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: top;
+  display: grid;
+  grid-template-columns: 60 max-content 60px;
+  grid-template-rows:  190px max-content min-content;
+  grid-template-areas:". . ."
+                      " . canvas . "
+                      " . . . "
+                      ". footer . ";
+  align-items: center;
+  justify-content: center;
+//
+// .poster {
+//   grid-column: 2/3;
+//   grid-row: 1/4;
+//   z-index: -1;
+// }
+
+#canvas {
+  grid-area: canvas;
+  border-radius: 20%;
+  background-color:$colorcanvas;
+  border: 5px solid $bordercanvas;
+}
+
+footer {
+  grid-area: footer;
+  justify-self:center;
+  font-size:1em;
+  letter-spacing: .2em;
+  color:$colorfooter;
+  padding:.3em 0 1em 0;
+  }
+}
