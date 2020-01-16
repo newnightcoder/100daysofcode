@@ -9,7 +9,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12176744102
 
 **what i learned:**
 
-- where to put the clearRect() in order for bothe elements ball and paddle to coexist.
+- where to put the clearRect() in order for both elements ball and paddle to coexist.
 - i can debug easy things on my own if i do not enter into stress mode. this is a good thing. i am happy!
 
 **next step:**
