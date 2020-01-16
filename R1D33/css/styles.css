@@ -1,0 +1,34 @@
+body {
+  background-color: #061130;
+  background-image: url("../img/arkanoid4.png");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: top;
+  font-family: "Anton", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 60px max-content 60px;
+  grid-template-rows: 31vh max-content min-content;
+  grid-template-areas: ". . ." " . canvas . " " . . . " ". footer . ";
+  align-items: center;
+  justify-content: center;
+}
+.container #canvas {
+  grid-area: canvas;
+  border-radius: 20%;
+  background-color: #000000;
+  border: 5px solid lightblue;
+}
+.container footer {
+  grid-area: footer;
+  justify-self: center;
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  color: white;
+  padding: 0.3em 0 1em 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
