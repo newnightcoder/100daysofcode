@@ -9,8 +9,8 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12180574845
 **what i learned:**
 
 - i'm now actually learning/searching how to make it collide with the borders of the canvas and the paddle!
-it requires a well thought-out condition... i dn't know which one + it involves some basic maths thinking so i have to really get to it or be patient for the eureka moment. 
-- to make a sketch is important! stop THINKING everything and USE PAPER/A PLAN OF ACTION. it helps VISUALIZE.
+it requires a well thought-out condition... i don't know which one + it involves some basic maths thinking so i have to really get to it or be patient for the eureka moment. 
+- to make a SKETCH is important! stop THINKING everything! and USE PAPER or A PLAN OF ACTION. it helps VISUALIZE.
 
 **next step:**
 
