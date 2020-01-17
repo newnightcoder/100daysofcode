@@ -34,7 +34,7 @@ i feel calm and okay now because i know the code is mine and i will find the ans
  - now that i am in JS, i really feel so comfortable with html and CSS!! i really can't believe it!! the difference is OBVIOUS.
  i manage to design what i want, how i want it, without any worries + quickly! 
  i try things, like having my canvas NOT taking the whole screen like in every video i see on youtube!
- it is nice to do my own thing on my own thanks to all the resources available out there! (tonight [this guy](https://twitter.com/christopher4lis) helped me so much!!! 
+ it is nice to do my own thing on my own thanks to all the resources available out there! (tonight super talented [Christopher Lis](https://twitter.com/christopher4lis) helped me so much!!! 
  thank you!!! <3 i love the dev community.)  
  - the game thing!!! i would never have thought about that! it was so far away from me and kind of a dream... 
  i thought it would be impossible for me and it's not!
