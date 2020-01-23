@@ -5,7 +5,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12202301292
 **what i did:**
 
 - after suddenly UNDERSTANDING that the rows and columns of bricks form a...TABLE! i researched/learned HOW to create a table with JS!!!
-- i did a sketch to visualize the bricks as a table and find the connection with their index [r c].
+- i did a sketch to visualize the bricks as a table and find the connection with their indexes [r c].
 
 **what i learned:**
 
