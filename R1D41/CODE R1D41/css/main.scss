@@ -1,0 +1,75 @@
+// variables
+$font:"Anton",sans-serif;
+//linear-gradient(#a5b1c2, #45aaf2)
+$colorbg: #061130; //#AFD4CD;
+$colortext:rgb(255,255,255);
+$colormenu:rgb(0,0,255);
+$colorcanvas:#000000;
+$bordercanvas:lightblue;
+$colorfooter:white;
+$colorpaddle:#0aeb00;
+
+
+body {
+  background-color: $colorbg;
+  background-image: url("../img/arkanoid4.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: top;
+  font-family: $font;
+  color:$colortext;
+}
+
+// all the rest of the CSS is nested in .container thanks to Sass! cool
+.container {
+  display: grid;
+  grid-template-columns: 60px max-content 60px;
+  grid-template-rows:  25vh max-content min-content;
+  grid-template-areas:". . ."
+                      " . canvas . "
+                      " . . . "
+                      ". footer . ";
+  align-items: center;
+  justify-content: center;
+
+  #start {
+    //visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area:canvas;
+    align-self: start;
+    z-index:2;
+    h1 {
+      color:$colormenu;
+      font-size: 8em;
+    }
+    h2 {
+      white-space: nowrap;
+      border: 1px solid white;
+      border-radius:10px;
+      padding: 0 30px;
+      &:hover {
+        cursor: pointer;
+        color: black;
+        background-color: white;
+      }
+    }
+}
+  #canvas {
+    grid-area: canvas;
+    border-radius: 20%;
+    background-color:$colorcanvas;
+    border: 5px solid $bordercanvas;
+  }
+
+  footer {
+    grid-area: footer;
+    justify-self:center;
+    font-size:1em;
+    letter-spacing: .2em;
+    margin-top: .5em;
+    background-color: $colorbg;
+    color:$colorfooter;
+    }
+  }

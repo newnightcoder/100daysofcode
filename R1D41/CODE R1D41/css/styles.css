@@ -1,0 +1,58 @@
+body {
+  background-color: #061130;
+  background-image: url("../img/arkanoid4.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: top;
+  font-family: "Anton", sans-serif;
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 60px max-content 60px;
+  grid-template-rows: 25vh max-content min-content;
+  grid-template-areas: ". . ." " . canvas . " " . . . " ". footer . ";
+  align-items: center;
+  justify-content: center;
+}
+.container #start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: canvas;
+  align-self: start;
+  z-index: 2;
+}
+.container #start h1 {
+  color: blue;
+  font-size: 8em;
+}
+.container #start h2 {
+  white-space: nowrap;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 0 30px;
+}
+.container #start h2:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+.container #canvas {
+  grid-area: canvas;
+  border-radius: 20%;
+  background-color: #000000;
+  border: 5px solid lightblue;
+}
+.container footer {
+  grid-area: footer;
+  justify-self: center;
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  margin-top: 0.5em;
+  background-color: #061130;
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */
