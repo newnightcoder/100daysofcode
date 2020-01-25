@@ -14,7 +14,7 @@ gameState = state
 
 }
 
-setGameState('start'); and boom!
+setGameState('start'); // and boom! it works
 - now the game is on 'pause' state until i decide to 'start' it! that's awesome. so much better!!
 - i finished a first css draft of the game welcome/home page.
 - i tried to create the ball-brick collision but was unsuccessful unfortunately.
