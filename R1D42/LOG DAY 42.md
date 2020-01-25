@@ -5,10 +5,15 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12209375477
 **what i did:**
 
 -  i coded for the "start' state of the game using a setGameState function which takes the parameter state so that my new variable gameState gets updated accordingly.
+
 let gameState; //'menu' , 'start', 'play', 'gameover' etc...
+
 setGameState(state){
+
 gameState = state
+
 }
+
 setGameState('start'); and boom!
 - now the game is on 'pause' state until i decide to 'start' it! that's awesome. so much better!!
 - i finished a first css draft of the game welcome/home page.
