@@ -36,6 +36,6 @@ i have to calm down. it will be delivered when it will be delivered, it has noth
  
  - USE BRICKS INDEXES to create ball-bricks collision. it will get better from there for sure. relax.
  - finish the game states. it's possible, very close. 
- - finish coding for life -- + game over, almost there. push yourself more. finish it. it's okay if it's not perfect from the get go. just try and you'll see. to be impressed in not productive. be strong and TRY.
+ - finish coding for life -- + game over, almost there. push yourself more. finish it. it's okay if it's not perfect from the get go. just try and you'll see. be strong and TRY.
  - finish css game over (that's a pleasure so find/make time to do it)
  - start manipulating the html/css elements in JS (start menu and gameover)
