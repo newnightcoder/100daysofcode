@@ -5,9 +5,9 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12220373399
 **what i did:**
 
 - i did not plan it but finally i didn't code/work tonight! 
-- it was (Sara)[https://twitter.com/DetentionTech]'s last day of the challenge and we were many fellow learners/coders to congratulate on her twitter. the (100 Days Of Code)[https://www.100daysofcode.com/] community is truly amazing!!! i am so happy to . have met/meet so many interesting people. this is deeply beautiful.
+- it was [Sara](https://twitter.com/DetentionTech)'s last day of the challenge and we were many fellow learners/coders to congratulate on her twitter. the [100 Days Of Code](https://www.100daysofcode.com/) community is truly amazing!!! i am so happy to . have met/meet so many interesting people. this is deeply beautiful.
 - then catch-up on facetime with Tómas until 4 (his upcoming netflix projects! and my life now with the code learning/my future as a web developer) 
-- i found some more MINDBLOWING devs on codepen!!! the inspiration NEVER stops!!! it's like in contemporary art but x100 i think. (+ there is web contemporary art! i love Nathan Tokyo. he did this (end of the world)[http://eotw.nathan.tokyo/] project: that could totally be a video/performance installation it's just perfect in all senses.)
+- i found some more MINDBLOWING devs on codepen!!! the inspiration NEVER stops!!! it's like in contemporary art but x100 i think. (+ there is web contemporary art! i love Nathan Tokyo. he did this [end of the world](http://eotw.nathan.tokyo/) project: that could totally be a video/performance installation it's just perfect in all senses.)
 - i watched some YT  motivation videos + pro tips, just enjoying my new life in general and the community.
 - OMG i discovered COLLAB LAB!
 
