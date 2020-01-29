@@ -1,0 +1,139 @@
+// variables
+$font:"Anton",sans-serif;
+//linear-gradient(#a5b1c2, #45aaf2)
+$colorbg: #061130; //#AFD4CD;
+$colortext:rgb(255,255,255);
+$colormenu:rgb(0,0,255);
+$colorcanvas:#000000;
+$bordercanvas:lightblue;
+$colorfooter:white;
+$colorpaddle:#0aeb00;
+
+@mixin buttons {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px 30px;
+}
+@mixin hoverButtons {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  transform: scale(1.12);
+}
+html {
+  margin: 0;
+  padding:0;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  //background-image: url("../img/home2.png"); //swith with level1.png
+  background-color: black;
+  // background-repeat: no-repeat;
+  // background-position: top; //center
+  // background-size: 30%; //101% for level1
+  font-family: $font;
+  color:$colortext;
+}
+// CSS DE LA PAGE MENE/START GAME en visibility hidden
+
+#welcome {
+  padding-top: 9em;
+  display: none; //switch with flex
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  -webkit-text-stroke:1px black;
+  img {
+    z-index:-1;
+    position: absolute;
+    top:0;
+    height:110%;
+    width: 40%;
+  }
+
+  h1 {
+    margin:0;
+    padding: 0;
+    position: relative;
+    font-size:7em;
+      &::after {
+        content:'mini';
+        font-size: 1rem;
+        position: absolute;
+        top:30px;
+    }
+  }
+  .undertitle {
+    margin-top: -2em;
+  }
+  h2 {
+    -webkit-text-stroke:0;
+    color: white;
+    white-space: nowrap;
+    line-height: 1em;
+    @include buttons;
+    &:hover {
+      @include hoverButtons;
+    }
+  }
+}
+
+#start {
+  display: block;
+  position:absolute;
+  @include buttons;
+  &:hover {
+   @include hoverButtons;
+  }
+}
+
+
+#pause {
+  z-index:2;
+  display: none;
+  position:absolute;
+  @include buttons;
+  &:hover {
+   @include hoverButtons;
+  }
+}
+
+#gameover{
+  display: none;
+}
+
+#grid {
+  z-index:-3;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows:  4vh max-content 20px;
+  grid-template-areas:". . ."
+                      " . canvas . "
+                      ". footer . ";
+  align-items: center;
+  justify-content: center;
+
+  #canvas {
+    grid-area: canvas;
+    border-radius: 20%;
+    background-color:$colorcanvas;
+    border: 5px solid $bordercanvas;
+  }
+
+  footer {
+    grid-area: footer;
+    justify-self:center;
+    font-size:1em;
+    letter-spacing: .2em;
+    margin-top: .5em;
+    background-color: $colorbg;
+    color:$colorfooter;
+    }
+  }
