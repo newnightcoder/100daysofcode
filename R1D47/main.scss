@@ -1,0 +1,196 @@
+//------------------------------------------------------------------------------
+// VARIABLES AND MIXINS
+//------------------------------------------------------------------------------
+$font:"Anton",sans-serif;
+//linear-gradient(#a5b1c2, #45aaf2)
+$colorbg: #061130; //#AFD4CD;
+$colortext:rgb(255,255,255);
+$colormenu:rgb(0,0,255);
+$colorcanvas:#000000;
+$bordercanvas:lightblue;
+$colorfooter:white;
+$colorpaddle:#0aeb00;
+
+@mixin flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin buttons {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px 30px;
+}
+@mixin hoverButtons {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  transform: scale(1.12);
+}
+//------------------------------------------------------------------------------
+// HTML + BODY
+//------------------------------------------------------------------------------
+
+html {
+  margin: 0;
+  padding:0;
+  overflow: hidden;
+}
+
+#body {
+  margin: 0;
+  padding-top: 5vh;
+  @include flex;
+  justify-content: center;
+  background-color: black;
+  font-family: $font;
+  color:$colortext;
+}
+//------------------------------------------------------------------------------
+// WELCOME MENU
+//------------------------------------------------------------------------------
+#welcome {
+  z-index:1;
+  padding-top: 6em;
+  @include flex; //switch to display:none
+  text-align: center;
+  -webkit-text-stroke:.7px black;
+  img {
+    z-index:-1;
+    position: absolute;
+    top:0;
+    height:110%;
+    width: 40%;
+}
+  h1 {
+    margin:0;
+    padding: 0;
+    position: relative;
+    font-size:7em;
+      &::after {
+        content:'mini';
+        font-size: 2rem;
+        position: absolute;
+        top:30px;
+    }
+  }
+  .undertitle {
+    margin-top: -2em;
+    .js {
+      text-transform: uppercase;
+    }
+  }
+  .play-game {
+    margin-top:.7em;
+    @include buttons;
+    -webkit-text-stroke:0;
+    color: white;
+    animation: blink 800ms infinite ease-in;
+    &:hover {
+      @include hoverButtons;
+  }
+}
+  @keyframes blink {
+    30% {color:white};
+    50% {color:black};
+    }
+
+  .link {
+      text-decoration: none;
+      color:white;
+      &:hover {
+        color:black;
+      }
+      .history {
+        text-decoration: none;
+        -webkit-text-stroke:0;
+        color: white;
+        white-space: nowrap;
+        line-height: 1em;
+        @include buttons;
+        &:hover {
+          @include hoverButtons;
+      }
+    }
+  }
+  .footer{
+    position:absolute;
+    bottom:0;
+  }
+}
+//------------------------------------------------------------------------------
+// START MENU
+//------------------------------------------------------------------------------
+
+#start {
+  display: none;
+  position:absolute;
+  width:30%;
+  background-color: white;
+  color:black;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+  animation: blink 1200ms infinite ease-in;
+  @include buttons;
+  &:hover {
+    cursor:pointer;
+    transform: scale(1.12);
+    font-size: 2.3em;
+  }
+}
+@keyframes blink {
+  30% {color:white};
+  50% {color:black};
+  }
+
+//------------------------------------------------------------------------------
+// THE GAME SCREEN
+//------------------------------------------------------------------------------
+#game {
+  z-index:-1;
+  display: none; //switch to grid
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows:  4vh max-content 20px;
+  grid-template-areas:". . ."
+                      " . canvas . "
+                      ". footer . ";
+  align-items: center;
+  justify-content: center;
+
+  #canvas {
+    grid-area: canvas;
+    border-radius: 20%;
+    background-color:$colorcanvas;
+    border: 5px solid $bordercanvas;
+  }
+
+  footer {
+    grid-area: footer;
+    justify-self:center;
+    font-size:1em;
+    letter-spacing: .2em;
+    margin-top: .5em;
+    background-color: $colorbg;
+    color:$colorfooter;
+    }
+  }
+
+//------------------------------------------------------------------------------
+// PAUSE
+//------------------------------------------------------------------------------
+#pause {
+  z-index:-5;
+  display: none;
+  position:absolute;
+  @include buttons;
+  &:hover {
+   @include hoverButtons;
+  }
+}
+//------------------------------------------------------------------------------
+// GAME OVER
+//------------------------------------------------------------------------------
+#gameover{
+  display: none;
+}
