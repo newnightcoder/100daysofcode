@@ -1,0 +1,177 @@
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  font-family: "Anton", sans-serif;
+  color: white;
+}
+
+#welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  -webkit-text-stroke: 0.7px black;
+}
+#welcome img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  height: 110vh;
+}
+#welcome h1 {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-size: 17vmin;
+}
+#welcome h1::after {
+  content: "mini";
+  font-size: 5vmin;
+  position: absolute;
+  top: 30px;
+}
+#welcome .undertitle {
+  margin-top: -2em;
+  font-size: 2.5vmin;
+}
+#welcome .undertitle .js {
+  text-transform: uppercase;
+}
+#welcome .play-game {
+  margin-top: 0.7em;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px 30px;
+  -webkit-text-stroke: 0;
+  color: white;
+  animation: playBlink 800ms infinite ease-in;
+}
+#welcome .play-game:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  transform: scale(1.12);
+}
+@keyframes playBlink {
+  30% {
+    color: white;
+  }
+  50% {
+    color: black;
+  }
+}
+#welcome .link {
+  text-decoration: none;
+  color: white;
+}
+#welcome .link:hover {
+  color: black;
+}
+#welcome .link .history {
+  text-decoration: none;
+  -webkit-text-stroke: 0;
+  color: white;
+  white-space: nowrap;
+  line-height: 1em;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px 30px;
+  padding-top: 10px;
+}
+#welcome .link .history:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  transform: scale(1.12);
+}
+#welcome .footer {
+  position: absolute;
+  bottom: 0;
+}
+
+#start {
+  z-index: 2;
+  display: none;
+  position: absolute;
+  width: 150px;
+  background-color: blue;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+  animation: startBlink 900ms infinite ease-in;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px 30px;
+  border-color: black;
+}
+#start:hover {
+  cursor: pointer;
+  transform: scale(1.12);
+  font-size: 2.3em;
+}
+
+@keyframes startBlink {
+  30% {
+    color: blue;
+  }
+}
+#game {
+  z-index: -2;
+  display: none;
+}
+#game #canvas {
+  border-radius: 20%;
+  border: 5px solid lightblue;
+}
+#game footer {
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  margin-top: 0.5em;
+  background-color: #061130;
+  color: white;
+}
+
+#pause {
+  z-index: -1;
+  display: none;
+  position: absolute;
+  width: 150px;
+  background-color: pink;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px 30px;
+  border-color: black;
+}
+#pause:hover {
+  cursor: pointer;
+  transform: scale(1.12);
+  font-size: 2.3em;
+}
+
+#gameover {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+  z-index: -1;
+  font-size: 7em;
+}
+
+/*# sourceMappingURL=styles.css.map */
