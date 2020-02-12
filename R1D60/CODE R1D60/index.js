@@ -22,44 +22,45 @@ let windows=window.innerHeight;
 playButton.onclick = displayStartGame;
 startButton.onclick = displayGame;
 
-let gameState;
+let gameState = 'level1';
 
 function setGameState(state){
   gameState = state;
 }
 
 function displayStartGame(){
-  setGameState('level2');//change the level here to switch from one level to the other MANUALLY
+  // setGameState('level2'); Laszlo: This can be deleted. Just set your variable gameState to level1 at the beginning, this is just duplicate.
   displayLevel();
 }
 
 function displayGame(){
   startButton.style.display='none';
-  if(gameState=='level1'){
+  if(gameState==='level1'){
   setGameState('playL1');
   }
-   else if(gameState=='level2'){
+   else if(gameState==='level2'){
   setGameState('playL2');
   }
-  else if(gameState=='level3'){
+  else if(gameState==='level3'){
   setGameState('playL3');
   }
-  else if(gameState=='level4'){
+  else if(gameState==='level4'){
   setGameState('playL4');
   }
+  game()
 }
 
 function displayPause(){
-  if (gameState=='pauseL1'||gameState=='pauseL2'||gameState=='pauseL3'||gameState=='pauseL4'){
+  if (gameState==='pauseL1'||gameState==='pauseL2'||gameState==='pauseL3'||gameState==='pauseL4'){
     pause.style.display='block';
   }
-  if (gameState=='playL1'||gameState=='playL2'||gameState=='playL3'||gameState=='playL4'){
+  if (gameState==='playL1'||gameState==='playL2'||gameState==='playL3'||gameState==='playL4'){
       pause.style.display='none';
   }
 }
 
 function displayGameOver(){
-  if (gameState=='gameover'){
+  if (gameState==='gameover'){
     gameOverMenu.style.display='block';
   }
 }
@@ -72,21 +73,21 @@ function background(){
 function displayLevel(){
   home.style.display='none';
   canvas.style.backgroundColor='black';
-  if (gameState=='level1'){
+  if (gameState==='level1'){
     body.style.backgroundImage="url('img/tile008.png')";
     background();
   }
-  if (gameState=='level2'){
+  if (gameState==='level2'){
     body.style.backgroundImage="url('img/tile001.png')";
     canvas.style.borderColor='pink';
     background();
   }
-  if (gameState=='level3'){
+  if (gameState==='level3'){
     body.style.backgroundImage="url('img/tile004.png')";
     canvas.style.borderColor='orange';
     background();
   }
-  if (gameState=='level4'){
+  if (gameState==='level4'){
     canvas.style.removeProperty("background-color");
     body.style.backgroundImage="url('img/home2.png')";
     body.style.backgroundSize='40%';
@@ -107,44 +108,44 @@ let leftArrow = false;
 let spaceBar = false;
 
 document.addEventListener('keydown', function(event) {
-  if (event.keyCode==39)
+  if (event.keyCode===39)
       rightArrow = true;
 
-  if (event.keyCode==37)
+  if (event.keyCode===37)
       leftArrow = true;
 
-  if (event.keyCode==32){
+  if (event.keyCode===32){
 
     //yeah this is for PAUSE! LOL. i already know i'll have to RE-CODE for this in the future omg! LOL!!!
-    if (gameState=='playL1'){
+    if (gameState==='playL1'){
       spaceBar=true;
       setGameState('pauseL1');
       displayPause();
-    } else if(gameState=='pauseL1'){
+    } else if(gameState==='pauseL1'){
       setGameState('playL1');
       displayPause();
     }
-    if (gameState=='playL2'){
+    if (gameState==='playL2'){
       spaceBar=true;
       setGameState('pauseL2');
       displayPause();
-    } else if(gameState=='pauseL2'){
+    } else if(gameState==='pauseL2'){
       setGameState('playL2');
       displayPause();
     }
-    if (gameState=='playL3'){
+    if (gameState==='playL3'){
       spaceBar=true;
       setGameState('pauseL3');
       displayPause();
-    } else if(gameState=='pauseL3'){
+    } else if(gameState==='pauseL3'){
       setGameState('playL3');
       displayPause();
     }
-    if (gameState=='playL4'){
+    if (gameState==='playL4'){
       spaceBar=true;
       setGameState('pauseL4');
       displayPause();
-    } else if(gameState=='pauseL4'){
+    } else if(gameState==='pauseL4'){
       setGameState('playL4');
       displayPause();
     }
@@ -152,13 +153,13 @@ document.addEventListener('keydown', function(event) {
 })
 
 document.addEventListener('keyup', function(event) {
-  if (event.keyCode==39)
+  if (event.keyCode===39)
       rightArrow = false;
 
-  if (event.keyCode==37)
+  if (event.keyCode===37)
       leftArrow = false;
 
-  if (event.keyCode==32)
+  if (event.keyCode===32)
       spaceBar=false;
   }
 )
@@ -173,15 +174,17 @@ function loseLife(){
 }
 
 function gameOver(){
-  if (life == 0){
+  if (life === 0){
     setGameState('gameover');
     displayGameOver();
   }
 }
 
-let levelWon=true;
+
 //------------------------- THE PROBLEM STARTS OBVIOUSLY HERE?? ----------------------------------------
 function levelUp(){
+  let levelWon = false;
+  let allBricksGone = brick.rows * brick.columns;
   for (r=0; r<brick.rows; r++){
     for (c=0; c<brick.columns; c++){
 
@@ -189,26 +192,43 @@ function levelUp(){
         // let b2=bricks[1][c];
         // let b3=bricks[2][c];
         let b=bricks[r][c];
-        levelWon=levelWon&&!b.unbroken; //THAT'S WHERE THE PROBLEM HAPPENS! if you try levelWon = !b.unbroken ("seems" logical..), PLAY AND LOOK what happens!!!
 
-        if (levelWon==true&&gameState=='playL1'){
-          setGameState('level2');
-          displayLevel();
-        }
-        if (levelWon&&gameState=='playL2'){
-          setGameState('level3');
-          displayLevel();
-        }
-        if (levelWon&&gameState=='playL3'){
-          setGameState('level4');
-          displayLevel();
-        }
-        if (levelWon&&gameState=='playL4'){
-          setGameState('');
-          displayLevel();
+        if (!b.unbroken) {
+          allBricksGone = allBricksGone - 1;
         }
       }
     }
+
+  if (allBricksGone === 0) {
+    levelWon = true;
+  }
+  console.log(allBricksGone)
+  if (levelWon===true&&gameState==='playL1'){
+    setGameState('level2');
+    displayLevel();
+    buildBricks();
+    reset();
+    game();
+  }
+  if (levelWon&&gameState==='playL2'){
+    setGameState('level3');
+    displayLevel();
+    buildBricks();
+    reset();
+    game();
+  }
+  if (levelWon&&gameState==='playL3'){
+    setGameState('level4');
+    displayLevel();
+    reset();
+    game();
+  }
+  if (levelWon&&gameState==='playL4'){
+    setGameState('');
+    displayLevel();
+    reset();
+    game();
+  }
   }
 // -----------------------------------------------------------------------------
 //                                  PADDLE
@@ -277,7 +297,7 @@ function resetBall(){
     ball.ySpeed = ball.xSpeed = 0;
     loseLife();
     // setTimeout(3000);
-    // if (gameState == 'play' || gameState=='level1' || gameState=='level2'){
+    // if (gameState === 'play' || gameState==='level1' || gameState==='level2'){
       reset();
     // }
   }
@@ -294,13 +314,14 @@ const brick = {
   width: brick_width,
   height: brick_height,
   columns: 6,
-  rows: 6,
+  rows: 0,
 }
 
 let bricks=[];
 //create the bricks as a TABLE (nested for loop)
 function createBricksL1() {
-  for (r = 0; r < 3; r++) {
+  brick.rows = 3 // added this so that brick rows would be set individually for each level, so we avoid having hardcoded 6 rows for every level. Also, this way you can just changed the rows for each level and it will still work with the levelWon function as well.
+  for (r = 0; r < brick.rows; r++) {
     bricks[r]=[];
     for (c = 0; c < brick.columns; c++) {
         bricks[r][c]={
@@ -311,7 +332,7 @@ function createBricksL1() {
     }
   }
 }
-createBricksL1();
+// createBricksL1();  Laszlo: This should be deleted.
 
 //------------------------ BRICKS LEVEL 2 --------------------------------------
 function createBricksL2() {
@@ -326,11 +347,12 @@ function createBricksL2() {
     }
   }
 }
-createBricksL2();
+// createBricksL2(); Laszlo: This should be deleted. By calling it here already, you are overwriting the bricks of level 1
 
 //------------------------ BRICKS LEVEL 3 --------------------------------------
 function createBricksL3() {
-  for (r = 0; r < 4; r++) {
+  brick.rows = 4
+  for (r = 0; r < brick.rows; r++) {
     bricks[r]=[];
     for (c = 0; c < brick.columns; c++) {
         bricks[r][c]={
@@ -341,11 +363,11 @@ function createBricksL3() {
     }
   }
 }
-createBricksL3();
+// createBricksL3(); Laszlo: This should be deleted. By calling it here already, you are overwriting the bricks of previous levels
 
 //------------------------ BRICKS LEVEL 4 --------------------------------------
 function createBricksL4() {
-  for (r = 0; r < 4; r++) {
+  for (r = 0; r < brick.rows; r++) {
     bricks[r]=[];
     for (c = 0; c < brick.columns; c++) {
         bricks[r][c]={
@@ -356,13 +378,37 @@ function createBricksL4() {
     }
   }
 }
-createBricksL4();
+// createBricksL4(); Laszlo: This should be deleted. By calling it here already, you are overwriting the bricks of previous levels. 
+
+//------------------------ function to only build bricks for the current level --------------------------------------
+
+function buildBricks() {
+  switch (gameState) {
+    case 'level1':
+      createBricksL1();
+      break;
+    case 'level2':
+      createBricksL2();
+      break;
+    case 'level3':
+      createBricksL3();
+      break;
+    case 'level4':
+      createBricksL1();
+      break;
+    default:
+      break;
+  }
+}
+
+buildBricks() // this way, only the bricks you need for the current level are being built, instea of building a 6x6 matrix of bricks for every level.
+
 //------------------------------------------------------------------------------
 function drawBricks(){
   for(r=0; r<brick.rows; r++){
     for(c=0; c<brick.columns; c++){
 
-    if (gameState=='level1'||gameState=='playL1'||gameState=='pauseL1'){
+    if (gameState==='level1'||gameState==='playL1'||gameState==='pauseL1'){
           let b1=bricks[0][c];
           if(b1.unbroken){
             context.fillStyle='#FFD700'; //gold color!
@@ -379,7 +425,7 @@ function drawBricks(){
             context.fillRect(b3.x, b3.y, brick_width, brick_height);
           }
         }
-    if (gameState=='level2'||gameState=='playL2'||gameState=='pauseL2'){
+    if (gameState==='level2'||gameState==='playL2'||gameState==='pauseL2'){
           let b1=bricks[r][0];
           if(b1.unbroken){
             context.fillStyle='#e40303';
@@ -411,7 +457,7 @@ function drawBricks(){
             context.fillRect(b6.x, b6.y, brick_width, brick_height);
           }
         }
-    if (gameState=='level3'||gameState=='playL3'||gameState=='pauseL3'){
+    if (gameState==='level3'||gameState==='playL3'||gameState==='pauseL3'){
           let b1=bricks[r][0];
           if(b1.unbroken){
             context.fillStyle='red';
@@ -443,7 +489,7 @@ function drawBricks(){
             context.fillRect(b6.x, b6.y, brick_width, brick_height);
           }
         }
-    if (gameState=='level4'||gameState=='playL4'||gameState=='pauseL4'){
+    if (gameState==='level4'||gameState==='playL4'||gameState==='pauseL4'){
           let b1=bricks[r][0];
           if(b1.unbroken){
             context.fillStyle='black';
@@ -526,27 +572,33 @@ function ballCollisionsBricks() {
           ball.ySpeed = -ball.ySpeed;
         }
       }
-        let b4=bricks[3][c];
-        if (gameState=='playL2'&& b4.unbroken||gameState=='playL3'&& b4.unbroken||gameState=='playL4'&& b4.unbroken){
-          if(ball.x + ball.radius > b4.x && ball.x - ball.radius < b4.x + brick.width && ball.y + ball.radius > b4.y &&ball.y-ball.radius<b4.y+brick.height){
-            b4.unbroken=false;
-            ball.ySpeed = -ball.ySpeed;
-          }
-        }
-        let b5=bricks[4][c];
-        if (gameState=='playL2'&& b5.unbroken||gameState=='playL3'&& b5.unbroken||gameState=='playL4'&& b5.unbroken){
-          if(ball.x + ball.radius > b5.x && ball.x - ball.radius < b5.x + brick.width && ball.y + ball.radius > b5.y &&ball.y-ball.radius<b5.y+brick.height){
-            b5.unbroken=false;
-            ball.ySpeed = -ball.ySpeed;
-          }
-        }
-          let b6=bricks[5][c];
-          if (gameState=='playL2'&& b6.unbroken||gameState=='playL3'&& b6.unbroken||gameState=='playL4'&& b6.unbroken){
-            if(ball.x + ball.radius > b6.x && ball.x - ball.radius < b6.x + brick.width && ball.y + ball.radius > b6.y &&ball.y-ball.radius<b6.y+brick.height){
-              b6.unbroken=false;
-              ball.ySpeed = -ball.ySpeed;
-        }
-      }
+      if (brick.rows > 3) {
+            let b4=bricks[3][c];
+            if (gameState==='playL2'&& b4.unbroken||gameState==='playL3'&& b4.unbroken||gameState==='playL4'&& b4.unbroken){
+              if(ball.x + ball.radius > b4.x && ball.x - ball.radius < b4.x + brick.width && ball.y + ball.radius > b4.y &&ball.y-ball.radius<b4.y+brick.height){
+                b4.unbroken=false;
+                ball.ySpeed = -ball.ySpeed;
+              }
+            }
+            if (brick.rows > 4) {
+              let b5=bricks[4][c];
+              if (gameState==='playL2'&& b5.unbroken||gameState==='playL3'&& b5.unbroken||gameState==='playL4'&& b5.unbroken){
+                if(ball.x + ball.radius > b5.x && ball.x - ball.radius < b5.x + brick.width && ball.y + ball.radius > b5.y &&ball.y-ball.radius<b5.y+brick.height){
+                  b5.unbroken=false;
+                  ball.ySpeed = -ball.ySpeed;
+                }
+              }
+              if (brick.rows > 5) {
+                let b6=bricks[5][c];
+                if (gameState==='playL2'&& b6.unbroken||gameState==='playL3'&& b6.unbroken||gameState==='playL4'&& b6.unbroken){
+                  if(ball.x + ball.radius > b6.x && ball.x - ball.radius < b6.x + brick.width && ball.y + ball.radius > b6.y &&ball.y-ball.radius<b6.y+brick.height){
+                    b6.unbroken=false;
+                    ball.ySpeed = -ball.ySpeed;
+                  }
+                }
+              }
+            }
+      }    
     }
   }
 }
@@ -574,11 +626,12 @@ function collisions(){
 function game() {
   context.clearRect(0, 0, canvas_width, canvas_height);
   draw();
- if (gameState=='playL1'||gameState=='playL2'||gameState=='playL3'||gameState=='playL4')
-    move();
-    collisions();
-    resetBall();
-    levelUp();
-    requestAnimationFrame(game);
+ if (gameState==='playL1'||gameState==='playL2'||gameState==='playL3'||gameState==='playL4') {
+   move();
+   collisions();
+   resetBall();
+   levelUp();
+   requestAnimationFrame(game);
+ }
 }
 game();
