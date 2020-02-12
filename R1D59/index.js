@@ -17,8 +17,10 @@ let footer = document.querySelector('footer')
 let windows=window.innerHeight;
 
 // -----------------------------------------------------------------------------
-//                                GAME STATES!!!
+//                                GAME STATES AND DISPLAY !!!
 // -----------------------------------------------------------------------------
+playButton.onclick = displayStartGame;
+startButton.onclick = displayGame;
 
 let gameState;
 
@@ -26,6 +28,41 @@ function setGameState(state){
   gameState = state;
 }
 
+function displayStartGame(){
+  setGameState('level1');
+  displayLevel();
+}
+
+function displayGame(){
+  startButton.style.display='none';
+  if(gameState=='level1'){
+  setGameState('playL1');
+  }
+   else if(gameState=='level2'){
+  setGameState('playL2');
+  }
+  else if(gameState=='level3'){
+  setGameState('playL3');
+  }
+  else if(gameState=='level4'){
+  setGameState('playL4');
+  }
+}
+
+function displayPause(){
+  if (gameState=='pauseL1'||gameState=='pauseL2'||gameState=='pauseL3'||gameState=='pauseL4'){
+    pause.style.display='block';
+  }
+  if (gameState=='playL1'||gameState=='playL2'||gameState=='playL3'||gameState=='playL4'){
+      pause.style.display='none';
+  }
+}
+
+function displayGameOver(){
+  if (gameState=='gameover'){
+    gameOverMenu.style.display='block';
+  }
+}
 function background(){
   body.style.backgroundRepeat='no-repeat';
   body.style.backgroundPosition='center';
@@ -62,54 +99,6 @@ function displayLevel(){
   footer.style.display='none';
 }
 
-function displayStartGame(){
-  setGameState('level2');
-  displayLevel();
-}
-
-function displayGame(){
-  startButton.style.display='none';
-  if(gameState=='level1'){
-  setGameState('playL1');
-  }
-   else if(gameState=='level2'){
-  setGameState('playL2');
-  }
-  else if(gameState=='level3'){
-  setGameState('playL3');
-  }
-  else if(gameState=='level4'){
-  setGameState('playL4');
-  }
-}
-
-function displayPause(){
-  if (gameState == 'pause'){
-    pause.style.display='block';
-  }
-  if (gameState!=='pause'){
-      pause.style.display='none';
-  }
-}
-
-function displayGameOver(){
-  if (gameState=='gameover'){
-    gameOverMenu.style.display='block';
-  }
-}
-
-playButton.onclick = displayStartGame;
-startButton.onclick = displayGame;
-// playButton.addEventListener('onclick', function(){
-//   setGameState('start');
-//   displayStartGame();
-//   displayLevel();
-//   displayGame();
-// })
-// startButton.addEventListener('onclick', function(){
-//   //setGameState('start');
-//   displayGame();
-// })
 // -----------------------------------------------------------------------------
 //                          GAMEPLAY / KEYBOARD CONTROL
 // -----------------------------------------------------------------------------
@@ -124,39 +113,40 @@ document.addEventListener('keydown', function(event) {
   if (event.keyCode==37)
       leftArrow = true;
 
-  // if (event.keyCode==32 && gameState==='playL1'){
-  //   if (gameState=='playL1'||gameState==!'pause'){
-  //     spaceBar=true;
-  //     setGameState('pause');
-  //     displayPause();}
-  //
-  //   else if(gameState=='pause'){
-  //     // if(gameState=='level1'){
-  //     setGameState('playL1');
-  //     displayPause();
-  //     }
-  //   }
-  //   if (event.keyCode==32 && gameState==='playL2'){
-  //     // if (gameState=='playL1'||gameState==!'pause'){
-  //       spaceBar=true;
-  //       setGameState('pause');
-  //       //displayPause();
-  //     }
-  //     else if(gameState=='pause'){
-  //       // if(gameState=='level1'){
-  //       setGameState('playL2');
-  //       displayPause();
-  //     }
-    // else if (gameState=='playL2'){
-    //   spaceBar=true;
-    //   setGameState('pause');
-    //   displayPause();
-    // }else if(gameState=='pause'){
-    //   // if(gameState=='level1'){
-    //   setGameState('playL2');
-    //   displayPause();
-    // }
-
+  if (event.keyCode==32){ //yeah this is for PAUSE! LOL. i already know i'll have to RE-CODE for this in the future omg! LOL!!!
+    if (gameState=='playL1'){
+      spaceBar=true;
+      setGameState('pauseL1');
+      displayPause();
+    } else if(gameState=='pauseL1'){
+      setGameState('playL1');
+      displayPause();
+    }
+    if (gameState=='playL2'){
+      spaceBar=true;
+      setGameState('pauseL2');
+      displayPause();
+    } else if(gameState=='pauseL2'){
+      setGameState('playL2');
+      displayPause();
+    }
+    if (gameState=='playL3'){
+      spaceBar=true;
+      setGameState('pauseL3');
+      displayPause();
+    } else if(gameState=='pauseL3'){
+      setGameState('playL3');
+      displayPause();
+    }
+    if (gameState=='playL4'){
+      spaceBar=true;
+      setGameState('pauseL4');
+      displayPause();
+    } else if(gameState=='pauseL4'){
+      setGameState('playL4');
+      displayPause();
+    }
+  }
 })
 
 document.addEventListener('keyup', function(event) {
@@ -166,12 +156,12 @@ document.addEventListener('keyup', function(event) {
   if (event.keyCode==37)
       leftArrow = false;
 
-  // if (event.keyCode==32)
-  //     spaceBar=false;
+  if (event.keyCode==32)
+      spaceBar=false;
   }
 )
 // -----------------------------------------------------------------------------
-//                             LIVES / GAME OVER
+//                             LIVES / GAME OVER / LEVELS
 // -----------------------------------------------------------------------------
 
 let life = 10;
@@ -187,6 +177,35 @@ function gameOver(){
   }
 }
 
+let levelWon=true;
+//------------------------- THE PROBLEM STARTS OBVIOUSLY HERE?? ----------------------------------------
+function levelUp(){
+  for (r=0; r<brick.rows; r++){
+    for (c=0; c<brick.columns; c++){
+
+        let b=bricks[r][c];
+
+        levelWon=levelWon&&!b.unbroken; //THAT'S WHERE THE PROBLEM HAPPENS! if you try levelWon = !b.unbroken ("seems" logical..), PLAY AND LOOK what happens!!!
+
+        if (levelWon&&gameState=='playL1'){
+          setGameState('level2');
+          displayLevel();
+        }
+        if (levelWon&&gameState=='playL2'){
+          setGameState('level3');
+          displayLevel();
+        }
+        if (levelWon&&gameState=='playL3'){
+          setGameState('level4');
+          displayLevel();
+        }
+        if (levelWon&&gameState=='playL4'){
+          setGameState('');
+          displayLevel();
+        }
+      }
+    }
+  }
 // -----------------------------------------------------------------------------
 //                                  PADDLE
 // -----------------------------------------------------------------------------
@@ -313,50 +332,6 @@ function drawBricksL1(){
   }
 }
 //------------------------ BRICKS LEVEL 2 --------------------------------------
-function createBricksL3() {
-  for (r = 0; r < 4; r++) {
-    bricks[r]=[];
-    for (c = 0; c < brick.columns; c++) {
-        bricks[r][c]={
-          x: c*brick.x + 70,
-          y: r*brick.y + 20,
-          unbroken:true
-      };
-    }
-  }
-}
-createBricksL3();
-
-function drawBricksL3(){
-  for(r=0; r<brick.rows; r++){
-    for(c=0; c<brick.columns; c++){
-
-      let b1=bricks[0][c];
-      if(b1.unbroken){
-        context.fillStyle='yellow'; //gold color!
-        context.fillRect(b1.x, b1.y, brick_width, brick_height);
-      }
-      let b2=bricks[1][c];
-      if(b2.unbroken){
-        context.fillStyle='red';
-        context.fillRect(b2.x, b2.y, brick_width, brick_height);
-      }
-      let b3=bricks[2][c];
-      if(b3.unbroken){
-        context.fillStyle='blue';
-        context.fillRect(b3.x, b3.y, brick_width, brick_height);
-      }
-      let b4=bricks[3][c];
-      if(b4.unbroken){
-        context.fillStyle='orange';
-        context.fillRect(b4.x, b4.y, brick_width, brick_height);
-      }
-    };
-  }
-}
-
-
-//------------------------ BRICKS LEVEL 3 --------------------------------------
 function createBricksL2() {
   for (r = 0; r <brick.rows; r++) {
     bricks[r]=[];
@@ -376,7 +351,7 @@ function drawBricksL2(){
     for(c=0; c<brick.columns; c++){
       let b1=bricks[r][0];
       if(b1.unbroken){
-        context.fillStyle='#e40303'; //gold color!
+        context.fillStyle='#e40303';
         context.fillRect(b1.x, b1.y, brick_width, brick_height);
       }
       let b2=bricks[r][1];
@@ -407,7 +382,110 @@ function drawBricksL2(){
     };
   }
 }
+//------------------------ BRICKS LEVEL 3 --------------------------------------
+function createBricksL3() {
+  for (r = 0; r < 4; r++) {
+    bricks[r]=[];
+    for (c = 0; c < brick.columns; c++) {
+        bricks[r][c]={
+          x: c*brick.x + 70,
+          y: r*brick.y + 20,
+          unbroken:true
+      };
+    }
+  }
+}
+createBricksL3();
 
+function drawBricksL3(){
+  for(r=0; r<brick.rows; r++){
+    for(c=0; c<brick.columns; c++){
+
+      let b1=bricks[r][0];
+      if(b1.unbroken){
+        context.fillStyle='red';
+        context.fillRect(b1.x, b1.y, brick_width, brick_height);
+      }
+      let b2=bricks[r][1];
+      if(b2.unbroken){
+        context.fillStyle='red';
+        context.fillRect(b2.x, b2.y, brick_width, brick_height);
+      }
+      let b3=bricks[r][2];
+      if(b3.unbroken){
+        context.fillStyle='#00d300';
+        context.fillRect(b3.x, b3.y, brick_width, brick_height);
+      }
+      let b4=bricks[r][3];
+      if(b4.unbroken){
+        context.fillStyle='#00d300';
+        context.fillRect(b4.x, b4.y, brick_width, brick_height);
+      }
+      let b5=bricks[r][4];
+      if(b5.unbroken){
+        context.fillStyle='blue';
+        context.fillRect(b5.x, b5.y, brick_width, brick_height);
+      }
+      let b6=bricks[r][5];
+      if(b6.unbroken){
+        context.fillStyle='blue';
+        context.fillRect(b6.x, b6.y, brick_width, brick_height);
+      }
+    };
+  }
+}
+//------------------------ BRICKS LEVEL 4 --------------------------------------
+function createBricksL4() {
+  for (r = 0; r < 4; r++) {
+    bricks[r]=[];
+    for (c = 0; c < brick.columns; c++) {
+        bricks[r][c]={
+          x: c*brick.x + 70,
+          y: r*brick.y + 20,
+          unbroken:true
+      };
+    }
+  }
+}
+createBricksL4();
+
+function drawBricksL4(){
+  for(r=0; r<brick.rows; r++){
+    for(c=0; c<brick.columns; c++){
+
+      let b1=bricks[r][0];
+      if(b1.unbroken){
+        context.fillStyle='black';
+        context.fillRect(b1.x, b1.y, brick_width, brick_height);
+      }
+      let b2=bricks[r][1];
+      if(b2.unbroken){
+        context.fillStyle='black';
+        context.fillRect(b2.x, b2.y, brick_width, brick_height);
+      }
+      let b3=bricks[r][2];
+      if(b3.unbroken){
+        context.fillStyle='black';
+        context.fillRect(b3.x, b3.y, brick_width, brick_height);
+      }
+      let b4=bricks[r][3];
+      if(b4.unbroken){
+        context.fillStyle='black';
+        context.fillRect(b4.x, b4.y, brick_width, brick_height);
+      }
+      let b5=bricks[r][4];
+      if(b5.unbroken){
+        context.fillStyle='black';
+        context.fillRect(b5.x, b5.y, brick_width, brick_height);
+      }
+      let b6=bricks[r][5];
+      if(b6.unbroken){
+        context.fillStyle='black';
+        context.fillRect(b6.x, b6.y, brick_width, brick_height);
+      }
+    };
+  }
+}
 // -----------------------------------------------------------------------------
 //                                 COLLISIONS !!!
 // -----------------------------------------------------------------------------
@@ -434,109 +512,70 @@ function ballCollisionsBricks() {
     for(c=0; c<brick.columns; c++){ //nested for loops needed to have access to the bricks[][] again.
 
       let b1=bricks[0][c];
-      if (gameState=='playL1','playL2','playL3'&&b1.unbroken){
+      if (b1.unbroken){
         if(ball.x + ball.radius > b1.x && ball.x - ball.radius < b1.x + brick.width && ball.y + ball.radius > b1.y &&ball.y-ball.radius<b1.y+brick.height){
           b1.unbroken=false;
           ball.ySpeed = -ball.ySpeed;
         }
       }
+
       let b2=bricks[1][c];
-      if (gameState=='playL1','playL2','playL3'&&b2.unbroken){
+      if (b2.unbroken){
         if(ball.x + ball.radius > b2.x && ball.x - ball.radius < b2.x + brick.width && ball.y + ball.radius > b2.y &&ball.y-ball.radius<b2.y+brick.height){
           b2.unbroken=false;
           ball.ySpeed = -ball.ySpeed;
         }
       }
       let b3=bricks[2][c];
-      if (gameState=='playL1','playL2','playL3'&&b3.unbroken){
+      if (b3.unbroken){
         if(ball.x + ball.radius > b3.x && ball.x - ball.radius < b3.x + brick.width && ball.y + ball.radius > b3.y &&ball.y-ball.radius<b3.y+brick.height){
           b3.unbroken=false;
           ball.ySpeed = -ball.ySpeed;
         }
       }
-      let b4=bricks[3][c];
-      if (gameState=='playL2'&&b4.unbroken){
-        if(ball.x + ball.radius > b4.x && ball.x - ball.radius < b4.x + brick.width && ball.y + ball.radius > b4.y &&ball.y-ball.radius<b4.y+brick.height){
-          b4.unbroken=false;
-          ball.ySpeed = -ball.ySpeed;
+        let b4=bricks[3][c];
+        if (gameState=='playL2'&& b4.unbroken||gameState=='playL3'&& b4.unbroken||gameState=='playL4'&& b4.unbroken){
+          if(ball.x + ball.radius > b4.x && ball.x - ball.radius < b4.x + brick.width && ball.y + ball.radius > b4.y &&ball.y-ball.radius<b4.y+brick.height){
+            b4.unbroken=false;
+            ball.ySpeed = -ball.ySpeed;
+          }
         }
-      }
-      let b5=bricks[4][c];
-      if (gameState=='playL2'&&b5.unbroken){
-        if(ball.x + ball.radius > b5.x && ball.x - ball.radius < b5.x + brick.width && ball.y + ball.radius > b5.y &&ball.y-ball.radius<b5.y+brick.height){
-          b5.unbroken=false;
-          ball.ySpeed = -ball.ySpeed;
+        let b5=bricks[4][c];
+        if (gameState=='playL2'&& b5.unbroken||gameState=='playL3'&& b5.unbroken||gameState=='playL4'&& b5.unbroken){
+          if(ball.x + ball.radius > b5.x && ball.x - ball.radius < b5.x + brick.width && ball.y + ball.radius > b5.y &&ball.y-ball.radius<b5.y+brick.height){
+            b5.unbroken=false;
+            ball.ySpeed = -ball.ySpeed;
+          }
         }
-      }
-      let b6=bricks[5][c];
-      if (gameState=='playL2'&&b6.unbroken){
-        if(ball.x + ball.radius > b6.x && ball.x - ball.radius < b6.x + brick.width && ball.y + ball.radius > b6.y &&ball.y-ball.radius<b6.y+brick.height){
-          b6.unbroken=false;
-          ball.ySpeed = -ball.ySpeed;
+          let b6=bricks[5][c];
+          if (gameState=='playL2'&& b6.unbroken||gameState=='playL3'&& b6.unbroken||gameState=='playL4'&& b6.unbroken){
+            if(ball.x + ball.radius > b6.x && ball.x - ball.radius < b6.x + brick.width && ball.y + ball.radius > b6.y &&ball.y-ball.radius<b6.y+brick.height){
+              b6.unbroken=false;
+              ball.ySpeed = -ball.ySpeed;
         }
       }
     }
   }
 }
 
-let levelWon=true;
-
-function levelUp(){
-  if (gameState=='playL1'){
-  for (r=0; r<brick.rows; r++){
-    for (c=0; c<brick.columns; c++){
-
-        // let b=bricks[r][c];
-      let b1=bricks[0][c];
-      let b2=bricks[1][c];
-      let b3=bricks[2][c];
-      levelWon=!b1.unbroken&&!b2.unbroken&&!b3.unbroken;
-      if (levelWon){
-        //displayStartGame();
-          setGameState('level2');
-          displayLevel();
-        }
-    // }
-
-
-      // if (levelWon&&gameState=='playL2'){
-      //       setGameState('level3');
-      //       displayLevel();
-      //     }
-    }
-}
-}}
-
-    // else if (levelWon && gameState=='playL1'){
-    //     setGameState('level2');
-    //     displayLevel();
-    //   }
-    // else if (levelWon && gameState=='playL2'){
-    //         setGameState('level3');
-    //         displayLevel();
-    //     }
-    //     if (levelWon && gameState=='level3'){
-    //         setGameState('level4');
-    //         displayLevel();
-    // }
-
-
-
 // -----------------------------------------------------------------------------
-//                                  GAME LOOP
+//                                  GAME LOOP FUNCTIONS
 // -----------------------------------------------------------------------------
 
 function draw(){
   drawPaddle();
   drawBall();
-    if (gameState=='level1'||gameState=='playL1'){
-      drawBricksL1();
+  if (gameState=='level1'||gameState=='playL1'||gameState=='pauseL1'){
+  drawBricksL1();
   }
-  else  if (gameState=='level2'||gameState=='playL2'){//||gameState=='playL2'||gameState==!'pause'){
+  if (gameState=='level2'||gameState=='playL2'||gameState=='pauseL2'){
     drawBricksL2();
   }
-   if (gameState=='level3'||gameState=='playL3'){
+  if (gameState=='level3'||gameState=='playL3'||gameState=='pauseL3'){
     drawBricksL3();
+  }
+  if (gameState=='level4'||gameState=='playL4'||gameState=='pauseL4'){
+    drawBricksL4();
   }
 }
 function move(){
@@ -548,19 +587,15 @@ function collisions(){
   ballCollisionsCanvas();
   ballCollisionsBricks();
 }
-
-//-------------------------
+//--------------------------
 function game() {
   context.clearRect(0, 0, canvas_width, canvas_height);
   draw();
-
- if (gameState=='playL1'||gameState=='playL2'||gameState=='playL3'||gameState==!'pause'){
+ if (gameState=='play'||gameState=='playL1'||gameState=='playL2'||gameState=='playL3'||gameState=='playL4')
     move();
     collisions();
     resetBall();
-
-  }
-levelUp();
+    levelUp();
     requestAnimationFrame(game);
 }
 game();
