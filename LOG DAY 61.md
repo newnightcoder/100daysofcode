@@ -4,7 +4,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12278085880
 
 **what i did:**
 
-- i followed laszlo's steps/explanations to FIX the issue and have the levels display one after the other! and it's WORKING! (except for level1, i have to fix my own bug lol).
+- i followed Laszlo's steps/explanations to FIX the issue and have the levels display one after the other! and it's WORKING! (except for level1, i have to fix my own bug lol).
 - i also tried to figure out how to use the debugger tool.
 
 **what i learned:**
@@ -25,14 +25,15 @@ this solution helps me make progress logicwise!
 HELP APPROACHES:
 
 - this experience of explicitely asking for help to Laszlo and Nathan turns out to be absolutely PERFECT.
-- A) Laszlo took the "(pro)dev-plumber" approach and identified/fixed the issue in the context of my very code! without changig anyhting or almost to what i wrote.
+- A) Laszlo took the "(pro)dev-plumber" approach and IDENTIFIED + LOCATED + FIXED the issue in the context of my very code! without changing anything or almost to what i wrote.
 this is amazing because i get to understand each step for myself. from each detailed explanation of Laszlo, i could code and fix it indeed (i know my code now and i could immediately UNDERSTAND!!)
-- B) Nathan took the "(game)dev-masterclass" approach and sent me back a perfect code/LOGICAL STRUCTURE: absolute TEMPLATE / perfect coding style i will have to get to eventually. i am going to learn tremendously from him, this is so generous and VALUABLE.
-- combining these two different yet ideal approaches allows me to just boost my knowledge/energy/programming skills/overall coding confidence.
+- B) Nathan took the "(game)dev-masterclass" approach and sent me back a PERFECT code/LOGICAL STRUCTURE: absolute TEMPLATE / classy coding style i will have to get to eventually. i am going to learn tremendously from him, this is so generous and VALUABLE.
+- combining these two absolutely different yet ideal approaches allows me to just boost my knowledge/energy/programming skills/overall coding confidence.
 
 LEARNING BY DOING
 
-- this whole experience/game project is indeed teaching me a lot. more than expected of course. + i feel how it made me develop a sort of endurance, little strength. good thing.
+- this whole experience/game project is indeed teaching me a lot. more than expected of course. 
++ i feel how it made me develop a sort of endurance, little strength. good thing.
 - it was a good idea to ask for help, because the stuck phase wasn't being productive/inspiring anymore + i now feel relieved from the pressure of time and can move on to other/new topics like JS sound and text.
 - i am still such a beginner, so to ask for help/guidance to Jedis can be both reassuring of course but also and mostly NECESSARY. do NOT try to solve everything alone as a newbie. learning happens also thanks to the EXPERIENCE of advanced developers.
 
