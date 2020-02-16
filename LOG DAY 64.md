@@ -22,6 +22,8 @@ CLEAR THE CHECKLIST TO FINISH THE GAME!!
 - create transition screens (levels).
 - implement SPACEBAR for ALL BUTTONS!!! not only pause.
 - CREATE GAME RULES SCREEN
+
 and:
+
 - FINALLY implement ball ANGLE
 - fix minibug ball/paddle AND THAT'S A WRAP.
