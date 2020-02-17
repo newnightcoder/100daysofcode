@@ -11,7 +11,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12292915985
 **what i learned:**
 
 - how to display text and images on the canvas! so handy and interesting, i should use it again + document.createElement (for winScreen)!!
-- what i heard is true: as a "game dev" you would have to let go of some of your "personal preferences" in order to please the maximum players (don't be unflexible/stuck on your view and admit things/be able to adapt): though it was an interesting design statement, the mini canvas will have to go. it will BOOST the game SENSATION. i tried it myself and adopted it, so... let's move on. a bit sad but this is for the better. (or find another way to use the mini canvas! or let go of it, as decided.) + isn't it the 2nd AGILE principle??? "WELCOME changing requirements, even LATE in development LOL. Agile processes harness change for the better.." so let's go!  
+- what i heard is true: as a "game dev" you would have to let go of some of your "personal preferences" in order to please the maximum players (don't be unflexible/stuck on your view and admit things/be able to adapt): though it was an interesting design statement, the mini canvas will have to go. it will BOOST the game SENSATION. i tried it myself and adopted it, so... let's move on. a bit sad but this is for the better. (or find another way to use the mini canvas! or let go of it, as decided. + isn't it the 2nd AGILE principle??? "WELCOME changing requirements, even LATE in development LOL. Agile processes harness change for the better.." so let's go!)
 
 **next:**
 
