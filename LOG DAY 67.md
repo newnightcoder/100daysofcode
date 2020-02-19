@@ -19,8 +19,8 @@ CLEAR THE CHECKLIST TO FINISH THE GAME!!
 - ~~implement SPACEBAR for ALL BUTTONS!!! not only pause.~~
 - ~~create winStates~~
 - ~~RE-CREATE the overall DESIGN according to new decision.~~
-- CREATE GAME RULES SCREEN 
 - ~~finish the ENDING~~
+- CREATE GAME RULES SCREEN 
 
 and:
 
