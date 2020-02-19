@@ -9,8 +9,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12300298998
 
 **what i learned:**
 
-- how to document.createElement()!!!
-- let *varName* = document.createElement('*element*') // *varName*.innerHTML ='text' // document.body.appendChild(*varName*)  
+- how to document.createElement()!!! = let *varName* = document.createElement('*element*') // *varName*.innerHTML ='text' // document.body.appendChild(*varName*)  
 
 **next:**
 
