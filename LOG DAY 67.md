@@ -4,15 +4,13 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12300298998
 
 **what i did:**
 
-- i continued fixing many design bugs and coded to improve the game in general.
-- still on it.
-- i could create an html element and style it in JS (for the restart game menu)
+- i continued fixing many design bugs and coded to improve the game in general. still on it.
+- i could create an html element and style it in JS (for the RESTART game menu).
 
 **what i learned:**
 
-- how to document.createElement(): 
-
-let *varName* = document.createElement('*element*') // *varName*.innerHTML ='text' // document.body.appendChild(*varName*)  
+- how to document.createElement()!!!
+- let *varName* = document.createElement('*element*') // *varName*.innerHTML ='text' // document.body.appendChild(*varName*)  
 
 **next:**
 
