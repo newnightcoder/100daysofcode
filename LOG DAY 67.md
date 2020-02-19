@@ -12,7 +12,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12300298998
 
 - how to document.createElement(): 
 
-let *varName* = document.createElement() // *varName*.innerHTML ='text' // document.body.appendChild(*varName*)  
+let *varName* = document.createElement('*element*') // *varName*.innerHTML ='text' // document.body.appendChild(*varName*)  
 
 **next:**
 
