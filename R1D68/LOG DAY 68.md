@@ -4,7 +4,8 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12303939325
 
 **what i did:**
 
-- like yesterday: i continued TRACKING/fixing bugs (so i played the game quite a lot lol) and coded to improve the game DESIGN in general. still on it.
+- like yesterday: i continued tracking/fixing bugs (so i played the game quite a lot lol) 
+- i coded to improve the game DESIGN in general. still on it. a LOT happened. cool!
 - i created displayLevelName() dynamically, so much better, total freedom as i wanted, i'm not canvas-dependent anymore!! so great.
 
 **what i learned:**
