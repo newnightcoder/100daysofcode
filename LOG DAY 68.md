@@ -9,10 +9,11 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12303939325
 
 **what i learned:**
 
-- i coded fluently and could create my levelName element so easily. i SEE the articulation of the logic so CLEARLY now and how much REFACTORING i should actually be doing (cf Nathan's template!!!).
 - i see/understand/practice the relationship between JS and CSS.
-- to create elements dynamically can have great benefits as i see it (at this very early stage though). i have to investigate that but it allows NOT to overload the html file and create screens, effects, divs, as one pleases, when needed in the script.
-- how to work with MY OWN fonts and stop being dependent of googlefonts! also awesome!
+- i coded fluently and could create my levelName element easily (i tried LOGICAL ideas based on html knowledge and it finally worked!) = LEARNING BY DOING. 
+- i SEE the articulation of the logic so CLEARLY now and how much REFACTORING i should actually be doing soon (cf Nathan's template!!!) - but i'll come back to it later, it'll be very fun to do = measurement of progress.
+- to create elements dynamically can have great benefits. i have to investigate that but as i see it (at this very early stage though): it allows NOT to overload the html file and create screens, effects, divs, as one pleases, when needed in the script.
+- how to work with MY OWN fonts and stop being dependent of googlefonts! also awesome! 
 
 **next:**
 
