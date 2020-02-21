@@ -1,0 +1,246 @@
+//------------------------------------------------------------------------------
+// VARIABLES AND MIXINS
+//------------------------------------------------------------------------------
+@font-face{
+  src:url("../fonts/ARKANOID.ttf");
+  font-family:arka;
+}
+@font-face{
+  src:url("../fonts/arkasolid.ttf");
+  font-family:arkasolid;
+}
+@font-face{
+  src:url("../fonts/RetroGaming.ttf");
+  font-family:pixel;
+}
+$fontTitle:'arka';//
+$fontUndertitle:'arkasolid';
+$font:'pixel';
+//linear-gradient(#a5b1c2, #45aaf2)
+$colorBg: #061130; //#AFD4CD;
+$colorText:rgb(255,255,255);
+$colorMenu:rgb(0,0,255);
+$colorCanvas:#000000;
+$borderCanvas:black;
+$colorFooter:white;
+$colorPaddle:#0aeb00;
+
+@mixin flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin hoverButtons {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+@mixin buttons {
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 5px 30px;
+}
+//------------------------------------------------------------------------------
+// HTML + BODY
+//------------------------------------------------------------------------------
+
+html {
+  margin: 0;
+  padding:0;
+  overflow: hidden;
+}
+
+#body {
+  height:100vh;
+  margin: 0;
+  @include flex;
+  justify-content: center;
+  background-color: black;
+  font-family: $font;
+  color:$colorText;
+}
+//------------------------------------------------------------------------------
+// WELCOME MENU
+//------------------------------------------------------------------------------
+#welcome {
+  @include flex; //switch to display:none
+  text-align: center;
+  img {
+    z-index:-1;
+    position: absolute;
+    top:0;
+    height:110vh;
+}
+  h1 {
+    margin-top:70px;
+    margin-bottom: 0;
+    padding: 0;
+    position: relative;
+    font-family:$fontTitle;
+    font-size:16vmin;
+    color:white;
+    letter-spacing: .2rem;
+      &::after {
+        content:'mini';
+        font-size: 5vmin;
+        position: absolute;
+        top:30px;
+    }
+  }
+  .underTitle {
+    margin-top: .9em;
+  }
+  .playGame {
+    margin-top:.7em;
+    font-size: 4vmin;
+    color: white;
+    animation: playBlink 800ms infinite ease-in;
+    &:hover {
+      @include hoverButtons;
+  }
+}
+  @keyframes playBlink {
+    30% {color:white};
+    50% {color:black};
+    }
+  .link {
+      text-decoration: none;
+      color:white;
+      &:hover {
+        color:black;
+      }
+      .history {
+        font-size: 4vmin;
+        text-decoration: none;
+        color: white;
+        white-space: nowrap;
+        //line-height: 1em;
+        padding-top:10px;
+        &:hover {
+          @include hoverButtons;
+      }
+    }
+  }
+  .footer{
+    position:absolute;
+    bottom:0;
+  }
+}
+//------------------------------------------------------------------------------
+// INTRO MENU
+//------------------------------------------------------------------------------
+#intro{
+  background-image: url("../img/DOH.png");
+  background-repeat:space;
+  //background-position: center;
+  //background-size:;
+  height:240px;
+  width:600px;
+  display:none;
+  margin: 3em 0;
+  padding: 3em 0;// 55vh 0;
+  overflow-y: scroll;
+  text-align: center;
+  line-height: 1.5rem;
+    .skip, .toLevel1{
+    // position: absolute;
+      background-color: transparent;
+      font-family: $font;
+      font-size: 1rem;
+      width:200px;
+      color:white;
+      text-align: center;
+      //text-transform: uppercase;
+      animation: startBlink 900ms infinite ease-out;
+      @include buttons;
+      &:hover {
+        cursor:pointer;
+        transform: scale(1.1);
+        font-size: 1.1em;
+    }
+  }
+  .toLevel1{
+    margin-bottom: 50px;
+  }
+  .p11{
+    margin-bottom: 1.5em;
+  }
+  .p12, .p13, .p14{
+    text-align:left;
+  }
+}
+@keyframes startBlink {
+  40% {color:transparent};
+}
+//------------------------------------------------------------------------------
+// START MENU
+//------------------------------------------------------------------------------
+
+#start {
+	z-index:2;
+  display: none;
+  position:absolute;
+  margin-top: 3rem;
+  width:150px;
+  background-color: transparent;
+  color:orange;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  animation: startBlink 900ms infinite ease-out;
+  @include buttons;
+  border-color: orange;
+  &:hover {
+    cursor:pointer;
+    transform: scale(1.12);
+    font-size: 1.3em;
+  }
+}
+@keyframes startBlink {
+  40% {color:transparent};
+}
+
+//------------------------------------------------------------------------------
+// THE GAME SCREEN
+//------------------------------------------------------------------------------
+#game {
+  z-index:-2;
+  display: none;
+  #canvas {
+    // position: relative;
+    // bottom:0;
+    border-bottom: 5px solid #999;
+  }
+  footer {
+    font-size:2vmin;
+    letter-spacing: .2em;
+    margin-top: .5em;
+    background-color: $colorBg;
+    color:$colorFooter;
+  }
+}
+
+//------------------------------------------------------------------------------
+// PAUSE
+//------------------------------------------------------------------------------
+#pause {
+  z-index:-1;
+  display: none;
+  position:absolute;
+  width:150px;
+  color:white;
+  text-align: center;
+  text-transform: uppercase;
+  @include buttons;
+}
+
+//------------------------------------------------------------------------------
+// GAME OVER
+//------------------------------------------------------------------------------
+#gameover{
+  position:absolute;
+  @include flex;
+  display:none;
+  z-index: -1;
+  font-size: 3em;
+  text-transform: uppercase;
+}
