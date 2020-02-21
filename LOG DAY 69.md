@@ -22,7 +22,7 @@ CLEAR THE CHECKLIST TO FINISH THE GAME!!
 - ~~create winStates~~
 - ~~RE-CREATE the overall DESIGN according to new decision.~~
 - ~~finish the ENDING~~
-- ~~CREATE GAME RULES SCREEN~~ *done*
+- ~~CREATE GAME RULES SCREEN~~ *done!*
 
 and:
 
