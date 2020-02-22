@@ -20,7 +20,7 @@ FIX LAST 2 ISSUES TO RELEASE THE GAME:
 - fix resetBall() PERFECTLY (it's possible!! find out, apply step by step method)
 - fix SCORE display! 
 
-+
+AND:
 
 - implement ball ANGLE  *NOW!!!!!!!*
 - fix minibug ball/paddle.  *we'll see! it's a cute bug after all..*
