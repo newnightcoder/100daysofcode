@@ -15,7 +15,7 @@ link to my daily tweets [here](https://twitter.com/Nightcoder2/status/1231121390
 
 **next:**
 
-FIX 2 LAST ISSUES TO RELEASE THE GAME:
+FIX LAST 2 ISSUES TO RELEASE THE GAME:
 
 - fix resetBall() PERFECTLY (it's possible!! find out, apply step by step method)
 - fix SCORE display! 
