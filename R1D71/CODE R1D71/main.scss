@@ -1,0 +1,298 @@
+//------------------------------------------------------------------------------
+// VARIABLES AND MIXINS
+//------------------------------------------------------------------------------
+@font-face{
+  src:url("../fonts/ARKANOID.ttf");
+  font-family:arka;
+}
+@font-face{
+  src:url("../fonts/arkasolid.ttf");
+  font-family:arkasolid;
+}
+@font-face{
+  src:url("../fonts/RetroGaming.ttf");
+  font-family:pixel;
+}
+$fontTitle:'arka';//
+$fontUndertitle:'arkasolid';
+$font:'pixel';
+//linear-gradient(#a5b1c2, #45aaf2)
+$colorBg: #061130; //#AFD4CD;
+$colorText:rgb(255,255,255);
+$colorMenu:rgb(0,0,255);
+$colorCanvas:#000000;
+$borderCanvas:black;
+$colorFooter:white;
+$colorPaddle:#0aeb00;
+
+@mixin flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin hoverButtons {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+@mixin buttons {
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 10px 30px;
+}
+//------------------------------------------------------------------------------
+// HTML + BODY
+//------------------------------------------------------------------------------
+
+html {
+  margin: 0;
+  padding:0;
+  overflow: hidden;
+}
+
+#body {
+  height:100vh;
+  margin: 0;
+  @include flex;
+  justify-content: center;
+  background-color: black;
+  font-family: $font;
+  color:$colorText;
+}
+//------------------------------------------------------------------------------
+// WELCOME MENU
+//------------------------------------------------------------------------------
+#welcome {
+  @include flex; //switch to display:none
+  text-align: center;
+  img {
+    z-index:-1;
+    position: absolute;
+    background-position: center;
+    top:0;
+    height:110vh;
+}
+  h1 {
+    margin-top:70px;
+    margin-bottom: 0;
+    padding: 0;
+    position: relative;
+    font-family:$fontTitle;
+    font-size:16vmin;
+    color:white;
+    letter-spacing: .2rem;
+      &::after {
+        content:'mini';
+        font-size: 5vmin;
+        position: absolute;
+        top:30px;
+    }
+  }
+  .underTitle {
+    margin-top: .9em;
+    font-size: .8em;
+  }
+  .playGame {
+    margin-top:3em;
+    font-size: 3vmin;
+    text-transform: uppercase;
+    color: white;
+    animation: playBlink 800ms infinite ease-in;
+    &:hover {
+      @include hoverButtons;
+  }
+}
+  @keyframes playBlink {
+    30% {color:white};
+    50% {color:black};
+    }
+  .link {
+      text-decoration: none;
+      color:white;
+      &:hover {
+        color:black;
+      }
+      .history {
+        font-size: 3vmin;
+        text-decoration: none;
+        color: white;
+        white-space: nowrap;
+        //line-height: 1em;
+        padding-top:10px;
+        &:hover {
+          @include hoverButtons;
+      }
+    }
+  }
+  .footer{
+    position:relative;
+    bottom:-100px;
+    font-size: .8em;
+  }
+}
+//------------------------------------------------------------------------------
+// INTRO MENU
+//------------------------------------------------------------------------------
+#intro{
+  display:none;
+  background-image: url("../img/DOH.png");
+  background-repeat:space;
+  background-position: center;
+  height:300px;
+  width:800px;
+  margin: 3em 0;
+  padding: 3em 0;// 55vh 0;
+  overflow-y: scroll;
+  text-align: center;
+  line-height: 1.5rem;
+  .skip, .toLevel1{
+    // position: absolute;
+    background-color: transparent;
+    font-family: $font;
+    font-size: 1rem;
+    width:200px;
+    color:white;
+    text-align: center;
+    animation: introBlink 900ms infinite ease-out;
+    @include buttons;
+    &:hover {
+      cursor:pointer;
+      transform: scale(1.1);
+      font-size: 1.1em;
+    }
+  }
+  .skip{
+    position:absolute;
+    top:50vh;
+    right:30px;
+    margin:auto;
+    }
+  .toLevel1{
+    margin-bottom: 50px;
+  }
+  p{
+    line-height:3rem;
+  }
+  .p1{
+    animation: introText 150000ms ease-out forwards;
+    position:relative;
+    margin-top:0;
+    @keyframes introText {
+    0% {margin-top:320px};
+    100% {margin-top:-1240px};
+    }
+  }
+
+  .p11{
+    margin-bottom: 1.5em;
+  }
+  .p12 {
+    text-align:left;
+  }
+}
+@keyframes introBlink {
+  40% {color:transparent};
+}
+
+
+//------------------------------------------------------------------------------
+// START MENU
+//------------------------------------------------------------------------------
+
+#start {
+  margin-top: 50px;
+	z-index:2;
+  display: none;
+  position:absolute;
+  width:400px;
+  background-color: transparent;
+  color:white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3em;
+  animation: startBlink 900ms infinite ease-out;
+}
+@keyframes startBlink {
+  40% {color:transparent};
+}
+
+//------------------------------------------------------------------------------
+// THE GAME SCREEN
+//------------------------------------------------------------------------------
+levelName{
+  position: absolute;
+  top:2vh;
+  text-align:center;
+  line-height: 1.5em;
+}
+
+#game {
+  margin-top:4vh;
+  z-index:-2;
+  display: none;
+  #canvas {
+    // position: relative;
+    // bottom:0;
+    border-bottom: 5px solid #999;
+  }
+  footer {
+    font-size:2vmin;
+    letter-spacing: .2em;
+    margin-top: .5em;
+    background-color: $colorBg;
+    color:$colorFooter;
+  }
+}
+
+//------------------------------------------------------------------------------
+// PAUSE
+//------------------------------------------------------------------------------
+#pause {
+  z-index:-1;
+  display: none;
+  position:absolute;
+  width:150px;
+  color:white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  @include buttons;
+  //padding-bottom: 12px;
+}
+
+//------------------------------------------------------------------------------
+// GAME OVER
+//------------------------------------------------------------------------------
+#gameover{
+  position:absolute;
+  @include flex;
+  display:none;
+  font-size: 120px;
+  text-transform: uppercase;
+}
+#restart{
+  position: absolute;
+  margin-top: 100px;
+  text-decoration: none;
+  display: none;
+  font-family: pixel;
+  background-color: transparent;
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  //@include buttons;
+  animation: restartBlink 900ms infinite ease-out;
+  animation-delay:1000ms;
+  &:hover{
+    cursor:pointer;
+    transform: scale(1.12);
+    font-size: 1.3em;
+    }
+  &:visited{
+     color:white;
+    }
+  }
+
+@keyframes restartBlink {
+    40% {color:transparent};
+  }
