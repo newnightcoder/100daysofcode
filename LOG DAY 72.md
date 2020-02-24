@@ -9,5 +9,5 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12318493720
 
 FINISH:
 
-- fix resetBall() PERFECTLY (it's possible!! find out, apply step by step method)
-- implement ball ANGLE.
+- fix resetBall() 
+- ball ANGLE.
