@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>INTRO JS</title>
+</head>
+<body id="body">
+  <section id="welcome">
+    <img src="img/DOHred.png" alt="">
+    <h1>arkanoid</h1>
+    <p class="underTitle">a JavaScript game tribute by nightcoder</p>
+    <h2 class="playGame">play game &excl;</h2>
+    <a class="link" href="https://heroconcept.com/a-brief-history-of-brick-breaker-video-games/" target="_blank"><h2 class="history">a history of brick<br> breaker videogames <br><span class='span'>by Gecimen</span></h2></a>
+    <p class="footer">this game is a DESKTOP KEYBOARD GAME <br>it will look like s*** on your phone.</p>
+  </section>
+  <section id="intro">
+    <p class="p1"> Your Mothership ARKANOID&comma; <br>the humanity vessel traveling the Cosmos <br>in search of inhabitable planets&comma;<br> was attacked &excl;</p>
+    <p class="p2">D&nbsp;O&nbsp;H&nbsp;&nbsp;is back again&nbsp;&excl;<br> and his appetite for destruction <br> is greater than ever&period;&period;&period;</p>
+    <p class="p3">D&nbsp;O&nbsp;H <br> - aka Dominate Over Hour - <br>takes the shape of a wire-framed Moai&period;<br>He is the dimension-warping entity from outer-space<br>whose origins and goals are a complete mystery&period;&period;&period;</p>
+    <p class="p4"> You are VAUS&excl; the cool color-changing spacecraft&period;</p>
+    <p class="p5"> D&nbsp;O&nbsp;H&nbsp;&apos;s vicious and powerful attack <br>ejected you far away from the Mothership<br> and had you swallowed <br> into a warped dimension called:<br> UI PALETTE RADIAL-X </p>
+    <p class="p6"> You are now forced to &quot;brickbreak&quot; your way out <br>though this strange and colorful alternate reality&comma;<br>lost in an everlasting search for your Mothership&period;&period;&period;</p>
+    <p class="p7"> If only you could defeat D O H once and for all &excl;</p>
+    <p class="p8"> Time would start to flow backwards &excl;&excl;</p>
+    <p class="p9"> Which would break D&nbsp;O&nbsp;H&nbsp;&apos;s charm and allow <span class="vaus">YOU</span> <br>to escape the UI PALETTE RADIAL-X dimension &excl;&excl;&excl;</p>
+    <p class="p10"> And forever return to your Mothership&comma; Arkanoid&period;</p>
+    <p class="p11"> Good luck on your quest&comma;&nbsp;<span class="vaus">VAUS</span>&nbsp;&excl;</p>
+    <button class="skip">skip intro</button>
+    <button class="toLevel1">to level 1 !</button>
+    <div class="chooseLevel">
+      <button class="toLevel2">select level 2</button>
+      <button class="toLevel3">select level 3</button>
+      <button class="toLevel4">select level 4</button>
+      <button class="toLevel5">to Final Boss - D O H</button>
+      <button class="toEnd">To the End already?</button>
+    </div>
+  </section>
+  <div id="start">
+    <p class="gameRules"> TO MOVE &colon;<br> PRESS LEFT / RIGHT ARROW KEYS <br><br>TO PAUSE / UNPAUSE GAME&colon;<br> PRESS SPACE BAR</p>
+    <p class="pressSpacebar">press space bar to start &excl;&excl;&excl;</p>
+  </div>
+  <div id="pause">game paused</div>
+  <div id="gameover">game over &excl;</div>
+  <a id= restart href="index.html" target="_self">click here to restart game</a>
+  <section id="end">
+    <p>OMG &excl;&excl;&excl; YOU DID IT&comma; <span class="vaus">VAUS</span> &excl;<br>You defeated D O H &excl;&excl;&excl;</p>
+    <p>He has now desintegrated <br>and his bricks have disappeared&period;</p>
+    <p> Though you could escape <br>from the crazy UI PALETTE RADIAL-X dimension&comma; <br> your Mothership is nowhere to be found <br>in the whole galaxy&period;&period;&period;</p>
+    <p>You will have to be resilient&comma; <span class="vaus">Vaus</span>&period;<br>And find the strength to continue <br>the search for inhabitable planets&comma; on your own&period;</p>
+    <p>But you find your peace and happiness&comma; <br>knowing that as long as you will live&comma; <br>the memory of your Mothership will never die&period;</p>
+    <p>The Mothership&period; Arkanoid &excl;</p>
+    <h4>THE END</h4>
+    <p class="thankYou">thank you for playing &excl;</p>
+    <p class="endScreen">arkanoid<sup>mini</sup></p>
+    <p class="endMention">a JS game tribute by nightcoder</p>
+    <div class="socialIcons">
+      <a href="https://github.com/newnightcoder" target="_blank"><img class="logo" src="img/social/github.svg" width ="30em" alt="link to my dev profile"></a>
+      <a href="https://twitter.com/Nightcoder2" target="_blank"><img class="logo" src="img/social/twitter.svg" width="30em" alt="link to my twitter account"></a>
+      <a href="https://codepen.io/newnightcoder" target="_blank"><img class="logo" src="img/social/codepen.svg"width="30em" alt="link to my codepen"></a>
+    </div>
+    <img class="cartridge" src="img/arkanoid-cartridge.png" height="500">
+  </section>
+  <div id="game">
+    <p class='levelName'></p>
+    <canvas id="canvas" width=550 height=550></canvas>
+  </div>
+<script src="index.js"></script>
+</body>
+</html>

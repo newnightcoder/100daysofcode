@@ -1,0 +1,387 @@
+@font-face {
+  src: url("../fonts/ARKANOID.ttf");
+  font-family: arka;
+}
+@font-face {
+  src: url("../fonts/arkasolid.ttf");
+  font-family: arkasolid;
+}
+@font-face {
+  src: url("../fonts/RetroGaming.ttf");
+  font-family: pixel;
+}
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  font-family: "pixel";
+  color: white;
+}
+
+#welcome {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#welcome img {
+  z-index: -1;
+  position: absolute;
+  background-position: center;
+  top: 0;
+  height: 110vh;
+}
+#welcome h1 {
+  margin-top: 70px;
+  margin-bottom: 0;
+  padding: 0;
+  position: relative;
+  font-family: "arka";
+  font-size: 16vmin;
+  color: white;
+  letter-spacing: 0.2rem;
+}
+#welcome h1::after {
+  content: "mini";
+  font-size: 5vmin;
+  position: absolute;
+  top: 30px;
+}
+#welcome .underTitle {
+  margin-top: 0.9em;
+  font-size: 1em;
+}
+#welcome .playGame {
+  margin-top: 3em;
+  font-size: 3vmin;
+  text-transform: uppercase;
+  color: white;
+  animation: playBlink 800ms infinite ease-in;
+}
+#welcome .playGame:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+@keyframes playBlink {
+  30% {
+    color: white;
+  }
+  50% {
+    color: black;
+  }
+}
+#welcome .link {
+  text-decoration: none;
+  color: white;
+}
+#welcome .link:hover {
+  color: black;
+}
+#welcome .link .span {
+  font-size: 0.7em;
+  margin-top: 0;
+}
+#welcome .link .history {
+  font-size: 3vmin;
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
+  padding-top: 10px;
+}
+#welcome .link .history:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+#welcome .footer {
+  position: absolute;
+  bottom: 0;
+  font-size: 0.8em;
+}
+
+#intro {
+  display: none;
+  background-image: url("../img/DOH3d.png");
+  background-repeat: space;
+  background-position: center;
+  height: 300px;
+  width: 800px;
+  margin: 3em 0;
+  padding: 3em 0;
+  overflow-y: scroll;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.5rem;
+}
+#intro p {
+  line-height: 3rem;
+}
+#intro .p1 {
+  animation: introText 150000ms ease-out forwards;
+  position: relative;
+  margin-top: 0;
+}
+#intro .p4 {
+  color: #0aeb00;
+  animation: colorChange 3000ms infinite;
+}
+#intro .p11 {
+  margin-bottom: 1.5em;
+}
+#intro .vaus {
+  animation: colorChange 3000ms infinite;
+}
+@keyframes introText {
+  0% {
+    margin-top: 320px;
+  }
+  100% {
+    margin-top: -1530px;
+  }
+}
+@keyframes colorChange {
+  0% {
+    color: #0aeb00;
+  }
+  20% {
+    color: yellow;
+  }
+  40% {
+    color: #4877f4;
+  }
+  60% {
+    color: #ea0f42;
+  }
+  80% {
+    color: #ff8c00;
+  }
+  100% {
+    color: #ffffff;
+  }
+}
+#intro .skip, #intro .toLevel1, #intro .toLevel2, #intro .toLevel3, #intro .toLevel4, #intro .toLevel5, #intro .toEnd {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  background-color: transparent;
+  font-family: "pixel";
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+#intro .skip:hover, #intro .toLevel1:hover, #intro .toLevel2:hover, #intro .toLevel3:hover, #intro .toLevel4:hover, #intro .toLevel5:hover, #intro .toEnd:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#intro .skip {
+  animation: introBlink 900ms infinite ease-out;
+  position: absolute;
+  width: 100px;
+  font-size: 1rem;
+  top: 50vh;
+  right: 10vw;
+  margin: auto;
+}
+#intro .toLevel1 {
+  animation: introBlink 900ms infinite ease-out;
+  font-size: 1.2rem;
+  width: 200px;
+  margin-bottom: 50px;
+}
+#intro .toLevel2, #intro .toLevel3, #intro .toLevel4, #intro .toLevel5 {
+  font-size: 1rem;
+  margin-right: 10px;
+}
+#intro .toLevel2:hover {
+  color: orange;
+  outline: none;
+}
+#intro .toLevel2:hover:visited, #intro .toLevel2:hover:focus, #intro .toLevel2:hover:active {
+  outline: none;
+}
+#intro .toLevel3:hover {
+  color: lightgreen;
+}
+#intro .toLevel3:hover:visited, #intro .toLevel3:hover:focus, #intro .toLevel3:hover:active {
+  outline: none;
+}
+#intro .toLevel4:hover {
+  color: pink;
+}
+#intro .toLevel4:hover:visited, #intro .toLevel4:hover:focus, #intro .toLevel4:hover:active {
+  outline: none;
+}
+#intro .toLevel5:hover {
+  color: red;
+}
+#intro .toLevel5:hover:visited, #intro .toLevel5:hover:focus, #intro .toLevel5:hover:active {
+  outline: none;
+}
+#intro .toEnd:hover {
+  color: lightblue;
+}
+#intro .toEnd:hover:visited, #intro .toEnd:hover:focus, #intro .toEnd:hover:active {
+  outline: none;
+}
+
+@keyframes introBlink {
+  40% {
+    color: transparent;
+  }
+}
+#start {
+  margin-top: 37.5px;
+  display: none;
+  position: absolute;
+  width: 500px;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+#start .gameRules {
+  visibility: hidden;
+}
+#start .pressSpacebar {
+  animation: startBlink 900ms infinite ease-out;
+}
+
+@keyframes startBlink {
+  40% {
+    color: transparent;
+  }
+}
+#game {
+  flex-direction: column;
+  display: none;
+}
+#game .levelName {
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 1.2em;
+}
+#game #canvas {
+  border-bottom: 5px solid #999;
+  border-radius: 3%;
+}
+
+#pause {
+  display: none;
+  position: absolute;
+  margin-top: 75px;
+  width: 150px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 30px;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+
+#gameover {
+  position: absolute;
+  display: none;
+  font-size: 120px;
+  text-transform: uppercase;
+}
+
+#restart {
+  display: none;
+  position: absolute;
+  margin-top: 100px;
+  text-decoration: none;
+  font-family: pixel;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  animation: restartBlink 900ms infinite ease-out;
+  animation-delay: 1500ms;
+}
+#restart:hover {
+  cursor: pointer;
+  transform: scale(1.12);
+  font-size: 1.3em;
+}
+#restart:visited {
+  color: white;
+}
+
+@keyframes restartBlink {
+  40% {
+    color: transparent;
+  }
+}
+#end {
+  display: none;
+  position: absolute;
+  height: 600px;
+  width: 800px;
+  color: black;
+  margin-top: 600px;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 2em;
+  animation: Outro 120000ms ease-out forwards;
+}
+#end .vaus {
+  animation: colorChange 3000ms infinite;
+}
+#end h4 {
+  color: white;
+}
+#end .thankYou {
+  color: white;
+  margin-top: -50px;
+}
+#end .endScreen {
+  letter-spacing: 0.2rem;
+  margin-top: 200px;
+  font-family: "arka";
+  font-size: 6em;
+  color: white;
+}
+#end .endScreen sup {
+  font-size: 0.2em;
+}
+#end .endMention {
+  margin-top: -100px;
+  color: white;
+}
+#end .socialIcons {
+  margin-top: -20px;
+  padding: 0;
+}
+#end .socialIcons a {
+  margin-right: 10px;
+}
+#end .cartridge {
+  margin-bottom: 10vh;
+}
+
+@keyframes Outro {
+  0% {
+    margin-top: 600px;
+  }
+  100% {
+    margin-top: -1170px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
