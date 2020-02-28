@@ -4,7 +4,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12332700355
 
 **what i did:**
 
-- many things happened!/i want many things!/very rich!!! :
+- many things happened! / i want many things! / very rich!!! :
 
 - 1) there was the question of Lorna tonight on [stackoverflow](https://stackoverflow.com/questions/60437233/how-do-i-restart-my-timer-and-refresh-my-vital-stats-without-refreshing-the-wind), about her virtual pet timer + restart button!! it reminded me of my own issue with my set Timout and restart button haha!! so i decided to try to help and see if it rings a bell for me!!
 i opened her code in Atom and could understand everything, her writing is nice, synthetic, awesome experience!
