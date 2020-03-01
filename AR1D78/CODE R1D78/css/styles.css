@@ -1,0 +1,120 @@
+body {
+  background-color: white;
+  font-family: courier, sans-serif;
+  color: black;
+}
+
+#home {
+  height: 100vh;
+  background-image: url("../img/header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+}
+#home header {
+  margin-top: -50px;
+  color: black;
+}
+#home header h1 {
+  color: #ee006a;
+  font-size: 10em;
+}
+#home header h1::after {
+  content: ".";
+  color: black;
+}
+#home header .intro {
+  color: black;
+  margin-top: -170px;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+#home .moneysaver {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: bold;
+  color: #ee006a;
+}
+#home .moneysaver .black {
+  color: black;
+}
+#home .search {
+  flex-direction: row;
+  margin-top: 2em;
+}
+#home .search input {
+  margin-bottom: 1em;
+  width: 250px;
+  height: 30px;
+  outline: none;
+  border-radius: 10px;
+  background-color: #dbdfe1;
+}
+#home .search label {
+  color: black;
+  font-size: 1.2em;
+}
+
+#about {
+  height: 80vh;
+  background-color: gray;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+#about h2 {
+  margin-top: -100px;
+}
+#about h2 .logoHotel {
+  color: #ee006a;
+  font-size: 2em;
+}
+#about h2 .logoHotel::after {
+  content: ".";
+  color: black;
+  font-size: 1em;
+}
+#about .container {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#about .container .flex {
+  width: 25%;
+}
+#about .container .flex .book {
+  font-weight: bold;
+}
+
+#ourApp {
+  height: 50vh;
+  background-color: #3697D8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 4em;
+  text-align: center;
+  color: white;
+}
+
+footer {
+  height: 30vh;
+  background-color: #555;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 2vh;
+}
+footer .socialicons {
+  margin-top: 50px;
+}
+
+/*# sourceMappingURL=styles.css.map */

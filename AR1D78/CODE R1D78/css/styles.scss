@@ -1,0 +1,123 @@
+$colorTitle: #ee006a;//beige clair: #f2e7bf; pink:;
+$colorText:black;
+
+body {
+  background-color:white;
+  font-family: courier, sans-serif;
+  color:$colorText;
+}
+
+#home{
+  height:100vh;
+  background-image: url('../img/header.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+  header{
+    margin-top: -50px;
+    color:$colorText;
+  h1{
+    color:$colorTitle;
+    font-size: 10em;
+    &::after{
+      content:'.';
+      color:$colorText;
+    }
+  }
+  .intro{
+    color:$colorText;
+    margin-top:-170px;
+    font-size:2.2em;
+    font-weight:bold;
+  }
+}
+  .moneysaver{
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight:bold;
+    color:$colorTitle;
+    .black{
+      color:$colorText;
+    }
+    }
+  .search{
+    flex-direction: row;
+    margin-top:2em;
+    input{
+      margin-bottom:1em;
+      width:250px;
+      height:30px;
+      outline: none;
+      border-radius: 10px;
+      background-color: #dbdfe1;
+    }
+    label{
+      color:$colorText;
+      font-size: 1.2em;
+    }
+  }
+}
+
+#about{
+  height:80vh;
+  background-color: gray;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color:white;
+  h2{
+    margin-top:-100px;
+  .logoHotel{
+    color:$colorTitle;
+    font-size: 2em;
+    &::after{
+      content:'.';
+      color:$colorText;
+      font-size: 1em;
+    }
+  }
+}
+.container{
+  margin-top: 10vh;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  flex-wrap: wrap;
+  .flex{
+    width:25%;
+    .book{
+      font-weight: bold;
+    }
+    }
+  }
+}
+
+#ourApp{
+  //border:1px solid tomato;
+  height:50vh;
+  background-color: #3697D8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size:4em;
+  text-align: center;
+  color:white;
+}
+
+footer{
+  //border:1px solid tomato;
+  height:30vh;
+  background-color: #555;
+  font-size:2em;
+  text-align: center;
+  padding-top: 2vh;
+  .socialicons{
+    margin-top:50px;
+  }
+}
