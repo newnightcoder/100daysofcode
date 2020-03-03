@@ -1,6 +1,6 @@
 **LOG R1D80** (03/03/20)
 
-link to my daily tweet [https://twitter.com/Nightcoder2/status/1234731973534474240) 
+link to my daily tweet [here](https://twitter.com/Nightcoder2/status/1234731973534474240) 
 
 **what i did:**
 
