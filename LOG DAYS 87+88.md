@@ -15,8 +15,8 @@ DAY 88:
 **what i learned:**
 
 - how to switch from Postman to the CODE (very easy BUT i had corrections to make so it made me practice and understand: awesome! i'm happy! + it will be a good working code snippet to reuse!!)
-- how to chose the data i receive from the API (parameters to chose)
-- i will have to adjust/"scale down" the project to make it viable. using a travel API, the data received is limited + important to focus/go slowly, so i have to first make a hotel search app (Paris). let's see how that goes.
+- how to choose the data i receive from the API (parameters in the uri etc...)
+- i will have to adjust/"scale down" the project to make it viable. using a travel API, the data received is quite limited + important to focus/go slowly, so i have to first make a hotel search app (Paris). let's see how that goes.
 - Amadeus might NOT be the best hotel API actually, i find it very limited... let's dig further. else Travelgate or any other good one.
 - [blondiebytes YouTube playlist](https://www.youtube.com/playlist?list=PLcLMSci1ZoPtXsxjCsVDoaxM04sAmQGIc) is helping me a lot! she is really great!
 
