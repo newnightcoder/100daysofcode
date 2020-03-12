@@ -16,7 +16,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12379779750
 
 **next:**
 
-- FIND OUT HOW TO *SELECT DATA* FROM AN **ARRAY OF DATA**!!! FUNDAMENTAL!!! NOW!!! 
+- FIND OUT HOW TO **SELECT DATA** FROM AN **ARRAY OF DATA**!!! FUNDAMENTAL!!! NOW!!! 
 - (if possible find another hotel API. try Travelgate / find the best free hotel API if it exists.)
 - try and CODE! start with just hotel.name: display it!!! + PLAY with Paris and London! it should WORK!
 - if it all works nicely, go full-on DESIGN again and go as "professional" as possible!!! 
