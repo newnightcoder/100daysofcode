@@ -10,7 +10,7 @@ link to my daily tweets [here](https://twitter.com/Nightcoder2/status/1239474321
 **what i learned:**
 
 - thanks to the help of Jon and Ashley (both told me about the data.data trick!!!) i realized that my problem was in the DATA variable name!!! i can actually CHOOSE it, everything is so clear now.
-- i have to be careful because my judgent can be altered because of anxiety/not succeeding as quickly as i want = LEARN PATIENCE + TRUE RESILIENCE!!! the solution will ALWAYS be found (with or without help)
+- i have to be careful because my judgement can be altered because of anxiety/not succeeding as quickly as i want = LEARN PATIENCE + TRUE RESILIENCE!!! the solution will ALWAYS be found (with or without help)
 
 **next:**
 
