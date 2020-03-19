@@ -5,7 +5,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12376351554
 **what i did:**
 
 DAY 87:
-- i took day 87 off! unplanned but obviously necessary, breaks help knowledge/understanding sink in and relieve tensions.
+- i took day 87 off! unplanned but obviously necessary, breaks help knowledge/understanding sink in and relieve tensions! :P
 
 DAY 88:
 - i did make the GET request via Postman to receive hotel info from Paris and London and it worked.
