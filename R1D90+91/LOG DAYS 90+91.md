@@ -5,7 +5,7 @@ link to my daily tweets [here](https://twitter.com/Nightcoder2/status/1238336817
 **what i did:**
 
 - i tried without success to access the json data to display it on my app : hotel.name etc.. does not work.
-- i'm struggling with the arrays of data...
+- i'm struggling with the arrays of data....
 
 
 **next:**
