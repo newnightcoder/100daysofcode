@@ -18,5 +18,5 @@ SAME AS YESTERDAY:
 - display results with **insertAdjacentHTML**!!! + finish STYLING the results page.
 - add image / hotel description if possible (Amadeus API seems to be too limited... look for a more exhaustive/comprehensive one.)
 - handle writing input (paris/london)?
-+
+and
 - LEARN ABOUT OTHER ARRAY METHODS!!! SO COOL!!!
