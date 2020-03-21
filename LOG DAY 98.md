@@ -19,8 +19,7 @@ A LOT!!!
 
 **next:**
 
-- HANDLE WRITING INPUT (city name)!!! YES!!! it will make the app look/feel professional/REAL etc... DO IT!!!
+- HANDLE TEXT INPUT (city name)!!! YES!!! it will make the app look/feel professional/REAL etc... DO IT!!!
 - ADD IMAGES (eventhough test images, it's ok!) + hotel description to the results page!!!
 - finish the STYLING!!! HURRY UP!!!
-
 - UPDATE BLOG AND EXPLAIN ALL THAT!!! 
