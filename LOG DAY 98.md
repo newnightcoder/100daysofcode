@@ -6,14 +6,14 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12413408355
 
 - i learned about TEMPLATE LITERALS and coded to display ALL the hotels returned from the API (thanks to the map() method learnt yesterday)
 inside an html paragraph EACH!!! 
-- i started styling the <p> with CSS. great!!! 
+- i started styling the "injected" paragraph with CSS. great!!! 
 - i got to know Amadeus API much better and it's actually a great API lol : many cities available / IMAGES POSSIBLE (test images but still!!!) + many more features i did ignore.
 
 **what i learned:**
 
 A LOT!!!
 
-- template literals syntax: `` (backticks!) + ${} (placeholder for variable/parameter) : so handy + allows dynamic behaviour!!!
+- template literals syntax: BACKTICKS! + ${} (placeholder for variable/parameter) : so handy + allows dynamic behaviour!!!
 - insertAdjacentHTML() method!!! : i find it better/somehow easier to use  than the .createElement() method! .createElement used to blow my mind but insertAdjacentHTML is way cooler!!! beforeBegin/beforeEnd etc... parameter is perfect.
 - how to "inject" html dynamically to display the json data i want!!
 
