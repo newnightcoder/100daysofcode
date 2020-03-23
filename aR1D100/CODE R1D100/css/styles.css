@@ -1,0 +1,336 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: white;
+  font-family: courier, sans-serif;
+  color: black;
+}
+
+#homeContainer {
+  display: block;
+}
+#homeContainer #home {
+  height: 100vh;
+  background-image: url("../img/header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+}
+#homeContainer #home header {
+  margin-top: -50px;
+  color: black;
+}
+#homeContainer #home header h1 {
+  color: #ee006a;
+  font-size: 10em;
+}
+#homeContainer #home header h1::after {
+  content: ".";
+  color: black;
+  position: relative;
+  left: -30px;
+}
+#homeContainer #home header .intro {
+  color: black;
+  margin-top: -170px;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+#homeContainer #home .moneysaver {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: bold;
+  color: #ee006a;
+}
+#homeContainer #home .moneysaver .black {
+  color: black;
+}
+#homeContainer #home .search {
+  flex-direction: column;
+  margin-top: 5em;
+}
+#homeContainer #home .search input, #homeContainer #home .search button {
+  margin-bottom: 1em;
+  width: 250px;
+  height: 30px;
+  outline: none;
+  border-radius: 5px;
+  background-color: #dbdfe1;
+}
+#homeContainer #home .search input {
+  font-size: 1em;
+  padding-left: 20px;
+}
+#homeContainer #home .search button {
+  border: 1px black solid;
+  font-weight: bold;
+  font-size: 1em;
+}
+#homeContainer #home .search button:hover {
+  cursor: pointer;
+  background-color: #ee006a;
+  border: 1px solid #ee006a;
+  color: white;
+  transform: scale(1.05);
+  font-size: 1.1em;
+}
+#homeContainer #home .search label {
+  color: black;
+  font-size: 1.2em;
+}
+#homeContainer #about {
+  height: 430px;
+  background-color: #cfcfcf;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#homeContainer #about h2 {
+  color: black;
+  line-height: 1.5em;
+}
+#homeContainer .flexContainer {
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: black;
+}
+#homeContainer .flexContainer .flex {
+  width: 20%;
+  border: 0.5px solid white;
+  box-shadow: 0 0 5px white;
+  border-radius: 10px;
+  margin: 0 0 1em 1em;
+  padding-top: 1em;
+  background-color: #b0b0b0;
+}
+#homeContainer .flexContainer .flex .book {
+  font-weight: bold;
+}
+#homeContainer .logoHotel {
+  color: #3498DB;
+  font-size: 1.5em;
+}
+#homeContainer .logoHotel::after {
+  content: ".";
+  color: black;
+  font-size: 1.5em;
+  position: relative;
+  left: -8px;
+  margin-right: -10px;
+}
+#homeContainer #cities {
+  height: 650px;
+  margin-bottom: -10%;
+  border-top: 1px solid #cfcfcf;
+  background-image: url("../img/3 - marten-bjork-unsplash.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+#homeContainer #cities h2 {
+  line-height: 1.5em;
+}
+#homeContainer #cities .logoHotel {
+  color: #ee006a;
+}
+#homeContainer #cities .logoHotel::after {
+  color: white;
+}
+#homeContainer #cities p {
+  font-size: 1.5em;
+}
+#homeContainer #cities .citiesContainer ul {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  line-height: 2em;
+}
+#homeContainer #cities .citiesContainer ul li {
+  white-space: nowrap;
+  background-color: transparent;
+  width: 120px;
+  font-size: 1.2em;
+  margin: 0 1em 1em 0;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+#homeContainer #cities .citiesContainer ul li:hover {
+  background-color: #ee006a;
+  border: 1px solid #ee006a;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+#homeContainer #reviews {
+  height: 450px;
+  background-color: gray;
+  border: 1px solid transparent;
+  text-align: center;
+}
+#homeContainer #reviews h2 {
+  color: white;
+  line-height: 1.5em;
+}
+#homeContainer #reviews .flexContainer {
+  text-align: left;
+  margin-top: 5vh;
+  color: white;
+}
+#homeContainer #reviews .flexContainer h3 {
+  position: relative;
+  padding-left: 3vw;
+  margin-top: 3vh;
+}
+#homeContainer #reviews .flexContainer h3 .quote {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-size: 3em;
+}
+#homeContainer #reviews .flexContainer .flex {
+  width: 30%;
+  height: 270px;
+  padding: 2vh 0 1vh 2vw;
+}
+#homeContainer #ourApp {
+  height: 550px;
+  background-image: url("../img/7 - valeriia-bugaiova-unsplash.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  font-weight: 510;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 5px white;
+}
+#homeContainer #ourApp .download, #homeContainer #ourApp .illustration {
+  width: 40%;
+}
+#homeContainer #ourApp .downloadIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#homeContainer #ourApp .downloadIcons img {
+  margin: 0.5em 0.5em 0 0;
+}
+#homeContainer #ourApp .downloadIcons img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+#resultContainer {
+  display: none;
+  color: white;
+}
+#resultContainer .recap {
+  padding-bottom: 3vh;
+  background-image: linear-gradient(to right, #020024, #090979, #00d4ff);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#resultContainer .recap .searchHeader {
+  margin-left: 2vw;
+  color: #38a3ff;
+  font-size: 3em;
+  font-weight: bold;
+  width: 400px;
+}
+#resultContainer .recap .searchHeader::after {
+  content: ".";
+  color: white;
+  font-size: 1.5em;
+  position: relative;
+  left: -8px;
+  margin-right: -10px;
+}
+#resultContainer .recap button {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-left: 2vw;
+}
+#resultContainer .recap button:hover, #resultContainer .recap button :visited, #resultContainer .recap button :focus, #resultContainer .recap button :active {
+  cursor: pointer;
+  outline: none;
+  transform: scale(1.1);
+}
+
+.offers {
+  background-image: url("../img/header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3vh 0 3vh;
+}
+.offers div {
+  margin: 0 0 2vh 2vw;
+  width: 80%;
+  background-color: #555;
+  height: 130px;
+  font-family: verdana;
+  border: 1px solid #3498DB;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 2vw;
+  line-height: 1.7em;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  height: 170px;
+  background-color: #555;
+  font-size: 1.3em;
+  text-align: center;
+  padding-top: 30px;
+}
+footer .socialicons {
+  margin-top: 15px;
+}
+footer .socialicons img:hover {
+  cursor: pointer;
+  transform: scale(1.4);
+}
+footer .mentions {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+footer .mentions div {
+  font-size: 0.6em;
+  color: white;
+  width: 50%;
+}
+footer .mentions .terms {
+  text-align: left;
+  margin-left: 1vw;
+}
+footer .mentions .copyright {
+  text-align: right;
+  margin-right: 1vw;
+}
+
+/*# sourceMappingURL=styles.css.map */

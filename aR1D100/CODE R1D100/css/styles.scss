@@ -1,0 +1,346 @@
+$colorTitle: #ee006a;//beige clair: #f2e7bf; pink:;
+$colorText:black;
+$colorBlue:#3498DB;
+
+*{
+  box-sizing: border-box;
+}
+body {
+  position:relative;
+  background-color:white;
+  font-family: courier, sans-serif;
+  color:$colorText;
+}
+
+#homeContainer{
+  display: block;
+  #home{
+    height:100vh;
+    background-image: url('../img/header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    header{
+      margin-top: -50px;
+      color:$colorText;
+      h1{
+        color:$colorTitle;
+        font-size: 10em;
+        &::after{
+          content:'.';
+          color:$colorText;
+          position:relative;
+          left:-30px;
+        }
+      }
+      .intro{
+        color:$colorText;
+        margin-top:-170px;
+        font-size:2.2em;
+        font-weight:bold;
+      }
+    }
+    .moneysaver{
+      text-transform: uppercase;
+      font-size: 2em;
+      font-weight:bold;
+      color:$colorTitle;
+      .black{
+        color:$colorText;
+      }
+    }
+    .search{
+      flex-direction: column;
+      margin-top:5em;
+      input, button{
+        margin-bottom:1em;
+        width:250px;
+        height:30px;
+        outline: none;
+        border-radius: 5px;
+        background-color: #dbdfe1;
+      }
+      input{
+        font-size: 1em;
+        padding-left: 20px;
+      }
+      button{
+        border: 1px black solid;
+        font-weight: bold;
+        font-size:1em;
+        &:hover{
+          cursor:pointer;
+          background-color:$colorTitle;
+          border: 1px solid $colorTitle;
+          color:white;
+          transform: scale(1.05);
+          font-size: 1.1em;
+        }
+      }
+      label{
+        color:$colorText;
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  #about{
+    height:430px;
+    background-color: #cfcfcf;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    h2{
+      color:black;
+      line-height: 1.5em;
+    }
+  }
+  .flexContainer{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap: wrap;
+    color:black;
+    .flex{
+      width:20%;
+      border: .5px solid white;
+      box-shadow: 0 0 5px white;
+      border-radius:10px;
+      margin:0 0 1em 1em;
+      padding-top: 1em;
+      background-color: #b0b0b0;
+      .book{
+        font-weight: bold;
+      }
+    }
+  }
+  .logoHotel{
+    color:$colorBlue;
+    font-size: 1.5em;
+    &::after{
+      content:'.';
+      color:black;
+      font-size: 1.5em;
+      position: relative;
+      left:-8px;
+      margin-right: -10px;
+    }
+  }
+  #cities{
+    height:650px;
+    margin-bottom: -10%;
+    border-top: 1px solid #cfcfcf;
+    background-image:url("../img/3 - marten-bjork-unsplash.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:white;
+    h2{
+      line-height: 1.5em;
+    }
+    .logoHotel{
+      color:$colorTitle;
+      &::after{
+        color:white;
+      }
+      }
+      p{
+        font-size: 1.5em;
+      }
+    .citiesContainer{
+      ul{
+        margin-top: 5vh;
+        //margin-left: -30%;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        line-height: 2em;
+        li{
+          white-space: nowrap;
+          background-color: transparent ;
+          width:120px;
+          font-size: 1.2em;
+          margin: 0 1em 1em 0;
+          border: 1px solid white;
+          border-radius: 5px;
+          &:hover{
+            background-color: $colorTitle;
+            border: 1px solid $colorTitle;
+            transform: scale(1.2);
+            cursor:pointer;
+          }
+        }
+      }
+    }
+  }
+  #reviews {
+    height: 450px;
+    background-color: gray;
+    border: 1px solid transparent;
+    text-align: center;
+    h2{
+      color:white;
+      line-height: 1.5em;
+    }
+    .flexContainer{
+      text-align: left;
+      margin-top: 5vh;
+      color: white;
+      h3{
+        position: relative;
+        padding-left: 3vw;
+        margin-top: 3vh;
+       .quote{
+          position: absolute;
+          top:-20px;
+          left:0;
+          font-size: 3em;
+        }
+      }
+      .flex{
+        width:30%;
+        height:270px;
+        padding: 2vh 0 1vh 2vw;
+
+      }
+    }
+  }
+  #ourApp{
+    height:550px;
+    //background-color: #3697D8;
+    background-image:url("../img/7 - valeriia-bugaiova-unsplash.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size:3em;
+    font-weight: 510;
+    text-align: center;
+    color:white;
+    text-shadow: 0 0 5px white;
+    .download, .illustration{
+      width:40%;
+    }
+    .illustration{
+      //margin-top: -10vh;
+    }
+    .downloadIcons{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      img{
+        margin: .5em .5em 0 0;
+        &:hover{
+          cursor: pointer;
+          transform:scale(1.2);
+        }
+      }
+    }
+  }
+}
+#resultContainer{
+  display: none;
+  color:white;
+  .recap{
+    //height:300px;
+    padding-bottom: 3vh;
+    background-image: linear-gradient(to right, #020024, #090979, #00d4ff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+      .searchHeader{
+        margin-left: 2vw;
+        color:#38a3ff;
+        font-size: 3em;
+        font-weight: bold;
+        width:400px;
+        &::after{
+            content:'.';
+            color:white;
+            font-size: 1.5em;
+            position: relative;
+            left:-8px;
+            margin-right: -10px;
+        }
+      }
+      button{
+        width:200px;
+        height:30px;
+        border-radius:5px;
+        font-size: 1em;
+        margin-left: 2vw;
+        &:hover, :visited, :focus, :active{
+          cursor:pointer;
+          outline: none;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  .offers{
+    background-image: url('../img/header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3vh 0 3vh;
+    div{
+      margin: 0 0 2vh 2vw;
+      width:80%;
+      background-color: #555;
+      height: 130px;
+      font-family: verdana;
+      border: 1px solid $colorBlue;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      padding-left: 2vw;
+      line-height: 1.7em;
+    }
+
+  }
+
+footer{
+  position:relative;
+  bottom:0;
+  height:170px;
+  background-color: #555;
+  font-size:1.3em;
+  text-align: center;
+  padding-top: 30px;
+  .socialicons{
+    margin-top:15px;
+    img:hover{
+      cursor: pointer;
+      transform:scale(1.4);
+    }
+  }
+  .mentions{
+    margin-top: 20px;
+    display:flex;
+    flex-direction: row;
+    div{
+      font-size: .6em;
+      color:white;
+      width:50%;
+    }
+    .terms{
+      text-align: left;
+      margin-left: 1vw;
+    }
+    .copyright{
+      text-align: right;
+      margin-right: 1vw;
+    }
+  }
+}
