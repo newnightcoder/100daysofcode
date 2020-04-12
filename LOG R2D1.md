@@ -13,7 +13,7 @@ i have to get closer to the dolphins with JS + start with React?*
 **what i did:**
 
 - from the 1st time i saw it, i found the Johns Hopkins Covid-19 dashboard absolutely excellent!!! the perfect app!!! (in spite of the gravity of the topic)
-[JHU dashboard](https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6)
+[JHU covid-19 dashboard](https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6) and
 [JHU github resources](https://github.com/CSSEGISandData/COVID-19)
 - i've also wanted to use the Chart.js library a way or the other for a while, so i thought it would be "fun" if i could use some covid-19 global data from an API
 and display it nicely with chart.js, in order ot make my own version of the JHU CSSE dashboard (Johns Hopkins University Center for Systems Science and Engineering).
