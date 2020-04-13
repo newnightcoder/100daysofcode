@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+header{
+  border: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  img{
+    position: absolute;
+    left:10vw;
+  }
+}
+.totalCases {
+  border: 1px solid white;
+  width:30vw;
+  margin-top: 50px;
+}
