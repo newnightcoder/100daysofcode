@@ -16,8 +16,8 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12495976994
 
 **next:**
 
-- ~get the covid-19 data in the console = solve the fetch() issue / fix the header~ *solved*
-- design of my dashboard : in progress
+- ~get the covid-19 data in the console = solve the fetch() issue / fix the header~ : *solved*
+- design of my dashboard : *in progress*
 - use proper ARRAY METHODS to display the data!!!
 - display data on a chart.js graph / WORLDMAP??? START THINKING ABOUT THAT!!!
 - let's conitnue to update/write for the blog - catch up.
