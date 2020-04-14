@@ -15,11 +15,14 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12499637471
 **what i learned**
 
 - how to use the **sort() method**!!! : it uses a "comparison" function(a, b) to return 1, -1 and 0:
+
 ```let sortedData = data.sort(function(a, b){
        if(a.value < b.value) return 1;
        else if(b.value < a.value) return -1;
        else return 0;
-    })```
+    })
+ ```   
+    
 - **forEach() method**!!! i used it instead of map(), in order to return each countryname etc..
 - tested the **filter() method** to get the countries with more 100k confirmed cases!!! it works beautifully!!!
 - TEMPLATE LITERALS TO CREATE HTML DIV **WITH CLASSES**!!! (ID would be possible as well): awesome! i just tried and it worked!!!
