@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="node_modules/chart.js/dist/Chart.js"></script>
+  <title>COVID-19 worldwide cases</title>
+</head>
+<body>
+  <header>
+    <h1>COVID-19 Dashboard inspired by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University</h1>
+  </header>
+  <main>
+    <section class="total">
+      <div class="totalCases">
+        <h2 class="h2top">Total Cases</h2>
+      </div>
+      <div class="buttons">
+        <button class="confirmed">confirmed</button>
+        <button class="deaths">deaths</button>
+        <button class="recovered">recovered</button>
+      </div>
+    </section>
+    <section class="casesPerCountry">
+      <h2 class="h2mid">Confirmed cases <br>per country</h2>
+      <div class="countryContainer"></div>
+    </section>
+    <section class="update">
+      <h2>Last updated&colon;</h2>
+    </section>
+    <div class="canvasContainer">
+      <canvas id="myChart"></canvas>
+    </div>
+    <div class="details"></div>
+  </main>
+
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
