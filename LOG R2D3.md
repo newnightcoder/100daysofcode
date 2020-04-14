@@ -16,7 +16,8 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12499637471
 
 - how to use the **sort() method**!!! : it uses a "comparison" function(a, b) to return 1, -1 and 0:
 
-```let sortedData = data.sort(function(a, b){
+```
+let sortedData = data.sort(function(a, b){
        if(a.value < b.value) return 1;
        else if(b.value < a.value) return -1;
        else return 0;
