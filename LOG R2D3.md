@@ -37,4 +37,4 @@ let sortedData = data.sort(function(a, b){
 - TOGGLE between confirmed/deaths/recovered!!!
 - TOGGLE dark mode too!!!
 - design of my dashboard : *in progress* => INCLUDE WORLDMAP!
-- display data on a chart.js graph / WORLDMAP??? START THINKING ABOUT THAT!!!
+- display data on a chart.js graph for the right section
