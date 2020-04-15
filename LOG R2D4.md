@@ -6,8 +6,8 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12503200998
 **what i did:**
 
 - i could get the stats buttons to work using .innerHTML instead of .insertAdjacentHTML and map() instead of forEach()!!! works nicely.
-- i implemented the WORLDMAP on the dashboard, using googlemap API: very easy + handy! (i tried with mapbox.js forst but i don't get it really.. i'll have to spend more time focusing on that later at some point. love the design!)
-- styled/customized the map! it looks great!!! like JHU!!!
+- i implemented the WORLDMAP on the dashboard, using googlemap API: very easy + handy! (i tried with mapbox.js first but i don't get it really.. i'll have to spend more time focusing on that later at some point. love their design!)
+- styled/customized the map! it looks great sofar!!! like JHU!!!
 
 
 **what i learned**
