@@ -1,0 +1,129 @@
+$backgroundColor1:black;
+$backgroundColor2:#222222;
+$borderColor:#585858;
+$textColorBright:#bfbfbf;
+$textColorDark:#6f6f6f;
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #777;
+  color: $textColorBright;
+  text-align: center;
+  font-family: Arial;
+}
+
+header{
+  background-color:$backgroundColor2;
+  border: 1px solid $borderColor;
+  font-size: .8rem;
+  color: $textColorDark;
+  //margin-bottom: 2vh;
+}
+
+.charts{
+  display:none;
+}
+
+h2{
+  font-size: 1rem;
+}
+.deathNumbers{
+  color:red;
+}
+.confirmedNumbers{
+  color:#ffff00;
+}
+.recoveredNumbers{
+  color:#00ff00;
+}
+.total{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ .buttons{
+    display: flex;
+    flex-direction: column;
+    button{
+      width:100px;
+      margin: 3px 0 3px 10px;
+      padding: 5px 0 5px 0;
+      border-radius: 5px;
+      border: 1px solid #000;
+      color: $textColorBright;
+      outline: none;
+      background-color: $backgroundColor2;
+     &:hover{
+        cursor: pointer;
+        transform: scale(0.9);
+      }
+    }
+    .confirmed:hover{
+      color:#ffff00;
+    }
+    .deaths:hover{
+      color:red;
+    }
+    .recovered:hover{
+      color:#00ff00;
+    }
+  }
+}
+
+  .totalCases, .casesPerCountry, footer{
+    background-color: $backgroundColor2;
+    border: 1px solid $borderColor;
+    width:13vw;
+    font-size: .75rem;
+    margin-top: 10px;
+  }
+  .totalCases{
+    height:100px;
+    .topResult{
+      font-size: 3vmax;
+      padding: 0 0 20px 0;
+    }
+  }
+
+.casesPerCountry{
+  text-align: left;
+  h2{
+    text-align: center;
+  }
+  .countryContainer{
+    overflow:scroll;
+    height:44vh;
+    div{
+      color:$textColorBright;
+      height:1.5rem;
+      padding: 10px 0 25px 20px;
+      border-bottom: 1px solid $borderColor;
+    }
+  }
+}
+
+#map{
+  height:460px;
+  width:600px;
+  border:2px solid black;
+  position:absolute;
+  top:117px;
+  left:300px;
+  margin:auto;
+}
+
+footer{
+  height:10vh;
+  width: 100%;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color:$textColorDark;
+  position: absolute;
+  bottom: 10px;
+}
