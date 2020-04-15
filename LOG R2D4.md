@@ -26,6 +26,7 @@ that's obviously because forEach "doesn't return anything" whereas map() does. i
 - display data on a chart.js graph for the right section
 - dark/light mode TOGGLE!!!
 
+
 - ~design of my dashboard : *in progress* => INCLUDE WORLDMAP!~
 - ~TOGGLE between confirmed/deaths/recovered!!!~ : *solved with .innerHTML!* 
 - ~use proper ARRAY METHODS to display the data!!!~ : *solved* 
