@@ -7,7 +7,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12514471967
 
 - i changed the format of the JSON data displayed on the dashboard: stat numbers and ISO timestamp of the "last updated" footer! looks so much better now!! that's a relief lol.
 - i used toString().replace(regEx, '$1 ') for the stat numbers and new Date(data.lastupdate) for the footer!!!
-- i tried to work with moment.js and it's working nicely indeed! so handy and many options possible!
+- i tried basic moment.js functions and it's working nicely indeed! so handy and many options possible! to use for the footer!
 
 
 **what i learned**
