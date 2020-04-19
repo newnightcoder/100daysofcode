@@ -6,13 +6,15 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12514471967
 **what i did:**
 
 - i changed the format of the JSON data displayed on the dashboard: stat numbers and ISO timestamp of the "last updated" footer! looks so much better now!! that's a relief lol.
-- i started to work with moment.js and it's very handy!
+- i used toString().replace(regEx, '$1 ') for the stat numbers and new Date(data.lastupdate) for the footer!!!
+- i tried to work with moment.js and it's working nicely indeed! so handy and many options possible!
 
 
 **what i learned**
 
 - the toString().replace() method!!! .replace() takes 2 arguments: regular expression (regEx) and replacement value ('$1 ')!!! perfect
-- i tried the toLocaleString method()! 
+- i tried the toLocaleString method() but it gave me no result..
+- the new Date() constructor : awesome! exactly what i needed!!
 - i have to go deeper into them + learning JSON.stringify + break down regEx!
 - how to set up a node_module (moment.js in this case): i got it to work immediately, cool!
 
