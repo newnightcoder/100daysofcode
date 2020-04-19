@@ -6,7 +6,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12518145095
 **what i did:**
 
 - i dived into looking for a way to ANIMATE the circles on the map and it brought me to SVGs!!! 
-- i could CODE my very first SVG circle!!! the marker on the map and of course it looks much better than the google maps API's circle because VECTORIAL: absolute perfection.
+- i could CODE my very first SVG circle!!! (for the marker on the map) and of course it looks so much better than the google maps API's circle because it's VECTORIAL: absolute perfection.
 - i couldn't get to the animating part though. it seems much more difficult...
 
 
