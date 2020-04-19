@@ -14,8 +14,8 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12518145095
 
 - SVGs!!!! SVGs are perfect!! they can be used like img, but also CODE!
 - how to code for an SVG (XML)
-- ```<animate> tag!!! (but also <circle>, <rect> etc...)
-- learned about SVG PATH but it's difficult, i have to get into it + understand all the attributes possible for <animate>!! or try *Inkscape*???
+- XML TAGS!!! : svg, animate, (but also circle, rect etc...)
+- learned about SVG PATH but it's difficult, i have to get into it + understand all the attributes possible for xml animate!! or try **Inkscape**???
 
 
 **next:**
