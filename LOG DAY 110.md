@@ -12,6 +12,7 @@ i'll have to find a way to change the map as well...
 **what i learned**
 
 - a lot of new HTML and CSS tricks!!!: 
+
 **HTML:** input tag class=checkbox id=input / label for=input (referring to the input tag! awesome) 
 
 **CSS:** body.light{} + Sass nesting / transform:translateX() / transitions 
