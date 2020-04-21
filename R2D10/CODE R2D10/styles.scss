@@ -1,0 +1,193 @@
+$backgroundColor1:black;
+$backgroundColor2:#222222;
+$borderColor:#585858;
+$textColorBright:#bfbfbf;
+$textColorDark:#6f6f6f;
+$backgroundColorBody:#777;
+
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: $backgroundColorBody;
+  color: $textColorBright;
+  text-align: center;
+  font-family: Arial;
+}
+
+header{
+  background-color:$backgroundColor2;
+  border: 1px solid $borderColor;
+  font-size: .8rem;
+  color: $textColorDark;
+  height:100px;
+  position: relative;
+
+  label{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $backgroundColorBody;
+    height:22px;
+    width:52px;
+    border-radius: 50px;
+    position:absolute;
+    right:10px;
+    bottom:5px;
+    padding: 12px 3px;
+    i{
+      font-size: 20px;
+      color:$backgroundColor2;
+    }
+    .toggle{
+      height:22px;
+      width: 22px;
+      border-radius: 50%;
+      background-color: white;
+      position: absolute;
+      left:2px;
+      transition: transform 300ms;
+    }
+  }
+}
+input{
+  display: none;
+  &:checked + label .toggle{
+    transform: translateX(26px);
+  }
+}
+
+.charts{
+  display:none;
+}
+
+h2{
+  font-size: 1rem;
+}
+.deathNumbers{
+  color:red;
+}
+.confirmedNumbers{
+  color:#ffff00;
+}
+.recoveredNumbers{
+  color:#00ff00;
+}
+.total{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ .buttons{
+    display: flex;
+    flex-direction: column;
+    button{
+      width:100px;
+      margin: 3px 0 3px 10px;
+      padding: 5px 0 5px 0;
+      border-radius: 5px;
+      border: 1px solid #000;
+      color: $textColorBright;
+      outline: none;
+      font-weight: bold;
+      background-color: $backgroundColor2;
+     &:hover{
+        cursor: pointer;
+        transform: scale(0.9);
+      }
+    }
+    // .confirmed:hover{
+    //   color:#ffff00;
+    // }
+    // .deaths:hover{
+    //   color:red;
+    // }
+    // .recovered:hover{
+    //   color:#00ff00;
+    // }
+  }
+}
+
+  .totalCases, .casesPerCountry, footer{
+    background-color: $backgroundColor2;
+    border: 1px solid $borderColor;
+    width:13vw;
+    font-size: .75rem;
+    margin-top: 10px;
+  }
+  .totalCases{
+    height:100px;
+    .topResult{
+      font-size: 2.6vmax;
+      padding: 0 0 20px 0;
+    }
+  }
+
+.casesPerCountry{
+  text-align: left;
+  h2{
+    text-align: center;
+  }
+  .countryContainer{
+    overflow:scroll;
+    height:44vh;
+    &::-webkit-scrollbar{
+      //background-color: $textColorDark;
+    }
+    div{
+      color:$textColorBright;
+      height:1.5rem;
+      padding: 10px 0 25px 20px;
+      border-bottom: 1px solid $borderColor;
+    }
+  }
+}
+
+#map{
+  height:460px;
+  width:700px;
+  border:2px solid black;
+  position:absolute;
+  top: 120px;
+  left:23vw;
+  // top:117px;
+  // left:300px;
+//  margin:auto;
+}
+
+footer{
+  height:10vh;
+  width: 100%;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color:$textColorDark;
+  position: absolute;
+  bottom: 10px;
+}
+// -----------------------------------------------------------------------------
+//                            LIGHTMODE
+//------------------------------------------------------------------------------
+body{
+  transtion: background 300ms;
+  .light{
+    transition: background 300ms;
+  }
+}
+body.light{
+  background-color: $textColorBright;
+  .light{
+    background-color: white;
+    color:$backgroundColorBody;
+  }
+  .fas {
+    color:$textColorBright;
+  }
+  label{
+    //background-color: white;
+  }
+}
