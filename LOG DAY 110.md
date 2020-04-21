@@ -19,9 +19,10 @@ i'll have to find a way to change the map as well...
 
 **JS:** 
 
-```input.addEventListener('change', function(){
+```
+input.addEventListener('change', function(){
       document.body.classList.toggle('light');
-})  ```
+})
 
 - i discovered FONTAWESOME!!! i now finally undersand the **i** tag and the "fas fa-icon" classes!!! awesome indeed. 
 
