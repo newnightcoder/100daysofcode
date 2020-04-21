@@ -5,7 +5,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12526141483
 
 **what i did:**
 
-- i implemented the darkmode/lightmode toggle on the dashboard!!! it took some time to learn/understand/test everything and the result is really cool!!
+- i implemented the DARKMODE/LIGHTMODE toggle on the dashboard!!! it took some time to learn/understand/test everything and the result is really cool!!
 i'll have to find a way to change the map as well...
 
 
