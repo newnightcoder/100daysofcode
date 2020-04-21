@@ -1,4 +1,4 @@
-**LOG R210** (21/04/20)
+**LOG R2D10** (21/04/20)
 
 link to my daily tweet [here](https://twitter.com/Nightcoder2/status/1252614148338462721)
 
@@ -23,9 +23,7 @@ i'll have to find a way to change the map as well...
 input.addEventListener('change', function(){
       document.body.classList.toggle('light');
 })
-
-
-
+```
 - i discovered FONTAWESOME!!! i now finally undersand the **i** tag and the "fas fa-icon" classes!!! awesome indeed. 
 
 
