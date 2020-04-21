@@ -30,13 +30,13 @@ input.addEventListener('change', function(){
 **next:**
 
 - EXPAND/develop the dashboard for better DATA VISUALIZATION : start d3.js. we'll see how hard it is. if really too much, back to chart.js.
-- ~dark/light mode TOGGLE!!!~ : **done**
-- ~change FONT on the MAP~ *solved - looks much better eventhough the font itself can't be changed. loos nice now!~ 
+- ~dark/light mode TOGGLE!!!~ : *done*
+- ~change FONT on the MAP~ : *solved - looks much better eventhough the font itself can't be changed. looks nice now!* 
 - ~display the footer even better than it is now: play with moment.js or new Date() constructor.~ *solved with moment.js!! easy!!*
 - ~SVG ANIMATION!!!~ : *solved! with the animate attribute!!!*
 - ~"convert" json timestamp footer into REGULAR DATE + TIME !!~ : *solved with .toString().replace(regEx, $1)*
 - ~display DATA ON THE MAP!!~ : *solved*
-- ~design of my dashboard : *in progress* => INCLUDE WORLDMAP!~
+- ~design of my dashboard => INCLUDE WORLDMAP!~ : *in progress* 
 - ~TOGGLE between confirmed/deaths/recovered!!!~ : *solved with .innerHTML!* 
 - ~use proper ARRAY METHODS to display the data!!!~ : *solved* 
 - ~get the covid-19 data in the console = solve the fetch() issue / fix the header~ : *solved*
