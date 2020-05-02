@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/9209397972.js" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="node_modules/moment/min/moment-with-locales.min.js"></script>
+  <title>COVID-19 worldwide cases</title>
+</head>
+<body>
+
+  <header class="light">
+    <h1>COVID-19 Dashboard inspired by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University</h1>
+      <input type="checkbox" class="input" id="input">
+      <label for="input" class="label">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+        <div class="toggle"></div>
+      </label>
+  </header>
+
+
+    <section class="total">
+      <div class="totalCases light">
+        <h2 class="h2top">Total Cases</h2>
+        <div class="topResult"></div>
+      </div>
+      <div class="buttons ">
+        <button class="confirmed light">confirmed</button>
+        <button class="deaths light">deaths</button>
+        <button class="recovered light">recovered</button>
+      </div>
+    </section>
+
+    <section class="casesPerCountry light">
+      <h2 class="h2mid">Confirmed cases <br>per country</h2>
+      <div class="countryContainer"></div>
+    </section>
+
+    <div id="map"></div>
+
+    <div class="update light">
+      <h2>Last updated&colon;&nbsp;</h2>
+    </div>
+
+    <section class="charts"></section>
+
+
+  <script type="text/javascript" src="app.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqlbFjucpbaHmvgGJq6NEqom7AtLHmuBY&language=en&callback=initMap"
+    async defer></script>
+</body>
+</html>
