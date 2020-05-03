@@ -6,8 +6,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12567877083
 **what i did:**
 
 - i managed to get the confirmed cases for each date of the french timeseries using my first for in loop!!!
-- read/researched more about loops and how to create arrays (also: i spotted a syntax error in a code example in "A smarter way to learn JS" in the loops chapter! happy i could spot that lol!
-)
+- read/researched more about loops and how to create arrays (also: i spotted a syntax error in a code example in "A smarter way to learn JS" in the loops chapter! happy i could spot that lol!)
 - tried the .push() method to get all the values in an array but it creates as many arrays as iterations in the loop...
 
 
