@@ -14,7 +14,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12572831700
 
 **what i learned**
 
-- maybe the for in loop is the root of the problem: when using the push() method to get the numbers in dataset, it works! BUT i creates as many arrays as iterations BECAUSE OF the for in loop in think..
+- maybe the for in loop is the root of the problem: when using the push() method to get the numbers in dataset, it works! BUT i creates as many arrays as iterations BECAUSE OF the for in loop i think..
 - i need to find an alternative.
 
 
