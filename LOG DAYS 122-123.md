@@ -5,7 +5,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12578990153
 
 **what i did:**
 
-- i tried further with d3 and discovered many things: i fetched the json data with d3.json()!!!
+- i tried further with d3 and discovered many things: i fetched the json data with d3.json()!!! (+ i found out .then() on my own! thinking about fetch()!!! it returns a promise as well!! awesome.)
 - i could make a chart with data i created (simple array) and it works!! so my code is right! so the last issue is really: how to pass in my data (.confirmed)
 - i exercised further with freecodecamp! cool. i have to do that much more!
 - i understand d3 much more but my case is quite specific, with the super NESTED data i'm trying to access!
