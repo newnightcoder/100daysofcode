@@ -22,7 +22,7 @@ d3.json(url)
    })
    ```   
 - d3.nest, .key, .values: so handy!!! i have to find the proper way to access my data!!
-- console.table for visualizing data (arrays, objects) in the console!!! much BETTER!!
+- **console.table** for visualizing data (arrays, objects) in the console!!! much BETTER!!
 - all this d3/dataviz adventure is bringing me a lot (also as far as JS itself is concerned)! not easy but it feels nice. i feel better than 2 days ago lol!
 
 
