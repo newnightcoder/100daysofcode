@@ -15,10 +15,12 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12578990153
 A LOT!! (d3 is very rich + super powerful!)
 
 - d3 uses the fetch API!!! mindblowing: 
-```d3.json() 
-     .then(function (data){
+```
+d3.json(url) 
+  .then(function (data){
      //code
-     })
+   })
+   ```   
 - d3.nest, .key, .values: so handy!!! i have to find the proper way to access my data!!
 - console.table for visualizing data (arrays, objects) in the console!!! much BETTER!!
 - all this d3/dataviz adventure is bringing me a lot (also as far as JS itself is concerned)! not easy but it feels nice. i feel better than 2 days ago lol!
