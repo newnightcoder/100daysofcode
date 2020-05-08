@@ -1,0 +1,303 @@
+$backgroundColor1:black;
+$backgroundColor2:#222222;
+$borderColor:#585858;
+$textColorBright:#bfbfbf;
+$textColorDark:#6f6f6f;
+$backgroundColorGrid-1:#777;
+$backgroundColorGrid-2:#000000;
+$fontSizeTitles:.8rem;
+
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+#grid-1{
+  background-color: $backgroundColorGrid-1;
+  color: $textColorBright;
+
+  display:grid;
+  height:100vh;
+  grid-template-columns: min-content min-content 700px 1fr;
+  grid-template-rows: repeat(4, min-content);
+  grid-column-gap: 1vw;
+  grid-row-gap:2vh;
+  grid-template-areas: "header header header header"
+                        "total buttons map ."
+                        "casesPerCountry . map ."
+                        "casesPerCountry . map ."
+                        "update update update update";
+
+  header{
+    grid-area: header;
+    // grid-column: span 4;
+    // grid-row: span 1;
+    background-color:$backgroundColor2;
+    border: 1px solid $borderColor;
+    font-size: $fontSizeTitles;
+    color: $textColorBright;
+    line-height: 2rem;
+    height:100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+  h1{
+
+    .live::before{
+        content:"";
+        height:1em;
+        width:1em;
+        border-radius: 50%;
+        background-color: red;
+        position: absolute;
+        // top:0;
+        // left:0;
+      }
+}
+    label{
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $backgroundColorGrid-1;
+      height:22px;
+      width:52px;
+      border-radius: 50px;
+      position:absolute;
+      right:10px;
+      bottom:5px;
+      padding: 12px 3px;
+      i{
+        font-size: 20px;
+        color:$backgroundColor2;
+      }
+      .toggle{
+        height:22px;
+        width: 22px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        left:2px;
+        transition: transform 300ms;
+      }
+    }
+  }
+  input{
+    display: none;
+    &:checked + label .toggle{
+      transform: translateX(26px);
+    }
+  }
+
+
+  h2{
+    font-size: 1rem;
+  }
+  .deathNumbers{
+    color:red;
+  }
+  .confirmedNumbers{
+    color:#ffff00;
+  }
+  .recoveredNumbers{
+    color:#00ff00;
+  }
+  .total{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .totalCases, .casesPerCountry, .update{
+    background-color: $backgroundColor2;
+    border: 1px solid $borderColor;
+    width:13vw;
+    font-size: .75rem;
+  }
+  .totalCases{
+    grid-area: total;
+    // grid-column: span 1;
+    // grid-row: span 1;
+    height:100px;
+    margin-left:1vw;
+    justify-self:center;
+    .topResult{
+      font-size: 2.6vmax;
+      padding: 0 0 20px 0;
+    }
+  }
+
+  .buttons{
+    grid-area: buttons;
+    justify-self:center;
+    height:100px;
+    // grid-column: 2/3;
+    // grid-row:2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    button{
+      width:100px;
+      margin: 3px 0 3px 0;
+      padding: 5px 0 5px 0;
+      border-radius: 5px;
+      border: 1px solid #000;
+      color: $textColorBright;
+      outline: none;
+      font-weight: bold;
+      background-color: $backgroundColor2;
+      &:hover{
+        cursor: pointer;
+        transform: scale(0.9);
+      }
+    }
+     .confirmed:hover{
+       color:#ffff00;
+     }
+     .deaths:hover{
+       color:red;
+     }
+     .recovered:hover{
+       color:#00ff00;
+     }
+   }
+
+  .casesPerCountry{
+    grid-area: casesPerCountry;
+    // grid-column: span 1/2;
+    // grid-row: span 1;
+    text-align: left;
+    margin-left:1vw;
+
+    h2{
+      text-align: center;
+    }
+    .countryContainer{
+      overflow:scroll;
+      height:48vh;
+
+      &::-webkit-scrollbar{
+        //background-color: $textColorDark;
+      }
+      div{
+        color:$textColorBright;
+        height:1.5rem;
+        padding: 10px 0 25px 20px;
+        border-bottom: 1px solid $borderColor;
+      }
+    }
+  }
+
+
+// -----------------------------------------------------------------------------
+//                                    MAP
+//------------------------------------------------------------------------------
+
+  #map{
+    grid-area: map;
+    align-self: center;
+    // grid-column: 3/4;
+    // grid-row: 2/4;
+    height: 100%;//calc(100px + 50vh);
+    width:700px;
+    border:2px solid black;
+  }
+
+// -----------------------------------------------------------------------------
+//                                UPDATE FOOTER
+//------------------------------------------------------------------------------
+
+  .update{
+    grid-area: update;
+    // grid-column: span 4;
+    // grid-row: span 1;
+    height:5vh;
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color:$textColorDark;
+  }
+} //end parenthesis of #grid-1
+
+.transition-1{
+  height:5vh;
+  background-image: linear-gradient(to bottom, $backgroundColorGrid-1, $backgroundColorGrid-2);
+}
+// -----------------------------------------------------------------------------
+//                            CHARTS SECTION / D3
+//------------------------------------------------------------------------------
+
+#grid-2{
+  background-color:$backgroundColorGrid-2;
+  color:$textColorBright;
+  display:grid;
+  height:100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content;
+
+  h2{
+    //grid-column: 1/4;
+    height:8vh;
+    font-size: 1.2rem;;
+  }
+  svg{
+    //grid-column: 1/2;
+    margin-left: 2vw;
+    justify-self:center;
+  }
+  // .testChart{
+  //   //height:100px;
+  //   width:1px;
+  //   background-color: yellow;
+  //   display: inline-block;
+  //   margin-right:2px;
+  //   //border: 1px solid tomato;
+  //   // .svg{
+  //   //   color: green;
+  //   //   border:10px solid white;
+  //   // }
+  // }
+}
+
+#grid-3, #grid-4, #grid-5{
+  height:100vh;
+  padding-top:4vh;
+  border: 2px solid tomato;
+}
+// -----------------------------------------------------------------------------
+//                            LIGHTMODE
+//------------------------------------------------------------------------------
+body{
+  transtion: background 300ms;
+  .light{
+    transition: background 300ms;
+  }
+}
+body.light{
+  background-color: $textColorBright;
+  .light{
+    background-color: white;
+    color:$backgroundColorGrid-1;
+  }
+  .fas {
+    color:$textColorBright;
+  }
+  label{
+    //background-color: white;
+  }
+}
