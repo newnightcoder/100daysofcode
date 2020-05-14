@@ -1,0 +1,800 @@
+$backgroundColor1:black;
+$backgroundColor2:#333333;
+$borderColor:#585858;
+$textColorBright:#bfbfbf;
+$textColorDark:#6f6f6f;
+$backgroundColorGrid-1:#777;
+$backgroundColorGrid-2:#c0c0c0;
+$backgroundColorGrid-4:#98c0e0;
+$backgroundColorGrid-5:#c0c0c0;
+$backgroundColorGrid-6:#b9d5b8;
+// $backgroundColorGrid-7:;
+$fontSizeTitles:.8rem;
+
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  font-family:
+  -apple-system,
+  BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
+
+
+  #grid-1{
+    height:100vh;
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    header{
+      position:absolute;
+      width:95vw;
+      background-color:black;
+      z-index:1;
+      border-radius:10px;
+      mix-blend-mode: multiply;
+      animation: banner 4000ms forwards;
+      text-align: center;
+
+      @keyframes banner{
+        0%{opacity:1;}
+        100%{opacity:.8;}
+      }
+
+      h1{
+        color:white;
+        border-top:1px solid white;
+        border-bottom:1px solid white;
+        text-align: center;
+        font-size:6em;
+        animation: h1 4000ms forwards;
+        text-shadow: 0 0 2px white;
+
+        @keyframes h1{
+          0%{
+            padding-top: 80vh;
+            padding-bottom:80vh;
+            opacity: 1;
+          }
+          100%{
+            padding-top:0;
+            padding-bottom:1vh;
+            opacity:.8;
+          }
+        }
+
+      i{
+        font-size:90px;
+        opacity:0;
+        animation: paragraph 300ms forwards;
+        animation-delay: 5000ms;
+        text-shadow: none;
+      }
+      .iconleft{
+        margin-right:1vw;
+      }
+      .iconright{
+        margin-left:1vw;
+      }
+
+      .covid{
+        opacity:0;
+        @keyframes title{
+          0% {opacity: 0;}
+          100% {opacity:1;}
+        }
+      }
+
+      .c{
+        animation: title 500ms forwards;
+        animation-delay: 800ms;
+      }
+      .o{
+        animation: title 2000ms forwards;
+        animation-delay: 1100ms;
+      }
+      .v{
+        animation: title 1500ms forwards;
+        animation-delay: 1400ms;
+      }
+      .i{
+        animation: title 1000ms forwards;
+        animation-delay: 1700ms;
+      }
+      .d{
+        animation: title 500ms forwards;
+        animation-delay: 2000ms;
+      }
+      .impact{
+        opacity: 0;
+        animation:impact 200ms forwards;
+        animation-delay: 3700ms;
+
+        @keyframes impact{
+          0% {opacity: 0;
+          }
+          50% {
+            text-shadow:0 0 20px;
+            transform: scale(.2);
+          }
+          100% {opacity:1;}
+        }
+      }
+    }
+
+      .laptops, .mobiles{
+        text-align: center;
+        margin-top: -6vh;
+        color:white;
+        font-size:20px;
+        text-transform: uppercase;
+
+        .span{
+          opacity:0;
+        }
+        .left{
+          animation: paragraph 300ms forwards;
+          animation-delay: 5000ms;
+        }
+        .mid{
+          animation: paragraph 300ms forwards;
+          animation-delay: 6000ms;
+        }
+        .right{
+          animation: paragraph 300ms forwards;
+          animation-delay: 7000ms;
+        }
+      }
+      .mobiles{
+        display:none;
+      }
+    }
+
+    @keyframes paragraph{
+    0%{opacity:0;}
+    100%{opacity:1;}
+    }
+
+    // main{
+    //   width:100%;
+    //   opacity:.5;
+    //   border-radius:10px;
+    //   margin:0;
+    //   background-color: dimgray;
+
+
+    .grid{
+      background-color: $backgroundColorGrid-1;
+      border-radius:10px;
+      display: grid;
+      height:100vh;
+      width:99%;
+      margin:0;
+      padding:0;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(10, 1fr);
+      grid-gap:1px;
+
+
+      .img1{
+        background: url("../img/1-bondi.png") no-repeat center/cover;
+        grid-column: span 2;
+        grid-row:span 2;
+        border-top-left-radius: 10px;
+      }
+      .img2{
+        background: url("../img/2-daily.png") no-repeat center/cover;
+        grid-column: span 1;
+        grid-row:span 2;
+      }
+      .img3{
+        background: url("../img/21-doctors.png") no-repeat center/cover;
+        grid-column: span 2;
+        grid-row:span 2;
+      }
+      .img4{
+        background: url("../img/airlines.png") no-repeat center/cover;
+        grid-column: span 1;
+        grid-row:span 1;
+      }
+      .img5{
+        background: url("../img/26-shi.png") no-repeat center/cover;
+        grid-column: span 2;
+        grid-row:span 1;
+      }
+      .img6{
+        background: url("../img/stay-home.png") no-repeat center/cover;
+        grid-column: span 1;
+        grid-row:span 1;
+      }
+      .img7{
+        background: url("../img/14-srilanka.png") no-repeat top/cover;
+        grid-column: span 3;
+        grid-row:span 3;
+        border-top-right-radius: 10px;
+      }
+      .img8{
+        background: url("../img/jobs.png") no-repeat center/cover;
+        grid-column: 8/9;
+        grid-row:span 1;
+      }
+      .img9{
+        background: url("../img/6-economist.png") no-repeat center/cover;
+        grid-column: span 1;
+        grid-row:span 2;
+      }
+      .img10{
+        background: url("../img/4-spiegel.png") no-repeat center/cover;
+        grid-column: 1/2;
+        grid-row:span 2;
+      }
+      .img11{
+        background: url("../img/5-pasadena.png") no-repeat center/cover;
+        grid-column: span 3;
+        grid-row:span 2;
+      }
+      .img12{
+        background: url("../img/3-cuomo.png") no-repeat center/cover;
+        grid-column: span 1;
+        grid-row:span 1;
+      }
+      .img13{
+        background: url("../img/centralpark.png") no-repeat left top/cover;
+        grid-column:  6/8;
+        grid-row:2/4;
+      }
+      .img14{
+        background: url("../img/22-paris.png") no-repeat center/cover;
+        grid-column: span 1;
+        grid-row:span 1;
+      }
+      .img15{
+        background: url("../img/7-dad.png") no-repeat center/cover;
+        grid-column: 5/7;
+        grid-row:4/6;
+      }
+      .img16{
+        background: url("../img/10-subway.png") no-repeat center/cover;
+        grid-column: span 4;
+        grid-row: span 2;
+      }
+      .img17{
+        background: url("../img/empty-subway.png") no-repeat center/cover;
+        grid-column: span 2;
+        grid-row: span 3;
+      }
+      .img18{
+        background: url("../img/8-cars.png") no-repeat center/cover;
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      .img19{
+        background: url("../img/9-macron.png") no-repeat center/cover;
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+      .img20{
+        background: url("../img/23-europe.png") no-repeat center/cover;
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+      .img21{
+        background: url("../img/12-toilet.png") no-repeat center/cover;
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      .img22{
+        background: url("../img/chart3.png") no-repeat center/cover;
+        grid-column: span 2;
+        grid-row: span 1;
+      }
+      .img23{
+        background: url("../img/stockex.png") no-repeat center/cover;
+        grid-column: span 2;
+        grid-row: span 1;
+      }
+      .img24{
+        background: url("../img/17-oil.png") no-repeat center/cover;
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      .img25{
+        background: url("../img/11-internazionale.png") no-repeat center/cover;
+        grid-column: span 1;
+        grid-row: span 2;
+      }
+      .img26{
+        background: url("../img/43- wc.png") no-repeat left/cover;
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+      .img27{
+        background: url("../img/16-newyorker.png") no-repeat center/cover;
+        grid-column: 5/7;
+        grid-row: span 4;
+      }
+      .img28{
+        background: url("../img/ireland.png") no-repeat center/cover;
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+      .img29{
+        background: url("../img/24-match.png") no-repeat center/cover;
+        grid-column: span 1;
+        grid-row: span 2;
+      }
+      .img30{
+        background: url("../img/18-newsweek.png") no-repeat center/cover;
+        grid-column: 11/13;
+        grid-row: span 4;
+        border-bottom-right-radius: 10px;
+      }
+
+      .img31{
+        background: url("../img/13-bolso.png") no-repeat center/cover;
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+
+      .img32{
+        background: url("../img/equator.png") no-repeat center/cover;
+        grid-column:span 2;
+        grid-row: span 3;
+      }
+
+      .img33{
+        background: url("../img/43- wc.png") no-repeat center/cover;
+        grid-column: 7/8;
+        grid-row: span 1;
+      }
+      .img34{
+        background: url("../img/queue.png") no-repeat center/cover;
+        grid-column:span 2;
+        grid-row: span 1;
+      }
+      .img35{
+        background: url("../img/19-paris.png") no-repeat center/cover;
+        grid-column:1/3;
+        grid-row: span 2;
+        border-bottom-left-radius: 10px;
+
+      }
+      .img36{
+        background: url("../img/20-support.png") no-repeat center/cover;
+        grid-column: span 3;
+        grid-row: span 2;
+      }
+      .img37{
+        background: url("../img/rails.png") no-repeat center/cover;
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+      .img38{
+        background: url("../img/italy.png") no-repeat center/cover;
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+    }
+
+  }
+
+#grid-2{
+  background-color: $backgroundColorGrid-1;
+  color: $textColorBright;
+  display:grid;
+  height:100vh;
+  border-radius:10px;
+  //border: 2px solid tomato;
+
+  grid-template-columns: min-content min-content 700px 1fr;
+  grid-template-rows: repeat(4, min-content);
+  grid-column-gap: 1vw;
+  grid-row-gap:2vh;
+  grid-template-areas: "header header header header"
+                        "total buttons map ."
+                        "casesPerCountry . map ."
+                        "casesPerCountry . map ."
+                        "update update update update";
+
+  header{
+    grid-area: header;
+    // grid-column: span 4;
+    // grid-row: span 1;
+    background-color:$backgroundColor2;
+    border: 1px solid $borderColor;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+
+    font-size: $fontSizeTitles;
+    color: $textColorBright;
+    line-height: 2rem;
+    height:100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+  h1{
+
+    .live::before{
+        content:"";
+        height:1em;
+        width:1em;
+        border-radius: 50%;
+        background-color: red;
+        position: absolute;
+        // top:0;
+        // left:0;
+      }
+}
+    label{
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $backgroundColorGrid-1;
+      height:22px;
+      width:52px;
+      border-radius: 50px;
+      position:absolute;
+      right:10px;
+      bottom:5px;
+      padding: 12px 3px;
+      i{
+        font-size: 20px;
+        color:$backgroundColor2;
+      }
+      .toggle{
+        height:22px;
+        width: 22px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        left:2px;
+        transition: transform 300ms;
+      }
+    }
+  }
+  input{
+    display: none;
+    &:checked + label .toggle{
+      transform: translateX(26px);
+    }
+  }
+
+
+  h2{
+    font-size: 1rem;
+  }
+  .deathNumbers{
+    color:red;
+  }
+  .confirmedNumbers{
+    color:#ffff00;
+  }
+  .recoveredNumbers{
+    color:#00ff00;
+  }
+  .total{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .totalCases, .casesPerCountry, .update{
+    background-color: $backgroundColor2;
+    border: 1px solid $borderColor;
+    width:13vw;
+    font-size: .75rem;
+  }
+  .totalCases{
+    // grid-column: span 1;
+    // grid-row: span 1;
+    grid-area: total;
+    margin-left:1vw;
+    height:100px;
+    justify-self:center;
+    border-radius:10px;
+
+    .topResult{
+      font-size: 2.6vmax;
+      padding: 0 0 20px 0;
+    }
+  }
+
+  .buttons{
+    // grid-column: 2/3;
+    // grid-row:2/3;
+    grid-area: buttons;
+    height:100px;
+    justify-self:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    button{
+      width:100px;
+      margin: 3px 0 3px 0;
+      padding: 5px 0 5px 0;
+      border-radius: 5px;
+      border: 1px solid #000;
+      color: $textColorBright;
+      outline: none;
+      font-weight: bold;
+      background-color: $backgroundColor2;
+      &:hover{
+        cursor: pointer;
+        transform: scale(0.9);
+      }
+    }
+     .confirmed:hover{
+       color:#ffff00;
+     }
+     .deaths:hover{
+       color:red;
+     }
+     .recovered:hover{
+       color:#00ff00;
+     }
+   }
+
+  .casesPerCountry{
+    // grid-column: span 1/2;
+    // grid-row: span 1;
+    grid-area: casesPerCountry;
+    margin-left:1vw;
+    border-radius:10px;
+    text-align: left;
+
+    h2{
+      text-align: center;
+    }
+    .countryContainer{
+      overflow:scroll;
+      height:48vh;
+
+      &::-webkit-scrollbar{
+        //background-color: $textColorDark;
+      }
+      div{
+        color:$textColorBright;
+        height:1.5rem;
+        padding: 10px 0 25px 20px;
+        border-bottom: 1px solid $borderColor;
+      }
+    }
+  }
+
+
+// -----------------------------------------------------------------------------
+//                                    MAP
+//------------------------------------------------------------------------------
+
+  #map{
+    // grid-column: 3/4;
+    // grid-row: 2/4;
+    grid-area: map;
+    height: 100%;//calc(100px + 50vh);
+    width:700px;
+    align-self: center;
+    border:2px solid black;
+    border-radius:10px;
+  }
+
+// -----------------------------------------------------------------------------
+//                                UPDATE FOOTER
+//------------------------------------------------------------------------------
+
+    .update{
+      // grid-column: span 4;
+      // grid-row: span 1;
+      grid-area: update;
+      height:5vh;
+      width: 100%;
+      font-size: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color:$textColorDark;
+    }
+  } //end parenthesis of #grid-1
+
+  .transition-1{
+    height:5vh;
+    background-image: linear-gradient(to bottom, $backgroundColorGrid-1, $backgroundColorGrid-2);
+  }
+// -----------------------------------------------------------------------------
+//                            CHARTS SECTION / D3
+//------------------------------------------------------------------------------
+
+#grid-3, #grid-4, #grid-5, #grid-6, #grid-7{
+  display:grid;
+  grid-template-columns:  1fr max-content 1fr;
+  grid-template-rows: min-content 50px max-content;
+  align-items: center;
+  justify-items:center;
+  height:100vh;
+  padding-top:2vh;
+  border-radius:10px;
+  position:relative;
+  width:100%;
+  //border: 2px solid tomato;
+  h3{
+    font-size:.8rem;
+    grid-column:1/4;
+    grid-row:1/2;
+    width:100%;
+    text-transform: uppercase;
+    color: white ;
+    text-align: center;
+    line-height: 1.5em;
+    background-color: #333;
+    border-radius: 10px;
+    padding:5px 5px;
+    mix-blend-mode: multiply;
+    div{
+      border-bottom:1px solid white;
+      margin-bottom:10px;
+    }
+  }
+  svg{
+    grid-column:2/3;
+    grid-row:3/4;
+    border-radius:10px;
+    background-color: #333;
+    opacity:1;
+  }
+}
+
+  #grid-3{
+    background:url("../img/air-atmosphere-background-beautiful-479333.jpg") no-repeat center/cover;
+    //background-color:$backgroundColorGrid-2;
+  h3{
+    width:80%;
+  }
+
+    .searchContainer{
+      grid-column: 2/3;
+      grid-row:2/3;
+      margin-left:1vw;
+      width:250px;
+      //height:480px;
+      //font-size:3em;
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      justify-content: center;
+      .input{
+        border-radius:5px;
+        border:1px solid lightgray;
+        width:80%;
+        height:20px;
+        margin-bottom:3vh;
+        font-size:.8rem;
+        outline:none;
+      }
+      .select{
+        outline:none;
+        width:80%;
+        height:20px;
+        font-size:.8rem;
+        outline:none;
+      }
+    }
+  .tick line{
+    opacity:.1;
+  }
+  .domain{
+      stroke:none;
+  }
+  .tooltip{
+    display: none;
+    position: absolute;
+    margin-top:20%;
+    height:70px;
+    width:150px;
+    border-radius: 5px;
+    color:$textColorDark;
+    box-shadow: 0 0 15px #333;
+    border:1px solid white;
+  }
+  .datesTooltip{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:40%;
+    width:100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #333;
+    color:$textColorBright;
+  }
+  .info{
+    background-color: rgba(211,211,211,.7);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:60%;
+    width:100%;
+    color:#292929;
+    position: relative;
+    line-height:1em;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    // &:after{
+    // content: "\25BC";
+    // position: absolute;
+    // bottom:-12px;
+    // left:75px;
+    // color:lightgray;
+    // z-index:-1;
+    // }
+    //border:1px solid yellow;
+    // justify-content: center;
+  }
+}
+
+    // .testChart{
+    //   //height:100px;
+    //   width:1px;
+    //   background-color: yellow;
+    //   display: inline-block;
+    //   margin-right:2px;
+    //   //border: 1px solid tomato;
+    //   // .svg{
+    //   //   color: green;
+    //   //   border:10px solid white;
+    //   // }
+    // }
+  // }
+
+
+  #grid-4{
+    background-color:$backgroundColorGrid-4;
+  }
+  #grid-5{
+    background-color:$backgroundColorGrid-5;
+  }
+  #grid-6{
+    background-color:$backgroundColorGrid-6;
+  }
+  // #grid-7{
+  //   background-color://$backgroundColorGrid-7;
+  // }
+}
+// -----------------------------------------------------------------------------
+//                            LIGHTMODE
+//------------------------------------------------------------------------------
+body{
+  transtion: background 300ms;
+  .light{
+    transition: background 300ms;
+  }
+}
+body.light{
+  background-color: $textColorBright;
+  .light{
+    background-color: white;
+    color:$backgroundColorGrid-1;
+  }
+  .fas {
+    color:$textColorBright;
+  }
+  label{
+    //background-color: white;
+  }
+}
