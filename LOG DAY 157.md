@@ -8,8 +8,9 @@ it made me realize that i have to be less of a perfectionnist and put less press
 the most important is to get to code everyday and keep the pace. the best is to do small projects and use what i learn for bigger projects, step by step.
 my covid dashboard was good, i did a nice job with the API etc.. but i hit a wall when i tried to implement a functionality i couldn't get to work, though i received great help...so i'll get back to it later. 
 for now, i need to start a new project and refresh my coding skills!!
-i feel energized and happy thanks to the all the support i received and i'm ready to get back to it!
+i feel energized and happy thanks to all the support i received and i'm ready to get back to it!
 as someone said: it's a MARATHON, not a SPRINT! so let's go!* 
+
 
 **what i did:**
 
