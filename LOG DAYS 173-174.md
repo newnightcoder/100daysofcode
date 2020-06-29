@@ -16,6 +16,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12777234583
   - Javascript Runtime Environment (JRE)
   - Lexical environment (LE)- Global environment (GE) - execution context - scope!
   - single threaded engine => callstack => event loop + callback queue
+  - JS APIs!!! fetch()! setTimeout() make even more sense now! (=> performance/time it takes to do that)
 - it is all so important to understand how the code works + how to better debug/understand problems!!! have to lkeep learning and get more and more familiar with all those new notions.
 
 **next:**
