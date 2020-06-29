@@ -12,9 +12,10 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12777234583
 **what i learned**
 
 - **navigator.geolocation.getCurrentPosition(position => console.log(position))** : AWESOME!!! (position as an object where coords are accessible!)
-- refresh: fetch! i want to learn how to use async / await now. urgent!
-- i felt confident trying different things with my own code and finally everything worked fine! i know i'll have to REFACTOR A LOT!!! but later. for now, i have to finish.
-- so much more about how JS works under the hood (Javascript Runtime Environment JRE / LE-GE / single threaded engine / callstack / event loop + callback queue)
+- so much more about how JS works under the hood 
+  - Javascript Runtime Environment (JRE)
+  - Lexical environment (LE)- Global environment (GE) - execution context - scope!
+  - single threaded engine => callstack => event loop + callback queue
 - it is all so important to understand how the code works + how to better debug/understand problems!!! have to lkeep learning and get more and more familiar with all those new notions.
 
 **next:**
