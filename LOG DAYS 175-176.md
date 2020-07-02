@@ -10,7 +10,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12785516405
 - updated the clock!!! it's now 100% real/dynamic (i hadn't noticed/thought about the fact that it was the always same time on screen from window load until browser refresh!!! i finally noticed it and could fix it with a setInterval(() => {timefunction();}, 1000))!!! really cool.
 - researched about BUTTONS and that was a bad idea / i have to switch back to a navbar (of course)
 - which made me research SPAs and how to best do it!! not easy, but i could find a nice way on stackoverflow/jsfiddle!
-- A LOT of learning : i started my first course ever!!! (Colt Steele'JS Bootcamp bought on Udemy + Will Sentance's JS hard parts :WOW!!!)
+- A LOT of learning : i started my first course ever!!! (Colt Steele'JS Bootcamp bought on Udemy + Will Sentance's JS hard parts: WOW!!!)
 
 
 **what i learned**
