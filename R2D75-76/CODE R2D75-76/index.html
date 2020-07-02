@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <link href="owm-font/css/owfont-regular.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9209397972.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment-with-locales.min.js"></script>
+  <title>To Do List</title>
+</head>
+<body>
+
+
+
+
+  <main id="container">
+
+    <section id="header">
+
+      <div class="options">
+        <div class="toggleMode">
+          <input type="checkbox" class="input" id="input">
+          <label for="input" class="label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <div class="toggle"></div>
+          </label>
+        </div>
+        <button class="home-btn"><i class="fas fa-home"></i></button>
+        <button class="bg-img-btn"><i class="far fa-image"></i></button>
+        <button class="weather-btn"><i class="fas fa-cloud-sun"></i></button>
+        <button class="pomodoro-btn"><i class="far fa-hourglass"></i></button>
+        <i id="refreshButton" class="fas fa-sync-alt"></i>
+      </div>
+
+      <div class="date-and-time">
+        <div class="date"></div>
+        <div class="time"></div>
+      </div>
+
+    </section>
+
+    <section id="home" class="dark">
+      <h4 class="title">TO DO
+        <p class="items-counter">Welcome to your to-do list&excl;</p>
+      </h4>
+      <ul id="list"></ul>
+    </section>
+
+    <section id="add-item">
+
+      <div class="inputArea">
+        <!-- <i class="fas fa-plus"></i> -->
+        <input id="addInput" type="text" placeholder=" Add a to-do&period;&period;&period;" >
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="28" height="28"
+        viewBox="0 0 172 172"
+        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#003da2"><path d="M86,17.2c-37.9948,0 -68.8,30.8052 -68.8,68.8c0,37.9948 30.8052,68.8 68.8,68.8c37.9948,0 68.8,-30.8052 68.8,-68.8c0,-37.9948 -30.8052,-68.8 -68.8,-68.8zM120.4,91.73333h-28.66667v28.66667c0,3.17053 -2.56853,5.73333 -5.73333,5.73333c-3.1648,0 -5.73333,-2.5628 -5.73333,-5.73333v-28.66667h-28.66667c-3.1648,0 -5.73333,-2.5628 -5.73333,-5.73333c0,-3.17053 2.56853,-5.73333 5.73333,-5.73333h28.66667v-28.66667c0,-3.17053 2.56853,-5.73333 5.73333,-5.73333c3.1648,0 5.73333,2.5628 5.73333,5.73333v28.66667h28.66667c3.1648,0 5.73333,2.5628 5.73333,5.73333c0,3.17053 -2.56853,5.73333 -5.73333,5.73333z"></path></g></g></svg>
+      </div>
+      <div class="userWarning userWarningAnim"></div>
+
+    </section>
+
+    <section id="pomodoro" class="dark">
+      <h4 class="title">POMODORO APP
+        <p class="pomo-message">Welcome to your Pomodoro app&excl;</p>
+      </h4>
+      <div class="pomodoro"></div>
+    </section>
+
+    <section id="calculator" class="dark">
+      <h4 class="title">POCKET CALCULATOR</h4>
+      <div class="calculator"></div>
+    </section>
+
+    <section id="weather" class="dark">
+      <h4 class="title">WEATHER
+        <p class="items-counter">What's it like outside&quest;</p>
+      </h4>
+      <div class="weather">
+        <!-- <div class="error"></div> -->
+        <!-- <div class="wrapper"> -->
+          <!-- <div class="weatherIcon"></div> -->
+          <!-- <div class="description"></div> -->
+        <!-- </div> -->
+        <!-- <div class="temp"></div> -->
+        <!-- <div class="location"></div> -->
+      </div>
+    </section>
+
+
+
+
+
+
+
+  </main>
+
+
+
+  <script src="app.js"></script>
+</body>
+</html>
