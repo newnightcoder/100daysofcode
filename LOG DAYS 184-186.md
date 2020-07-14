@@ -16,7 +16,7 @@ link to my daily tweets [here](https://twitter.com/Nightcoder2/status/1282413601
   - CSS calc() with SASS variables: #{ $variable } + or - etc.... 
   - adding variable class to an element using template literal, awesome!!! class = ${variable} 
   - SPA behaviour thanks to html a tags (links) + :target : of course! (but some JS is needed as well in my case)
-  - how to deal with url on page refresh/reload!!! i now know it's possible and found a great [gist] (https://gist.github.com/azu/36ba5a80feb857c77a3a) 
+  - how to deal with url on page refresh/reload!!! i now know it's possible and found a great (gist) [https://gist.github.com/azu/36ba5a80feb857c77a3a]
   - use of parseInt() or Number() to convert a string to a number!! parseInt takes 2 arguments: the string and the radix (mathematical base, here and in general: 10).
 
 
