@@ -6,7 +6,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12846250101
 **what i did:**
 
 - i decided to try to code for a STARFIELD using objects/OOP and it worked!!! i was inspired by [this video](https://www.youtube.com/watch?v=17WoOqgXsRM) of Daniel Schiffman where he does it with Processing (Java). it's amazing.
-- i jumped ot the object part of Colt Steele's course.
+- i jumped to the object part of Colt Steele's course.
 
 **what i learned**
 
