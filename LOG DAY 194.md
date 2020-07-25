@@ -18,5 +18,5 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12868506997
 
 **next:**
 
--calculator?
+- calculator?
 - welcome screen for pomodoro + calculator
