@@ -1,6 +1,6 @@
 **LOG R2D100** (01/08/20)
 
-link to my daily tweet [here]()
+link to my daily tweet [here](https://twitter.com/Nightcoder2/status/1289647333471207430)
 
 **WHERE AM I ON THE ROAD TO BECOME A FRONT-END DEV? (PRE-REACT EVALUATION)**
 
