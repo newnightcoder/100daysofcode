@@ -39,15 +39,16 @@ link to my daily tweet [here]()
     * a lot of JS!!! but it will come i'm confident for that. (but i still have so much to cover for real, from destructuring to nice beautiful OOP etc...)
     * use of **CLI** !!! ALL THE TIME - especially for github
     * git/github : 
-      * **commit everything on github with CLI only** - really use and explore it. = no more github desktop (except for the 100DaysOfCode repo? we'll see lol)
-      * try to spend more time on github in general... 
+         * **commit everything on github with CLI only** - really use and explore it. = no more github desktop (except for the 100DaysOfCode repo? we'll see lol)
+         * try to spend more time on github in general... 
 
 
 **GOALS FOR ROUND 3:**
 
 * Learn React
-* Follow the courses (Deep Understanding + JS Colt Steele)
+* Follow/finish the courses (Dev Theory's Deep Understanding + Colt Steele's JS course + my usual go-to youtubers)
 * Learn how to connect a database
+* Try beginner stuff with node.js too!!!
 * Learn/practice algoryhm exercises 
 * Start working on the portfolio!
 * Try and make a blog.
