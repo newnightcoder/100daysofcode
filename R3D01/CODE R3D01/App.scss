@@ -1,0 +1,171 @@
+@import "~bootstrap/scss/bootstrap";
+
+@mixin flex{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+*{
+    margin:0;
+}
+.App{
+    height:100vh;
+    width:100vw;
+    background-color:#F5F5F5;
+    /* display:grid; */
+    
+}
+
+/* Header */
+
+.header{
+    background-color: #2196F3	;
+    color:white;
+    height:50vh;
+    border-top-left-radius:5px;
+    border-top-right-radius: 5px;
+    position: relative;
+    @include flex;
+    justify-content: space-evenly;
+
+    .logo{ 
+        background: url('img/nightcoder.jpg') no-repeat center/cover;
+        border-radius:10px;
+        margin:0;
+        border: 1px solid #6c757d;
+        height:85%;
+        width:280px;
+    }
+    
+
+
+/* Form  */
+
+    .form{
+        @include flex;
+        align-items: flex-end;
+        text-align:left;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        height: 90%;
+        width: 70%;
+        background: #2196F3;  /* fallback for old browsers */
+        h1{
+            text-align: center;
+            font-size: 3.25em;
+            font-weight: bold;
+            position:absolute;
+            top: 15%;
+        }
+        .form-group{
+            width:100%;
+            .form-control{
+                margin-bottom:.75rem;
+            }
+        }
+        
+    }
+}
+
+/* List */
+.list-container{
+    background-color:#F5F5F5;
+    padding-bottom:5vh;
+}
+
+ul{
+    list-style-type: none;
+    padding:0;
+}
+
+.list-title{
+    color:#6c757d;
+    list-style-type:none;
+    text-align: center;
+    padding: 5vh;
+    /* animation: comein 200ms forward; */
+    &::after{
+        content:"";
+        width:100px;
+        border-bottom: 2px solid rgba(200,200,200, .5);
+        display: block;
+        margin: 2vh auto;
+        //padding-bottom: 5vh;;
+    } 
+}
+
+.list-container{
+    position: relative;
+}
+
+.todo-counter{
+    width:50%;
+    height:5vh;    
+    text-align:center;
+    @include flex;
+    margin: -5vh auto 3vh;
+    font-style: italic;
+}
+li{
+@include flex;
+width:100%;
+}
+.todo{
+    height:6vh;
+    width:70%;
+    @include flex;
+    justify-content: flex-start;
+    border-radius:3px;
+    background-color:white;
+    color:black;
+    border: 1px solid lightgray;
+    border-radius:5px;
+    padding:.5em 1em;
+    margin:.5em 1em .5em 0;
+    position: relative;
+    &:hover{
+        cursor:text;
+    }
+    // &::after{
+    //     content:"";
+    //     display: block;
+    //     height:6vh;
+    //     border-left:1px solid rgba(200,200,200, .5);
+    //     position:absolute;
+    //     right:4em;
+    // }
+
+}
+
+
+.check, .trash{
+    @include flex;
+    height:6vh;
+    width:3em;
+    color:rgba(62, 69, 81, 0.3);
+    background-color: white;
+    border:1px solid lightgray;
+    border-radius:3px;
+    margin-right:.5em;
+    &:hover{
+        cursor:pointer;
+        color:rgba(0, 0, 0, 0.7);
+    }
+}
+
+
+//footer
+footer{
+    width:100%;
+    height:3vh;
+    font-size:.75rem;
+    position:fixed;
+    bottom:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-top:1px solid rgba(200,200,200, .7);
+}
