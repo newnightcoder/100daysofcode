@@ -10,7 +10,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12905058724
 
 **what i learned:**
 
-SO MUCH lol!!! it's extraordinary. and not that hard sofar!!!
+SO MUCH lol!!! it's extraordinary and not that hard sofar!!!
 
 
  - the goal/"mindset" of React - why it is so useful!
@@ -27,7 +27,8 @@ SO MUCH lol!!! it's extraordinary. and not that hard sofar!!!
 
 - JS :
     - omg i got to use my first **spread operator**!!! it makes so much sense now: it's just a **copy of the array**!!!! a freaking copy!!! hahaha!!! the secret is: 
-    ```array.slice() is the same as [...array]
+    ```
+    array.slice() is the same as [...array]
    ``` 
     - the **.unshift() method** !!!! to push at the beginning of the array (whereas .push() pushes at the end of the array). i discovered .unshift() on google because i wanted to make a better UI for my to-do list and was wondering if there was a method to push **to the beginning** of the array. and yes!!! JS is perfect.
 
