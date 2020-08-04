@@ -5,7 +5,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12905058724
 
 **what i did:**
 
-- i started learning REACT!!! + building my to-do app with it!!! my goal is to deliver an MVP version of this to-do app asap. the "perfectionnist" mindset has to be over NOW.
+- i started learning REACT!!! + building my to-do app with it!!! my goal is to deliver an MVP version of this to-do app asap. 
 - i also started using css libraries!!! react-bootstrap and mdbicons for now.
 
 **what i learned:**
