@@ -10,7 +10,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12908636093
 
 **what i learned:**
 
-- ** destructuring** : like in setState({ todos }) !!!
+- **destructuring** : like in setState({ todos }) !!!
 - .findIndex() method!!
 - dynamic "inline" style with logic!!! 
 ```
@@ -39,9 +39,7 @@ style={{
 - scrollable div
 - darkmode
 - ~check and delete functionalities of the todo app.~
-
 +
-
 - refactor code to **create COMPONENTS**
 - commit files or code to github via terminal. 
 
