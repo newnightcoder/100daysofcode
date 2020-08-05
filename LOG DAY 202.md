@@ -39,7 +39,7 @@ style={{
 - scrollable div
 - darkmode
 - ~check and delete functionalities of the todo app.~
-+
+                       +
 - refactor code to **create COMPONENTS**
 - commit files or code to github via terminal. 
 
