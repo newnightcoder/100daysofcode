@@ -1,0 +1,75 @@
+/* List */
+@mixin flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-container {
+  background-color: #f5f5f5;
+  padding-bottom: 5vh;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-title {
+  color: #6c757d;
+  text-align: center;
+  padding: 5vh;
+  &::after {
+    content: "";
+    display: block;
+    width: 100px;
+    border-bottom: 2px solid rgba(200, 200, 200, 0.5);
+    margin: 2vh auto;
+  }
+}
+
+.todo-counter {
+  height: 5vh;
+  width: 50%;
+  @include flex;
+  margin: -5vh auto 3vh;
+  font-style: italic;
+}
+
+li {
+  @include flex;
+  width: 100%;
+
+  .todo {
+    height: 6vh;
+    width: 70%;
+    @include flex;
+    justify-content: flex-start;
+    color: black;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    margin: 0.5em 1em 0.3em 0;
+    &:hover {
+      cursor: text;
+    }
+  }
+
+  .check,
+  .trash {
+    @include flex;
+    height: 6vh;
+    width: 3em;
+    color: rgba(62, 69, 81, 0.3);
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    margin-right: 0.5em;
+    &:hover {
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+}
