@@ -21,15 +21,12 @@ if (string.trim().length === 0) return;  //same as: if(string === '') return
 **next:**
 
 - continue with props + more refactoring?
-
 - implement localstorage
 - animations
 - scrollable div
 - darkmode
-
 - ~refactor code to **create COMPONENTS**~
 - ~check and delete functionalities of the todo app.~
-
 - commit files or code to github via terminal. 
 
  
