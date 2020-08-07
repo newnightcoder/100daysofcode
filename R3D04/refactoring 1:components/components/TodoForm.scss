@@ -1,0 +1,35 @@
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  @include flex;
+  justify-content: center;
+  background-color: #2196f3;
+  color: white;
+  min-height: 22vh;
+  width: 100%;
+  position: fixed;
+  bottom: 2.5vh;
+
+  .form {
+    height: 90%;
+    width: 70%;
+
+    .form-group {
+      margin: 0;
+
+      .label {
+        font-size: 1.25rem;
+      }
+      .input:focus {
+        box-shadow: none;
+      }
+      .form-control {
+        margin-bottom: 0.75rem;
+      }
+    }
+  }
+}

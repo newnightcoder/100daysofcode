@@ -1,0 +1,28 @@
+.header {
+  min-height: 15vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6c757d;
+  color: white;
+  font-size: 3.25rem;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+h1 {
+  z-index: 2;
+}
+
+.logo {
+  background: url("../img/nightcoder.jpg") no-repeat center/cover;
+  border-radius: 10px;
+  margin: 0;
+  border: 1px solid #6c757d;
+  height: 85%;
+  width: 180px;
+  position: absolute;
+  left: 2vw;
+}
