@@ -10,7 +10,8 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12919660873
 **what i learned:**
 
 - React **component lifecycle** methods: componentDidUpdate, componentDidMount and more on the React doc [here](https://reactjs.org/docs/state-and-lifecycle.html)
-BUT: thos methods only work for class components => i will need to use hooks like useState() for real very soon i think!
+
+BUT: those methods only work for class components => i will need to use hooks like useState() for real very soon i think!
 - instead of :
 ```
 const todos = [...this.state.todos]
@@ -25,7 +26,7 @@ setState({ todos })
 - i learned more about jsx and everything that's possible in React (for example : **conditional components with ternary operator**):
 ```
 <div>
- {this.state.data.arrayMethod() 
+ {this.state.data.filter(blabla) 
  ? ( <div>conditional div!</div> )
  : null 
  }
