@@ -12,6 +12,7 @@ awesome discovery, enjoyed the night a lot, but it took me time to figure out so
 - sunday night: i chose a topic and wrote my 1st blog post!!! to just to push myself to start doing it for real and creating the habit, as i want to have it! to write at least every week.
 it took the whole night and some hours, organising everything, cutting/adding/editing etc... i guess it took so long because it was my 1st post and i just jumped into it! from now on i know how it looks/feels like, so i can be more concise or pick a less general topic etc...
 anyways: GREAT experience. i feel super happy!!! it's a mini achievement right there! lol
+LINK [HERE](https://dev.to/nightcoder/what-is-the-local-storage-how-to-use-it-369c) 🤩
 
 
 **what i learned:**
