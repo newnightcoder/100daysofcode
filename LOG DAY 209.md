@@ -8,7 +8,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12934024694
 - i rewrote the code with better components/better "architecture" i think. they're all functional (app.js as well) so i could use the useState hook (instead of this.setState()!!)
 and it works so nicely, also a great occasion to practice destructuring.
 - in the process, while everything else is rendered properly, there's no todo.task inside the li, eventhough i pass in the todo prop! weird. have to debug tomorrow absolutely.
-- also cool: i did all the styling as CSS-in-JS with syled components! (except for library components (MDBreact) that i styled inline. wonder if the mix of both practices on the same file is okay.. but i'll figure it out asap)
+- also cool: i did all the styling as CSS-in-JS with styled components! (except for library components (MDBreact) that i styled inline. wonder if the mix of both practices on the same file is okay.. but i'll figure it out)
 
 
 **what i learned:**
