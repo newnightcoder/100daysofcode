@@ -1,0 +1,132 @@
+import React, { useState } from "react";
+import Header from "./components/Header";
+import List from "./components/List";
+import Form from "./components/Form";
+import Footer from "./components/Footer";
+import styled from "styled-components";
+
+const Container = styled.div`
+  background-color: lightblue;
+  height: 100vh;
+  width: 60vw;
+  display: grid;
+  grid-template-rows: 12vh 1fr 10vh max-content;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: scroll;
+`;
+
+const App = () => {
+  const [todos, setTodos] = useState([]);
+  // const [todosToDisplay, setTodosToDisplay] = useState("all");
+
+  const addItem = (todo) => {
+    const updatedTodos = [...todos];
+    updatedTodos.unshift(todo);
+    setTodos(updatedTodos);
+  };
+  const log = () => {
+    console.log("app level array:", todos);
+  };
+
+  return (
+    <Container>
+      <Header />
+      <List todos={todos} />
+      <Form addItem={addItem} log={log} />
+      <Footer />
+    </Container>
+  );
+};
+
+export default App;
+
+// import React, { Component } from "react";
+// import Header from "./components/Header";
+// import TodoForm from "./components/TodoForm";
+// import Todo from "./components/Todo";
+// import Footer from "./components/Footer";
+// import { MDBBtn, MDBBtnGroup } from "mdbreact";
+// // import ReactShadowScroll from "react-shadow-scroll";
+// import "mdbreact/dist/css/mdb.css";
+// import "./App.scss";
+
+// class App extends Component {
+//   state = {
+//     todos: [],
+//     todosToShow: "all",
+//   };
+
+//   addItem = (todo) => {
+//     const todos = [todo, ...this.state.todos];
+//     this.setState({
+//       todos,
+//     });
+//   };
+
+//   checkItem = (id) => {
+//     const todos = [...this.state.todos];
+//     todos.forEach((todo) => {
+//       if (todo.id === id) {
+//         todo.done = !todo.done;
+//       }
+//     });
+//     this.setState({ todos });
+//   };
+
+//   deleteItem = (id) => {
+//     const todos = [...this.state.todos];
+//     const index = todos.findIndex((todo) => todo.id === id);
+//     console.log(index);
+//     todos.splice(index, 1);
+//     this.setState({ todos });
+//   };
+
+//   componentDidMount() {
+//     const todoStorage = JSON.parse(localStorage.getItem("todoStorage"));
+//     if (todoStorage) this.setState({ todos: todoStorage });
+//   }
+//   componentDidUpdate() {
+//     localStorage.setItem("todoStorage", JSON.stringify(this.state.todos));
+//   }
+
+//   clear = () => {
+//     const todoStorage = JSON.parse(localStorage.getItem("todoStorage"));
+//     localStorage.clear();
+//     this.setState({ todos: todoStorage });
+//   };
+//   render() {
+//     return (
+//       <div className="App">
+//         <Header />
+//         <div className="list-container">
+//           <h2 className="list-title">Let's get some work done!</h2>
+//           <div className="todo-counter">
+//             You have {this.state.todos.filter((todo) => !todo.done).length}{" "}
+//             things to do.
+//           </div>
+//           <MDBBtnGroup size="sm" className="mb-4" style={{ border: "none" }}>
+//             <MDBBtn color="none">display todos</MDBBtn>
+//             <MDBBtn color="none">show completed</MDBBtn>
+//             <MDBBtn color="none">delete completed</MDBBtn>
+//             <MDBBtn color="none">delete all</MDBBtn>
+//           </MDBBtnGroup>
+//           <div className="btn-toolbar mb-4" role="toolbar"></div>
+//           <ul>
+//             {this.state.todos.map((todo) => (
+//               <Todo
+//                 style={{ animation: "appear 500ms forwards" }}
+//                 todo={todo}
+//                 deleteItem={this.deleteItem}
+//                 checkItem={this.checkItem}
+//               />
+//             ))}
+//           </ul>
+//         </div>
+//         <TodoForm addItem={this.addItem} />
+//         <Footer />
+//       </div>
+//     );
+//   }
+// }
+// export default App;
