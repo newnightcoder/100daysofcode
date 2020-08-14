@@ -5,8 +5,8 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/12941157868
 
 **what i did:**
 
-- i could find and fix the issue i had with todo.task renderding: cool
-- i tried to implement the filter buttons with useState (but i'm not sure of the approach to take... even with the MDN explanation [here](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_filtering_conditional_rendering)) 
+- i could find and fix the issue i had with todo.task rendering: cool!
+- i tried to implement the filter buttons with useState (but i'm not sure of which approach to take... even with the MDN explanation [here](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_filtering_conditional_rendering)) 
 - i discovered useReducer, which makes sense for what i'm trying to do but it's more complicated... i have kind of a result sofar but it's not working well.
 
 **what i learned:**
