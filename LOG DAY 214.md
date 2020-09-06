@@ -7,14 +7,15 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/13024948970
 
 - i could finally fully implement the FILTER functionalities for the todo-app!!! 
 - i dived into react-spring and could animate the todos!!! but only working when todos are mounted, not when unmounted (deleted)....
- - i started with the useSpring react-spring hook but didn't work really work as need (it worked like @keyframes with CSS, animating the LAST item of the list, not the dynamically added todo)
- - then i got to useTransition and it worked!! almost...  
+  - i started with the useSpring react-spring hook but didn't work really work as need (it worked like @keyframes with CSS, animating the LAST item of the list, not the dynamically added todo)
+  - then i got to useTransition and it worked!! almost...  
 - tried some options for the overall design (subtitle as pseudo-element etc...) 
 
 **what i learned:**
 
 - better inline style :
-```const styling = { } ; 
+```
+const styling = { } ; 
 //in component - inline:
 style = {styling}
 ```
