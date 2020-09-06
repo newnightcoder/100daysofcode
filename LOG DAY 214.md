@@ -54,7 +54,7 @@ return transition.map(({item, props, key}) => <animated.component />) // or <ani
 - ~continue with props + more refactoring to make **functional compononents**~
 - ~refactor code to **create COMPONENTS**~
 - ~check and delete functionalities of the todo app.~
-- ~finish FILTER FUNCTIONALITY (either with useState, useReducer or back to class component)~ : done with useState: at App level: ```const [todosToDisplay, setTodosToDisplay] = useState("all");``` + display function passed as prop to the List / at List level: ``` let filteredTodos=[]``` + conditional + in the render/return, to generate the todos: instead of todos.map, filteredTodos.map = no need to setState(filteredTodos), i just map over the filteredTodos array!!!
+- ~finish FILTER FUNCTIONALITY (either with useState, useReducer or back to class component)~ : done with useState: at App level: ```const [todosToDisplay, setTodosToDisplay] = useState("all");``` + display function (with string parameter) passed as prop to the List / at List level: ``` let filteredTodos=[]``` + conditional + in the render/return, to generate the todos: instead of todos.map, filteredTodos.map = no need to setState(filteredTodos), i just map over the filteredTodos array!!!
 
 
 - commit files or code to github via terminal. 
