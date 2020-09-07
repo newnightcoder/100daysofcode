@@ -8,7 +8,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/13028818984
 - i tried to fix the react-spring leave issue but couldn't figure out how yet...
 - i'm trying to implement the buttons as a toggle component!! almost there, it's teaching me a lot. 
 - A LOT OF STYLING!!! and it took a long part of the night too lol. ideas/design take time, trying different options, grid or flex, what background etc...
-now it feels ready!!!
+now it feels ready!
 
 
 **what i learned:**
