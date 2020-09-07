@@ -10,6 +10,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/13028818984
 - A LOT OF STYLING!!! and it took a long part of the night too lol. ideas/design take time, trying different options, grid or flex, what background etc...
 now it feels ready!!!
 
+
 **what i learned:**
 
 - how to implement a **toggle** component (toggle group) with: useState + ```const types =["button1", "button2", "button3"]``` + ```types.map((type) => <btn>{type}</btn>)```
@@ -22,7 +23,7 @@ function NewComponent = () => {
 ```
 and then in rendering: ```<NewComponent />```. i "knew" it, did it earlier but did not fully grasp all it can do!!! awesome really. 
 - i feel better and better trying things with React
-- 
+
 
 **next:**
   
