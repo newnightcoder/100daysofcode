@@ -1,4 +1,4 @@
-**LOG R3D15** (06/09/20)
+**LOG R3D15** (07/09/20)
 
 link to my daily tweet [here](https://twitter.com/Nightcoder2/status/1302881898470006785)
 
