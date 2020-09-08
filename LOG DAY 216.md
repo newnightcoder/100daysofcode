@@ -12,7 +12,8 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/13028818984
 **what i learned:**
 - **toggle buttons**: active state!!! as a component attribute: ```active = { active === type }``` + onClick: ```setActive(type)```
 - how to create a theme:
-```const theme = {
+```
+const theme = {
    blue: {
       default : "lightblue"
       hover : "darkblue"
