@@ -1,6 +1,6 @@
 **LOG R3D16** (08/09/20)
 
-link to my daily tweet [here](https://twitter.com/Nightcoder2/status/1302881898470006785)
+link to my daily tweet [here](https://twitter.com/Nightcoder2/status/1303218608353480704)
 
 
 **what i did:**
