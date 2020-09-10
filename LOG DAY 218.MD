@@ -23,11 +23,11 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/13039574105
 **next:**
   
 - FINISH STYLING THE APP!!! 
+  - **MEDIA QUERIES!!!**
   - counter conditionals
   - label down/out of focus
   - submit button hover
   - darkmode ??
-  - **MEDIA QUERIES!!!**
 
   ~- animations*~
    ~- FIX button bugs!!! 1- find out how to fix the onClick filter behaviour!! 2- find how to get the right color when active~
