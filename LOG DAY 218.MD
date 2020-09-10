@@ -12,7 +12,9 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/13039574105
 
 - how to handle state within styled.component!!! (import {css}):
   - within styled-component: destructuration of "active" state + add "css" before the `
-  ```${ ({ active }) } => active && css` ${props => theme[props.theme].active} ` ```
+  ```
+  ${ ({ active }) } => active && css` ${props => theme[props.theme].active} ` 
+  ```
 - more about react-spring!!!
 - how to customize material-UI
 - create functional component WITHIN another component
