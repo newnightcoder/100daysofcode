@@ -11,7 +11,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/13039574105
 **what i learned:**
 
 A LOT!
-- ```${ ({ state }) } => active && css` //css code here```
+- ```${ ({ state }) } => active && css` etc ` ```
 
 **next:**
   
