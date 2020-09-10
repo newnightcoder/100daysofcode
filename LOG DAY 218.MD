@@ -5,7 +5,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/13039574105
 
 **what i did:**
 
-- i found the way to fix the react-spring issue!!! ("merge" <Todo/> within <List/> and not have it as a separate component)
+- i found the way to fix the react-spring issue!!! ("merge" ```<Todo/>``` within ```<List/>``` and not have it as a separate component)
 - i also fixed the ACTIVE state problem!!! the list is done!!! super happy!!!
 
 **what i learned:**
