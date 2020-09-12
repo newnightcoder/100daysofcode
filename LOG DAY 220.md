@@ -6,7 +6,8 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/13046793462
 **what i did:**
 
 - not much time to code because back at the hotel for the 1st night with clients since covid...
-- i worked on the media queries and it's working except for certain phones (chrome devtools): iPhones 6,7,8 and X (it works with 6,7,8S series), galaxyS5.. investigating that!
+- i worked on the media queries and it's working so nicely!!! except for certain phones (chrome devtools): iPhones 5, SE, 6,7,8,X, galaxyS5, Moto G4. But it works with iPhones Plus series, pixel phones etc...
+investigating that!
 
 
 **next:**
