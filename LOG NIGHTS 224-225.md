@@ -13,6 +13,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/13064934130
 
 - sofar, that there were problems in my grid layout! (position fixed + grid-row:1 isn't possible! wtf was i thinking???)
 i'll have to design the layout first, and then implement the functironalities, for the next project!
+- big difference between 100vh and 100% !!!
 
 **next:**
   
