@@ -12,9 +12,9 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/13072215272
 **what i learned:**
 
 - how to fetch in React: (3 steps!!!):
-  - declare/write fetch function with the data i need (async/await, destructuration possible etc...) -  did it in api/index.js (within src folder)
-  - call the function in class component in componentDidMount lifecycle method (async function: `async ComponentDidMount` etc...)
-  - use state to store the data and pass it as props: `state = { data :{} }` + `this.setState({data : fetchedDate})` in componentDidMount function 
+  - 1. declare/write fetch function with the data i need (async/await, destructuration possible etc...) -  did it in api/index.js (within src folder)
+  - 2. call the function in class component in componentDidMount lifecycle method (async function: `async ComponentDidMount` etc...)
+  - 3. use state to store the data and pass it as props: `state = { data :{} }` + `this.setState({data : fetchedDate})` in componentDidMount function 
 - AXIOS is great and easy to use! it takes care of the response.json() and is supported by all browsers
 `axios.get()` does the http request!
 - how to **format numbers with Intl.NumberFormat**: `new Intl.NumberFormat('fr FR').format(number)` will put space between 3 consecutive digits
