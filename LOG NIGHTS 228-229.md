@@ -16,13 +16,14 @@ but super happy it's finally working!!!!
 `data.map( ({country}) => <div>{country}</div> )` 
 or
 `data.map( ({countryInfo}) => <img src={countryInfo.flag)}/> )`    
-- how to really write a fetch function / async await better / handle data and state!!
+- how to better write async await fetch function 
+- practice of how to handle data and state!!! that's really cool! i do get it for real! it's really "easy" at the end of the day.
 
 **next:**
 
 - the SEARCH filter!! or SELECT ?
 - interactivity with the list of countries!!
-~- countries component!!! list or table~ 
+- ~countries component!!! list or table~ 
 
 
 
