@@ -10,7 +10,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/13086854459
 
 **what i learned:**
 
-- more practice of state management both in class component and with useState, i'm really getting used to it, even if sometimes it takes timi for me to find the missing part, i fully understand the principle/how it works!!!
+- more practice of state management both in class component and with useState, i'm really getting used to it, even if sometimes it takes time for me to find the missing part, i fully understand the principle/how it works!!!
 - useState with boolean is really easy! (cf darkmode of the todo app etc...)
 
 **next:**
