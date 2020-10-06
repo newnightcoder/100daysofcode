@@ -13,7 +13,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/13133588484
 **what i learned:**
 
 - what hacktoberfest is!!! i want to take part.
-- NODE.js and what EXPRESS is (thanks to [coding garden](https://coding.garden/#/)'s live streams on twitch and youtube!!!  ❤️)
+- NODE.js and what EXPRESS is (thanks to [coding garden](https://coding.garden/#/)'s live streams on twitch and youtube!!!  ❤️ )
 - codingame (thanx to CJ)  and codewars (thanx to Javascript Mastery) : it's so COOL!!!! awesome!!!🤩
 
 
