@@ -5,7 +5,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/13141078871
 
 **what i did:**
 
-- first real kata on codewars using regex (vowels replacement!! with `/[aeiou]/gi`) : 🤩
+- first real kata on codewars using regex (vowels replacement!! with `string.replace(/[aeiou]/gi, "")`) : 🤩 makes 100% sense! really easy once basic RegEx syntax is understood!!!
 - portfolio design, i'm slow doing that, not sure waht style to chose etc... but it's fun! 
 
 **what i learned:**
