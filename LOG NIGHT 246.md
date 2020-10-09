@@ -11,7 +11,7 @@ link to my daily tweet [here](https://twitter.com/Nightcoder2/status/13141078871
 **what i learned:**
 
 - regexr is really cool!!! (regex101 as well) 
-- RegEx have their own construction/syntax! once that understood, it's absolutely not scary anymore!! just very handy + super precise everything you can do. each syntax is a bit like a new parameter you add to the pattern you want to define!
+- RegEx have their own construction/syntax! once that's understood, it's absolutely not scary anymore!! just very handy + super precise everything you can do. each syntax is a bit like a new parameter you add to the pattern you want to define!
 awesome.
 - i really like CODEWARS!!!
 
